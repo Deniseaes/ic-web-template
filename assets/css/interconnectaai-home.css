@@ -1,0 +1,30 @@
+#hero-left-box-interconnecta {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px   ;
+}
+
+#banner-content-interconnecta {
+    margin-left: 0px;
+}
+
+#banner-desc-area-ic {
+    margin-left: 0px;
+}
+
+#banner-title-ic {
+    font-size: 56px;
+    text-align: start;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#banner-desc-ic {
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
