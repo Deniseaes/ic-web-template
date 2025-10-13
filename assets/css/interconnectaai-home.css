@@ -28,3 +28,34 @@
     min-width: 100%;
     max-width: 100%;
 }
+
+#container-cierre-problema-ic{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#texto-cierre-problema-ic{
+    font-size: 24px;
+    text-align: start;
+    font-weight: 500;
+    margin-left: 100px; 
+}
+
+#logo-interconnecta-ic-header{
+    width: 150px;
+    height: auto;
+}
+
+#logo-interconnecta-ic-header-mobile{
+    width: 150px;
+    height: auto;
+}  
+
+#logo-interconnecta-ic-header-offcanva{
+    width: 150px;
+    height: auto;
+}
