@@ -60,6 +60,98 @@
   height: auto;
 }
 
+#img-zoho-header-service {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#img-ai-header-soluciones {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#header-soluciones-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#header-service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.language-select-container {
+  position: relative;
+  display: inline-block;
+  z-index: 3000;
+  margin-right: 20px;
+  width: 80px;
+}
+
+#language-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 60px;
+  height: 35px;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+
+  color: whitesmoke;
+  background-color: #0f121d;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.2s ease-in-out;
+}
+
+#language-select:hover {
+  border-color: whitesmoke;
+}
+
+#language-select:focus {
+  border-color: #0f121d;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+#language-select option {
+  background-color: #0f121d;
+  color: whitesmoke;
+}
+
+#language-select option:hover {
+  background-color: #0f121d;
+  color: whitesmoke;
+}
+
+#language-select option:focus {
+  background-color: #0f121d;
+  color: whitesmoke;
+}
+
+#language-select option::after {
+  background-color: #0f121d;
+  color: whitesmoke;
+}
+
+@media (max-width: 1380px) {
+  .language-select-container {
+    position: relative;
+    display: inline-block;
+    z-index: 3000;
+    margin-right: 40px;
+  }
+}
+
 #logo-ic-client-title {
   width: 20px;
   height: auto;
