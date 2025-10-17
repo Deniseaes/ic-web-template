@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/meanmenu.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/interconnectaai-home.css" />
+    
   </head>
 
   <body>
@@ -54,11 +55,13 @@
     <div id="tj-back-to-top"><span id="tj-back-to-top-percentage"></span></div>
     <!-- back to top end -->
 
-    <!-- start: Search Popup -->
+    <!-- start: Search Popup 
     <div class="search-popup-overlay"></div>
+    -->
     <!-- end: Search Popup -->
 
-    <!-- start: Offcanvas Menu -->
+  
+    <!-- start: Offcanvas Menu 
     <div class="tj-offcanvas-area d-none d-lg-block">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
@@ -152,7 +155,9 @@
         </div>
       </div>
     </div>
+    -->
     <!-- end: Offcanvas Menu -->
+     
 
     <!-- start: Hamburger Menu -->
     <div class="hamburger-area d-lg-none">
@@ -248,6 +253,7 @@
                   <ul>
                     <li class="has-dropdown current-menu-ancestor">
                       <a href="index.html">Home</a>
+                      <!--
                       <ul class="sub-menu header__mega-menu mega-menu">
                         <li>
                           <div class="mega-menu-wrapper">
@@ -533,9 +539,10 @@
                           </div>
                         </li>
                       </ul>
+                      -->
                     </li>
                     <li class="has-dropdown">
-                      <a href="about.html">Pages</a>
+                      <a href="about.html">Nosotros</a>
                       <ul
                         class="sub-menu header__mega-menu mega-menu mega-menu-pages"
                       >
@@ -663,8 +670,9 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="has-dropdown">
-                      <a href="service.html">Services</a>
+                    <li id="header-service-item" class="has-dropdown">
+                        <img id="img-zoho-header-service" src="./assets/images/hero/logo-zoho.webp" alt="">
+                        <a href="service.html">Enterprise</a>                
                       <ul class="sub-menu mega-menu-service">
                         <li>
                           <a
@@ -764,8 +772,9 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="has-dropdown">
-                      <a href="portfolio.html">Portfolio</a>
+                    <li id="header-soluciones-item" class="has-dropdown">
+                      <img id="img-ai-header-soluciones" src="./assets/images/header/icon-ai.svg" alt="">
+                      <a href="portfolio.html">Soluciones</a>                
                       <ul class="sub-menu">
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li>
@@ -774,7 +783,7 @@
                       </ul>
                     </li>
                     <li class="has-dropdown">
-                      <a href="blog.html">Blog</a>
+                      <a href="blog.html">Insights</a>
                       <ul class="sub-menu">
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="blog-grid.html">Blog Grid</a></li>
@@ -786,13 +795,24 @@
                         <li><a href="blog-details.html">Blog Details</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Alianzas Estratégicas</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </nav>
               </div>
 
+
+
+              <div class="language-select-container">
+                  <select id="language-select">
+                    <option value="EN">ENG</option>
+                    <option value="ES">ESP</option>
+                  </select>
+                </div>
               <!-- header right info -->
               <div class="header-right-item d-none d-lg-inline-flex">
+                
+                <!--
                 <div class="header-search">
                   <button class="search">
                     <i class="tji-search"></i>
@@ -829,12 +849,8 @@
                       ><i class="tji-arrow-right-long"></i
                     ></span>
                   </a>
-                </div>
-                <div class="menu_bar menu_offcanvas d-none d-lg-inline-flex">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                </div>   
+                -->           
               </div>
 
               <!-- menu bar -->
@@ -879,657 +895,7 @@
     </header>
     <!-- end: Header Area -->
 
-    <!-- start: Header Area -->
-    <header
-      class="header-area header-1 header-duplicate header-sticky section-gap-x"
-    >
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-wrapper">
-              <!-- site logo -->
-              <div class="site_logo">
-                <a class="logo" href="index.html"
-                  ><img src="assets/images/logo-inter.svg" alt=""
-                /></a>
-              </div>
-
-              <!-- navigation -->
-              <div class="menu-area d-none d-lg-inline-flex align-items-center">
-                <nav class="mainmenu">
-                  <ul>
-                    <li class="has-dropdown current-menu-ancestor">
-                      <a href="index.html">Home</a>
-                      <ul class="sub-menu header__mega-menu mega-menu">
-                        <li>
-                          <div class="mega-menu-wrapper">
-                            <div class="container-fluid gap-60-25">
-                              <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-1.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index.html">Homepage - 01</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-2.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-2.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-2.html">Homepage - 02</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-3.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-3.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-3.html">Homepage - 03</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-4.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-4.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-4.html">Homepage - 04</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-5.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-5.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-5.html">Homepage - 05</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-6.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-6.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-6.html">Homepage - 06</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-7.webp"
-                                        alt=""
-                                      />
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-7.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-7.html">Homepage - 07</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-8.webp"
-                                        alt=""
-                                      />
-                                      <h6
-                                        class="tj-demo-badge tj-zoom-in-out-anim"
-                                      >
-                                        New
-                                      </h6>
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-8.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-8.html">Homepage - 08</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-9.webp"
-                                        alt=""
-                                      />
-                                      <h6
-                                        class="tj-demo-badge tj-zoom-in-out-anim"
-                                      >
-                                        New
-                                      </h6>
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-9.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-9.html">Homepage - 09</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-12">
-                                  <div class="tj-demo-thumb">
-                                    <div class="image">
-                                      <img
-                                        src="./assets/images/header/demo/home-10.webp"
-                                        alt=""
-                                      />
-                                      <h6
-                                        class="tj-demo-badge tj-zoom-in-out-anim"
-                                      >
-                                        New
-                                      </h6>
-                                      <div class="tj-demo-button">
-                                        <a
-                                          href="index-10.html"
-                                          class="tj-primary-btn header_btn"
-                                        >
-                                          <span class="btn-text"
-                                            ><span>View demo</span></span
-                                          >
-                                          <span class="btn-icon"
-                                            ><i class="tji-arrow-right-long"></i
-                                          ></span>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <h6 class="tj-demo-title">
-                                      <a href="index-10.html">Homepage - 10</a>
-                                    </h6>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="about.html">Pages</a>
-                      <ul
-                        class="sub-menu header__mega-menu mega-menu mega-menu-pages"
-                      >
-                        <li>
-                          <div class="mega-menu-wrapper">
-                            <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">Main Pages</h6>
-                                <div class="mega-menu-list">
-                                  <a href="about.html">About us</a>
-                                  <a href="history.html"
-                                    >Our history
-                                    <span
-                                      class="mega-menu-badge tj-zoom-in-out-anim mega-menu-badge-hot"
-                                      >HOT</span
-                                    ></a
-                                  >
-                                  <a href="team.html">Team</a>
-                                  <a href="team-details.html">Team details</a>
-                                  <a href="careers.html"
-                                    >Careers
-                                    <span
-                                      class="mega-menu-badge tj-zoom-in-out-anim"
-                                      >NEW</span
-                                    ></a
-                                  >
-                                  <a href="careers-details.html"
-                                    >Careers details</a
-                                  >
-                                  <a href="pricing.html">Pricing plan</a>
-                                  <a href="#">Feedbacks</a>
-                                  <a href="faq.html">Faq</a>
-                                  <a href="contact.html">Contact</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">Other Pages</h6>
-                                <div class="mega-menu-list">
-                                  <a href="service.html">Services</a>
-                                  <a href="service-details.html"
-                                    >Service details</a
-                                  >
-                                  <a href="portfolio.html">Portfolio</a>
-                                  <a href="portfolio-details.html"
-                                    >Portfolio details</a
-                                  >
-                                  <a href="error.html">Error 404</a>
-                                  <a href="blog-grid.html"
-                                    >Blog grid
-                                    <span
-                                      class="mega-menu-badge tj-zoom-in-out-anim"
-                                      >NEW</span
-                                    ></a
-                                  >
-                                  <a href="blog.html">Blog standard</a>
-                                  <a href="blog-details.html">Blog details</a>
-                                  <a href="terms-and-conditions.html"
-                                    >Term & conditions</a
-                                  >
-                                  <a href="#"
-                                    >Recognition
-                                    <span
-                                      class="mega-menu-badge tj-zoom-in-out-anim"
-                                      >NEW</span
-                                    ></a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">Shop Pages</h6>
-                                <div class="mega-menu-list">
-                                  <a href="shop.html"
-                                    >Shop
-                                    <span
-                                      class="mega-menu-badge tj-zoom-in-out-anim mega-menu-badge-hot"
-                                      >HOT</span
-                                    ></a
-                                  >
-                                  <a href="shop-details.html">Shop details </a>
-                                  <a href="cart.html">Cart</a>
-                                  <a href="checkout.html">Checkout</a>
-                                  <a href="wishlist.html"
-                                    >Wishlist<span
-                                      class="mega-menu-badge tj-zoom-in-out-anim"
-                                      >NEW</span
-                                    ></a
-                                  >
-                                  <a href="login.html">Login</a>
-
-                                  <a href="#">Tracking</a>
-                                  <a href="#">Order confirm</a>
-                                  <a href="login.html">Registration</a>
-                                  <a href="#">Coming soon</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-3 mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <div class="feature-box">
-                                  <div class="feature-content">
-                                    <h2 class="title">Modern</h2>
-                                    <span>Home Makeover</span>
-                                    <a
-                                      class="read-more feature-contact"
-                                      href="tel:8321890640"
-                                    >
-                                      <i class="tji-phone-3"></i>
-                                      <span>+8 (321) 890-640</span>
-                                    </a>
-                                  </div>
-                                  <div class="feature-images">
-                                    <img
-                                      src="assets/images/service/service-ad.webp"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="service.html">Services</a>
-                      <ul class="sub-menu mega-menu-service">
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-1"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >Business Strategy Development</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-2"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >Customer Experience Solutions</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-3"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >Sustainability and ESG Consulting</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-4"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >Training and Development Programs</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-5"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >IT Support & Maintenance</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="mega-menu-service-single"
-                            href="service-details.html"
-                          >
-                            <span class="mega-menu-service-icon">
-                              <i class="tji-service-6"></i>
-                            </span>
-                            <span class="mega-menu-service-title"
-                              >Marketing Strategy & Campaigns</span
-                            >
-                            <span class="mega-menu-service-nav"
-                              ><i class="tji-arrow-right-long"></i
-                              ><i class="tji-arrow-right-long"></i></span
-                          ></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="portfolio.html">Portfolio</a>
-                      <ul class="sub-menu">
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li>
-                          <a href="portfolio-details.html">Portfolio Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="blog.html">Blog</a>
-                      <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                        <li>
-                          <a href="blog-right-sidebar.html"
-                            >Blog Right Sidebar</a
-                          >
-                        </li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
-
-              <!-- header right info -->
-              <div class="header-right-item d-none d-lg-inline-flex">
-                <div class="header-search">
-                  <button class="search">
-                    <i class="tji-search"></i>
-                  </button>
-                  <button type="button" class="search_close_btn">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 1L1 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M1 1L17 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="header-button">
-                  <a class="tj-primary-btn" href="contact.html">
-                    <span class="btn-text"><span>Let’s Talk</span></span>
-                    <span class="btn-icon"
-                      ><i class="tji-arrow-right-long"></i
-                    ></span>
-                  </a>
-                </div>
-                <div class="menu_bar menu_offcanvas d-none d-lg-inline-flex">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-
-              <!-- menu bar -->
-              <div class="menu_bar mobile_menu_bar d-lg-none">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Search Popup -->
-      <div class="search_popup">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div class="tj_search_wrapper">
-                <div class="search_form">
-                  <form action="#">
-                    <div class="search_input">
-                      <div class="search-box">
-                        <input
-                          class="search-form-input"
-                          type="text"
-                          placeholder="Type Words and Hit Enter"
-                          required
-                        />
-                        <button type="submit">
-                          <i class="tji-search"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end: Header Area -->
+  
 
     <!--
   El smooth-wrapper y smooth-content son los que contiene todo el contenido de la página y el footer
@@ -1537,7 +903,7 @@
   El div space-for-header es un espacio que se deja para que no quede el contenido debajo del header fijo 
   -->
 
-    <div id="smooth-wrapper">
+   <div id="smooth-wrapper">
       <div id="smooth-content">
         <main id="primary" class="site-main">
           <div class="space-for-header"></div>
@@ -1547,7 +913,7 @@
               <div id="hero-left-box-interconnecta" class="banner-left-box">
                 <div id="banner-content-interconnecta" class="banner-content">
                   <span class="sub-title wow fadeInDown" data-wow-delay=".2s">
-                    <img src="assets/images/hero/logo-zoho.webp" alt="" />
+                    <img src="../assets/images/hero/logo-zoho.webp" alt="Zoho" />
                   </span>
                   <!-- original
                   <h1 class="banner-title title-anim">Driving Excellence Through Evolution and
@@ -1576,14 +942,14 @@
                   </div>
                 </div>
                 <div class="banner-shape">
-                  <img src="assets/images/shape/pattern-bg.webp" alt="" />
+                  <img src="../assets/images/shape/pattern-bg.webp" alt="" />
                 </div>
               </div>
               <div class="banner-right-box">
                 <div class="banner-img">
                   <img
                     data-speed="0.8"
-                    src="assets/images/hero/hero_img.webp"
+                    src="../assets/images/hero/hero_img.webp"
                     alt=""
                   />
                 </div>
@@ -1593,19 +959,19 @@
                       <ul>
                         <li class="wow fadeInLeft" data-wow-delay=".5s">
                           <img
-                            src="assets/images/hero/logo-hero-01.webp"
+                            src="../assets/images/hero/logo-hero-01.webp"
                             alt=""
                           />
                         </li>
                         <li class="wow fadeInLeft" data-wow-delay=".6s">
                           <img
-                            src="assets/images/hero/logo-hero-02.webp"
+                            src="../assets/images/hero/logo-hero-02.webp"
                             alt=""
                           />
                         </li>
                         <li class="wow fadeInLeft" data-wow-delay=".7s">
                           <img
-                            src="assets/images/hero/logo-hero-03.webp"
+                            src="../assets/images/hero/logo-hero-03.webp"
                             alt=""
                           />
                         </li>
@@ -1630,220 +996,131 @@
           </section>
           <!-- end: Banner Section -->
 
-          <!-- start: Client Section -->
-          <section
-            class="tj-client-section client-section-gap wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div class="container-fluid client-container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="client-content">
-                    <h5 class="sec-title">
-                      Más de <span class="client-numbers">+500</span> empresas
-                      confían <span class="client-text"></span>en InterConnecta.
-                    </h5>
-                  </div>
-                  <div class="swiper client-slider client-slider-1">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-1.webp" alt="" />
-                        </div>
+           <!-- start:Partners Section -->
+        <section id="partners-section-logos" class="tj-client-section-2 h6-client section-gap-x wow fadeInUp" data-wow-delay=".4s">
+          <div class="container-fluid client-container">
+            <div class="row">
+              <div class="col-12">
+                <div id="h6-client-title-wrapper-logoZoho" class="h6-client-title-wrapper">
+                  <img  id="logo-zoho-client-title" class="h6-client-title-wrapper" src="../assets/images/hero/logo-zoho.webp" alt="Zoho">
+                </div>
+                <div id="h6-client-title-wrapper-zoho-ic" class="h6-client-title-wrapper">
+                  <img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">
+                  <h6 id="ic-client-title" class="h6-client-title">TODA SU OPERACION CONECTADA CON ZOHO</h6>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="swiper client-slider client-slider-2 h6-client-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-1-light.webp" alt="">
                       </div>
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-2.webp" alt="" />
-                        </div>
+                    </div>
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-2-light.webp" alt="">
                       </div>
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-3.webp" alt="" />
-                        </div>
+                    </div>
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-3-light.webp" alt="">
                       </div>
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-4.webp" alt="" />
-                        </div>
+                    </div>
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-4-light.webp" alt="">
                       </div>
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-5.webp" alt="" />
-                        </div>
+                    </div>
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-5-light.webp" alt="">
                       </div>
-                      <div class="swiper-slide client-item">
-                        <div class="client-logo">
-                          <img src="assets/images/brands/brand-6.webp" alt="" />
-                        </div>
+                    </div>
+                    <div class="swiper-slide client-item">
+                      <div class="client-logo">
+                        <img src="assets/images/brands/brand-6-light.webp" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- end: Client Section -->
+          </div>
+        </section>
+        <!-- end: Partners Section -->
 
-          <!-- start: Casos de Estudio Section -->
-          <section class="h5-blog section-gap fix">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="sec-heading-wrap style-8">
-                    <div class="heading-wrap-content">
-                      <div class="sec-heading style-8">
-                        <span
-                          class="sub-title wow fadeInUp"
-                          data-wow-delay=".3s"
-                          >Historias de Éxito</span
-                        >
-                        <h2 class="sec-title text-anim">
-                          Casos reales de
-                          <span style="color: #00a652">transformación</span> y
-                          <span style="color: #00a652">crecimiento</span>.
-                        </h2>
-                      </div>
-
-                      <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
-                        <a class="tj-primary-btn" href="#">
-                          <span class="btn-text"><span>Ver Más</span></span>
-                          <span class="btn-icon"
-                            ><i class="tji-arrow-right-long"></i
-                          ></span>
-                        </a>
-                      </div>
+         <!-- start: Portal Section -->
+        <section id="choose-portal-section" class="tj-choose-section section-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="sec-heading-wrap">
+                  <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">PORTAL INTELIGENTE</span>
+                  <div id="content-portal-section"  class="heading-wrap-content">
+                    <div id="content-portal-section-title" class="sec-heading">
+                      <h2 class="sec-title title-anim">Gestione y optimice su empresa con el <strong>Zoho <span>Enterprise Customer Portal</span></strong></h2>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="h5-blog-wrapper h9-blog-wrapper">
-                    <div
-                      class="blog-item style-2 h5-blog-item wow fadeInLeft"
-                      data-wow-delay=".3s"
-                    >
-                      <!--Caso 1-->
-                      <div class="blog-thumb">
-                        <a href="blog-details.html"
-                          ><img src="assets/images/casos/caso1_img.webp" alt=""
-                        /></a>
-                      </div>
-                      <div class="blog-content">
-                        <div class="title-area">
-                          <div class="blog-meta">
-                            <span class="categories"
-                              ><a href="#">Energy</a></span
-                            >
-                            <span>By <a href="#">InterConnecta</a></span>
-                          </div>
-                          <h4 class="title">
-                            <a href="#">Caso de estudio | Industria solar</a>
-                            <p style="font-size: medium; font-weight: 300">
-                              Cómo un agente de IA puede reducir las consultas
-                              manuales en un 70% en la industria solar.
-                            </p>
-                          </h4>
-                        </div>
-                        <a class="text-btn" href="#">
-                          <span class="btn-text"><span>Leer Más</span></span>
-                          <span class="btn-icon"
-                            ><i class="tji-arrow-right-long"></i
-                          ></span>
-                        </a>
-                      </div>
-                    </div>
-                    <!--Caso 2-->
-                    <div
-                      class="blog-item style-2 h5-blog-item wow fadeInRight"
-                      data-wow-delay=".4s"
-                    >
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img src="assets/images/casos/caso3_img.webp" alt=""
-                        /></a>
-                      </div>
-
-                      <div class="blog-content">
-                        <div class="title-area">
-                          <div class="blog-meta">
-                            <span class="categories"
-                              ><a href="#">Energy</a></span
-                            >
-                            <span>By <a href="#">InterConnecta</a></span>
-                          </div>
-                          <h4 class="title">
-                            <a href="#">Caso de estudio | Educación</a>
-                            <p style="font-size: medium; font-weight: 300">
-                              Cómo una universidad implementó Zoho para lograr
-                              una transformación digital completa del ciclo de
-                              vida del estudiante.
-                            </p>
-                          </h4>
-                        </div>
-                        <a class="text-btn" href="#">
-                          <span class="btn-text"><span>Leer Más</span></span>
-                          <span class="btn-icon"
-                            ><i class="tji-arrow-right-long"></i
-                          ></span>
-                        </a>
-                      </div>
-                    </div>
-                    <!--Caso 3-->
-                    <div
-                      class="blog-item style-2 h5-blog-item wow fadeInRight"
-                      data-wow-delay=".5s"
-                    >
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img src="assets/images/casos/caso3_img.webp" alt=""
-                        /></a>
-                      </div>
-                      <div class="blog-content">
-                        <div class="title-area">
-                          <div class="blog-meta">
-                            <span class="categories"
-                              ><a href="#">Energy</a></span
-                            >
-                            <span>By <a href="#">InterConnecta</a></span>
-                          </div>
-                          <h4 class="title">
-                            <a href="#">Caso de estudio | Logística</a>
-                            <p style="font-size: medium; font-weight: 300">
-                              Optimización de los procesos de despacho para
-                              empresas logísticas de alto volumen.
-                            </p>
-                          </h4>
-                        </div>
-                        <a class="text-btn" href="#">
-                          <span class="btn-text"><span>Leer Más</span></span>
-                          <span class="btn-icon"
-                            ><i class="tji-arrow-right-long"></i
-                          ></span>
-                        </a>
-                      </div>
+                    <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
+                      <a class="tj-primary-btn" href="#">
+                        <span class="btn-text"><span>Acceder</span></span>
+                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- end: Casos de Estudio Section -->
+            <div class="row row-gap-4 rightSwipeWrap">
+              <div class="col-lg-4">
+                <div class="choose-box right-swipe">
+                  <div class="choose-content">
+                    <div class="choose-icon">
+                      <i class="tji-innovative"></i>
+                    </div>
+                    <h4 class="title">Centralización inteligentes</h4>
+                    <p class="desc"><strong>Todo en un solo lugar.</strong> Gestione soporte, proyectos y analítica desde un portal unificado, totalmente integrado con su ecosistema <strong>Zoho.</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="choose-box right-swipe">
+                  <div class="choose-content">
+                    <div class="choose-icon">
+                      <i class="tji-award"></i>
+                    </div>
+                    <h4 class="title">Inteligencia integrada</h4>
+                    <p class="desc"><strong>Datos que impulsan decisiones.</strong> Conectado a <strong>Zoho.</strong> e impulsado por IA, el portal ofrece visibilidad, automatización y analítica en tiempo real.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="choose-box right-swipe">
+                  <div class="choose-content">
+                    <div class="choose-icon">
+                      <i class="tji-support"></i>
+                    </div>
+                    <h4 class="title">Experiencia enterprise</h4>
+                    <p class="desc"><strong>Escalable, segura y colaborativa.</strong> Optimice el trabajo de sus equipos globales con accesos por roles, soporte continuo y conexión directa a las apps de <strong>Zoho.</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end: Portal Section -->
 
-          <!-- start: Soluciones Section -->
+        <!-- start: Soluciones Section -->
           <section class="tj-service-section service-3 section-gap">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="sec-heading style-3 text-center">
+                  <div  class="sec-heading style-3 text-center">
                     <span class="sub-title wow fadeInUp" data-wow-delay=".3s"
-                      ><i class="tji-box"></i>Transformamos tu negocio
-                      conectando personas, procesos y tecnología.</span
+                      ><img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">NUESTRAS SOLUCIONES.</span
                     >
-                    <h2 class="sec-title title-anim">
-                      Nuestras soluciones integrales impulsan la eficiencia, la
-                      automatización y la toma de decisiones inteligentes.
+                    <h2 class="sec-title title-anim" >
+                      Soluciones <span style="color: #00a652">End-to-End</span> para el Crecimiento Empresarial.
                     </h2>
                   </div>
                 </div>
@@ -1855,26 +1132,24 @@
                       class="service-item style-3 wow fadeInUp"
                       data-wow-delay=".3s"
                     >
-                      <div class="service-content-wrap">
+                      <div class="service-content-wrap" >
                         <div class="service-title">
                           <div class="service-icon">
-                            <i class="tji-service-1"></i>
+                            <img src="../assets/images/solutions/solucion2_icon.svg" alt="soluciones">
                           </div>
                           <h4 class="title">
-                            <a href="#">Conectamos Zoho con tu negocio.</a>
+                            <a href="#">Conectamos tu negocio con Zoho.</a>
                           </h4>
                         </div>
                         <div class="service-content">
                           <p class="desc">
-                            Integramos y personalizamos las aplicaciones de Zoho
-                            para que trabajen en perfecta sincronía con tus
-                            procesos.
+                            <strong>Migramos, integramos y personalizamos</strong> las aplicaciones de Zoho y otras plataformas empresariales, creando un ecosistema conectado y eficiente.
                           </p>
                         </div>
                       </div>
                       <div
                         class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion1_img.jpg"
+                        data-bg-image="../assets/images/solutions/solucion1_img.jpg"
                       ></div>
                     </div>
                     <div
@@ -1884,25 +1159,23 @@
                       <div class="service-content-wrap">
                         <div class="service-title">
                           <div class="service-icon">
-                            <i class="tji-service-2"></i>
+                            <img src="../assets/images/solutions/solucion1_icon.svg" alt="soluciones">
                           </div>
                           <h4 class="title">
                             <a href="service-details.html"
-                              >Modernizamos tus operaciones.</a
+                              >Automatizamos tus operaciones.</a
                             >
                           </h4>
                         </div>
                         <div class="service-content">
                           <p class="desc">
-                            Rediseñamos y optimizamos procesos clave con
-                            soluciones digitales que impulsan productividad y
-                            resultados medibles.
+                            <strong>Rediseñamos y automatizamos</strong> procesos clave con soluciones digitales que impulsan productividad y resultados medibles.
                           </p>
                         </div>
                       </div>
                       <div
                         class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion2_img.jpg"
+                        data-bg-image="../assets/images/solutions/solucion2_img.jpg"
                       ></div>
                     </div>
                     <div
@@ -1912,7 +1185,7 @@
                       <div class="service-content-wrap">
                         <div class="service-title">
                           <div class="service-icon">
-                            <i class="tji-service-3"></i>
+                            <img src="../assets/images/solutions/solucion3_icon.svg" alt="soluciones">
                           </div>
                           <h4 class="title">
                             <a href="service-details.html"
@@ -1922,15 +1195,13 @@
                         </div>
                         <div class="service-content">
                           <p class="desc">
-                            Con DataIQ transformamos información en conocimiento
-                            accionable para guiar decisiones más inteligentes y
-                            aumentar tu ROI.
+                            Con DataIQ, <strong>transformamos información en conocimiento</strong> accionable para decisiones más rápidas y estratégicas.
                           </p>
                         </div>
                       </div>
                       <div
                         class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion3_img.jpg"
+                        data-bg-image="../assets/images/solutions/solucion3_img.jpg"
                       ></div>
                     </div>
                     <div
@@ -1940,35 +1211,7 @@
                       <div class="service-content-wrap">
                         <div class="service-title">
                           <div class="service-icon">
-                            <i class="tji-service-4"></i>
-                          </div>
-                          <h4 class="title">
-                            <a href="service-details.html"
-                              >Mantenemos tu operación siempre activa.</a
-                            >
-                          </h4>
-                        </div>
-                        <div class="service-content">
-                          <p class="desc">
-                            Ofrecemos soporte 24/7 y mantenimiento proactivo
-                            para asegurar que tus sistemas funcionen con el
-                            máximo rendimiento.
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion4_img.jpg"
-                      ></div>
-                    </div>
-                    <div
-                      class="service-item style-3 wow fadeInUp"
-                      data-wow-delay=".3s"
-                    >
-                      <div class="service-content-wrap">
-                        <div class="service-title">
-                          <div class="service-icon">
-                            <i class="tji-service-4"></i>
+                            <img src="../assets/images/solutions/solucion5_icon.svg" alt="soluciones">
                           </div>
                           <h4 class="title">
                             <a href="service-details.html"
@@ -1978,14 +1221,13 @@
                         </div>
                         <div class="service-content">
                           <p class="desc">
-                            Impulsa tu negocio con IA que anticipa, automatiza e
-                            integra soluciones como Tami con Zoho.
+                            <strong>Integramos IA en tus procesos con agentes inteligentes</strong> como TAMI, que anticipan, analizan y ejecutan acciones para optimizar tu operación.
                           </p>
                         </div>
                       </div>
                       <div
                         class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion5_img.jpg"
+                        data-bg-image="../assets/images/solutions/solucion4_img.jpg"
                       ></div>
                     </div>
                     <div
@@ -1995,25 +1237,49 @@
                       <div class="service-content-wrap">
                         <div class="service-title">
                           <div class="service-icon">
-                            <i class="tji-service-4"></i>
+                            <img src="../assets/images/solutions/solucion4_icon.svg" alt="soluciones">
                           </div>
                           <h4 class="title">
                             <a href="service-details.html"
-                              >IC Academy: desarrollamos el talento digital de
-                              tu equipo.</a
+                              >Solution Design: diseñamos soluciones a medida..</a
                             >
                           </h4>
                         </div>
                         <div class="service-content">
                           <p class="desc">
-                            Capacita a tu equipo en Zoho, IA y automatización
-                            para potenciar su crecimiento.
+                            <strong>Creamos arquitecturas y roadmaps empresariales</strong> para desplegar soluciones escalables y alineadas con tus objetivos.
                           </p>
                         </div>
                       </div>
                       <div
                         class="service-reveal-bg"
-                        data-bg-image="assets/images/solutions/solucion6_img.jpg"
+                        data-bg-image="../assets/images/solutions/solucion5_img.jpg"
+                      ></div>
+                    </div>
+                    <div
+                      class="service-item style-3 wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div class="service-content-wrap">
+                        <div class="service-title">
+                          <div class="service-icon">
+                            <img src="../assets/images/solutions/solucion6_icon.svg" alt="soluciones">
+                          </div>
+                          <h4 class="title">
+                            <a href="service-details.html"
+                              >IC Academy: onboarding empresarial inteligente.</a
+                            >
+                          </h4>
+                        </div>
+                        <div class="service-content">
+                          <p class="desc">
+                            <strong>Capacitamos y acompañamos</strong> a tus equipos en Zoho, IA y automatización, asegurando adopción, autonomía y retorno de inversión.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="service-reveal-bg"
+                        data-bg-image="../assets/images/solutions/solucion6_img.jpg"
                       ></div>
                     </div>
                   </div>
@@ -2034,6 +1300,251 @@
           </section>
           <!-- end: Soluciones Section -->
 
+          <!-- start: Casos de Estudio Section -->
+          <section class="h5-blog section-gap fix" id="section-casos-de-estudio">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="sec-heading-wrap style-8">
+                    <div class="heading-wrap-content">
+                      <div class="sec-heading style-3">
+                         <span class="sub-title wow fadeInUp" data-wow-delay=".3s"
+                      ><img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">CASOS DE ESTUDIO.</span
+                    >
+                        <h2 class="sec-title text-anim">
+                          Casos reales de
+                          <span style="color: #00a652">transformación empresarial</span> 
+                        </h2>
+                      </div>
+
+                      <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
+                        <a class="tj-primary-btn" href="#">
+                          <span class="btn-text"><span>Ver Más</span></span>
+                          <span class="btn-icon"
+                            ><i class="tji-arrow-right-long"></i
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row" id="content-casos-de-estudio">
+                <div class="col-12">
+                  <div class="h5-blog-wrapper h9-blog-wrapper">
+                    <div
+                      class="blog-item style-2 h5-blog-item wow fadeInLeft"
+                      data-wow-delay=".3s"
+                    >
+                      <!--Caso 1-->
+                      <div class="blog-thumb">
+                        <a href="blog-details.html"
+                          ><img src="../assets/images/casos/caso1_img.webp" alt=""
+                        /></a>
+                      </div>
+                      <div class="blog-content">
+                        <div class="title-area">
+                          <h4 class="title">
+                            <a href="#">Caso de estudio | Industria solar</a>
+                            <p style="font-size: medium; font-weight: 300">
+                              Zoho CRM personalizado para centralizar las suscripciones y las comunicaciones por correo electrónico con los suscriptores.
+                            </p>
+                          </h4>
+                        </div>
+                        <a class="text-btn" href="#">
+                          <span class="btn-text"><span>Leer Más</span></span>
+                          <span class="btn-icon"
+                            ><i class="tji-arrow-right-long"></i
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Caso 2-->
+                    <div
+                      class="blog-item style-2 h5-blog-item wow fadeInRight"
+                      data-wow-delay=".4s"
+                    >
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img src="../assets/images/casos/caso3_img.webp" alt=""
+                        /></a>
+                      </div>
+
+                      <div class="blog-content">
+                        <div class="title-area">
+                          <h4 class="title">
+                            <a href="#">Caso de estudio | Educación</a>
+                            <p style="font-size: medium; font-weight: 300">
+                              Cómo una universidad implementó Zoho para lograr una transformación digital completa del ciclo de vida del estudiante.
+                            </p>
+                          </h4>
+                        </div>
+                        <a class="text-btn" href="#">
+                          <span class="btn-text"><span>Leer Más</span></span>
+                          <span class="btn-icon"
+                            ><i class="tji-arrow-right-long"></i
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Caso 3-->
+                    <div
+                      class="blog-item style-2 h5-blog-item wow fadeInRight"
+                      data-wow-delay=".5s"
+                    >
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img src="../assets/images/casos/caso3_img.webp" alt=""
+                        /></a>
+                      </div>
+                      <div class="blog-content">
+                        <div class="title-area">
+                          
+                          <h4 class="title">
+                            <a href="#">Caso de estudio | Logística</a>
+                            <p style="font-size: medium; font-weight: 300">
+                              Optimización de los procesos de despacho para empresas logísticas de alto volumen.
+                            </p>
+                          </h4>
+                        </div>
+                        <a class="text-btn" href="#">
+                          <span class="btn-text"><span>Leer Más</span></span>
+                          <span class="btn-icon"
+                            ><i class="tji-arrow-right-long"></i
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end: Casos de Estudio Section -->
+
+          <!-- start: Soluciones Industrias Section -->
+        <section class="tj-project-section-3 section-gap section-gap-x" id="section-soluciones-industrias">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="sec-heading-wrap">
+                  <span class="sub-title wow fadeInUp" data-wow-delay=".3s"
+                      ><img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">SOLUCIONES PROBADAS PARA CADA INDUSTRIA.</span
+                    >
+                  <div class="heading-wrap-content">
+                    <div class="sec-heading style-3">
+                      <h2 id="section-soluciones-industrias-title" class="sec-title title-anim">Impulsamos a los <span style="color: #00a652">líderes de la industria</span></h2>
+                    </div>
+                    <div class="slider-navigation d-none d-md-inline-flex wow fadeInUp" data-wow-delay=".5s">
+                      <div class="slider-prev">
+                        <span class="anim-icon">
+                          <i class="tji-arrow-left"></i>
+                          <i class="tji-arrow-left"></i>
+                        </span>
+                      </div>
+                      <div class="slider-next">
+                        <span class="anim-icon">
+                          <i class="tji-arrow-right"></i>
+                          <i class="tji-arrow-right"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="project-wrapper wow fadeInUp" data-wow-delay=".4s">
+                  <div class="swiper project-slider-2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="project-item">
+                          <div class="project-img">
+                            <img src="../assets/images/solutions/caso1_img.webp" alt="">
+                          </div>
+                          <div id="title-card-soluciones-industrias" class="project-content">
+                            
+                            <div  class="project-text">
+                              <h4 class="title"><a href="#">Energía Solar</a></h4>
+                              <a class="project-btn" href="#">
+                                <i class="tji-arrow-right-big"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-item">
+                          <div class="project-img">
+                            <img src="assets/images/project/project-7.webp" alt="">
+                          </div>
+                          <div class="project-content">
+                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
+                            <div class="project-text">
+                              <h4 class="title"><a href="portfolio-details.html">Rebranding Strategy for a Growing</a>
+                              </h4>
+                              <a class="project-btn" href="portfolio-details.html">
+                                <i class="tji-arrow-right-big"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-item">
+                          <div class="project-img">
+                            <img src="assets/images/project/project-8.webp" alt="">
+                          </div>
+                          <div class="project-content">
+                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
+                            <div class="project-text">
+                              <h4 class="title"><a href="portfolio-details.html">Interactive Learning Platform</a></h4>
+                              <a class="project-btn" href="portfolio-details.html">
+                                <i class="tji-arrow-right-big"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-item">
+                          <div class="project-img">
+                            <img src="assets/images/project/project-9.webp" alt="">
+                          </div>
+                          <div class="project-content">
+                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
+                            <div class="project-text">
+                              <h4 class="title"><a href="portfolio-details.html">Environmental Impact Dashboard</a></h4>
+                              <a class="project-btn" href="portfolio-details.html">
+                                <i class="tji-arrow-right-big"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination-area"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-shape-1">
+            <img src="assets/images/shape/pattern-2.svg" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src="assets/images/shape/pattern-3.svg" alt="">
+          </div>
+          <div class="bg-shape-3">
+            <img src="assets/images/shape/shape-blur.svg" alt="">
+          </div>
+        </section>
+        <!-- end:Soluciones Industrias Section -->
+
           <!-- start: Choose Section -->
           <section
             id="choose"
@@ -2049,7 +1560,7 @@
                       data-speed=".8"
                       class="wow fadeInLeftBig"
                       data-wow-delay=".3s"
-                      src="./assets/images/problema-home/dolor_img.webp"
+                      src="../assets/images/problema-home/dolor_img.webp"
                       alt=""
                     />
                   </div>
@@ -2094,7 +1605,7 @@
                           <div class="choose-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/problema-home/dolor1_icon.svg"
+                              src="../assets/images/problema-home/dolor1_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2111,7 +1622,7 @@
                           <div class="choose-icon">
                             <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/problema-home/dolor2_icon.svg"
+                              src="../assets/images/problema-home/dolor2_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2128,7 +1639,7 @@
                           <div class="choose-icon">
                             <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/problema-home/dolor3_icon.svg"
+                              src="../assets/images/problema-home/dolor3_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2143,7 +1654,7 @@
               </div>
             </div>
             <div class="bg-shape-2">
-              <img src="assets/images/shape/pattern-3.svg" alt="" />
+              <img src="../assets/images/shape/pattern-3.svg" alt="" />
             </div>
             <div id="container-cierre-problema-ic">
               <p id="texto-cierre-problema-ic">
@@ -2425,7 +1936,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia1_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia1_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2450,7 +1961,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia2_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia2_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2475,7 +1986,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia3_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia3_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2500,7 +2011,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia4_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia4_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2525,7 +2036,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia5_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia5_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2550,7 +2061,7 @@
                           <div class="service-icon">
                            <img
                               class="wow fadeInLeftBig"
-                              src="./assets/images/metodologia-home/metodologia6_icon.svg"
+                              src="../assets/images/metodologia-home/metodologia6_icon.svg"
                               alt=""
                             />
                           </div>
@@ -2572,10 +2083,10 @@
               </div>
             </div>
             <div class="bg-shape-1">
-              <img src="assets/images/shape/pattern-2.svg" alt="" />
+              <img src="../assets/images/shape/pattern-2.svg" alt="" />
             </div>
             <div class="bg-shape-3">
-              <img src="assets/images/shape/shape-blur.svg" alt="" />
+              <img src="../assets/images/shape/shape-blur.svg" alt="" />
             </div>
           </section>
           <!-- end: Service Section -->
@@ -2612,7 +2123,7 @@
                     >
                       <div class="blog-thumb">
                         <a href="blog-details.html"
-                          ><img src="assets/images/blog/blog-1.webp" alt=""
+                          ><img src="../assets/images/blog/blog-1.webp" alt=""
                         /></a>
                         <div class="blog-date">
                           <span class="date">28</span>
@@ -2653,7 +2164,7 @@
                     >
                       <div class="blog-thumb">
                         <a href="blog-details.html"
-                          ><img src="assets/images/blog/blog-5.webp" alt=""
+                          ><img src="../assets/images/blog/blog-5.webp" alt=""
                         /></a>
                         <div class="blog-date">
                           <span class="date">28</span>
@@ -2694,7 +2205,7 @@
                     >
                       <div class="blog-thumb">
                         <a href="blog-details.html"
-                          ><img src="assets/images/blog/blog-4.webp" alt=""
+                          ><img src="../assets/images/blog/blog-4.webp" alt=""
                         /></a>
                         <div class="blog-date">
                           <span class="date">28</span>
@@ -2749,7 +2260,7 @@
                     <h2 class="title text-anim">
                       <span>Let’s Talk to</span>
                       <span class="cta-img wow fadeInUp" data-wow-delay=".3s"
-                        ><img src="assets/images/team/team-1.webp" alt="" /><a
+                        ><img src="../assets/images/team/team-1.webp" alt="" /><a
                           class="tji-icon-btn"
                           href="contact.html"
                           ><i class="tji-arrow-right-long"></i></a
@@ -2773,7 +2284,7 @@
                   <div class="footer-widget wow fadeInUp" data-wow-delay=".1s">
                     <div class="footer-logo">
                       <a href="index.html">
-                        <img src="assets/images/logos/logo.webp" alt="Logos" />
+                        <img src="../assets/images/logos/logo.webp" alt="Logos" />
                       </a>
                     </div>
                     <div class="footer-text">
@@ -2785,13 +2296,13 @@
                     <div class="award-logo-area">
                       <div class="award-logo">
                         <img
-                          src="assets/images/footer/award-logo-1.webp"
+                          src="../assets/images/footer/award-logo-1.webp"
                           alt=""
                         />
                       </div>
                       <div class="award-logo">
                         <img
-                          src="assets/images/footer/award-logo-2.webp"
+                          src="../assets/images/footer/award-logo-2.webp"
                           alt=""
                         />
                       </div>
@@ -2924,15 +2435,19 @@
             </div>
           </div>
           <div class="bg-shape-1">
-            <img src="assets/images/shape/pattern-2.svg" alt="" />
+            <img src="../assets/images/shape/pattern-2.svg" alt="" />
           </div>
           <div class="bg-shape-2">
-            <img src="assets/images/shape/pattern-3.svg" alt="" />
+            <img src="../assets/images/shape/pattern-3.svg" alt="" />
           </div>
         </footer>
         <!-- end: Footer Section -->
       </div>
     </div>
+
+    
+
+
     <!-- JS here -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -2949,5 +2464,6 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/meanmenu.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/cambiar-lenguaje.js"></script>
   </body>
 </html>
