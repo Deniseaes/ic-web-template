@@ -7732,7 +7732,7 @@ START: Hero CSS
 }
 
 .banner-left-box {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #F1FCF6;
   border-radius: 12px;
   padding: 70px;
   width: calc(50% - 15px);
@@ -7748,21 +7748,7 @@ START: Hero CSS
           align-items: center;
   overflow: hidden;
 }
-.banner-left-box::before {
-  content: "";
-  position: absolute;
-  top: 5%;
-  inset-inline-start: 5%;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: var(--tj-color-theme-primary);
-  -webkit-filter: blur(65px);
-  filter: blur(65px);
-  opacity: 0.26;
-  z-index: -1;
-  backdrop-filter: blur(10px);
-}
+
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .banner-left-box {
     -webkit-padding-end: 40px;
