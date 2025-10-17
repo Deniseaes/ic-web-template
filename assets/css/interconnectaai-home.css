@@ -1,4 +1,13 @@
-#hero-left-box-interconnecta {
+
+#tag-section-title-zoho {
+  border: 2px dashed #313d3d;
+  border-radius: 20px;
+  padding: 5px;
+  color: #313d3d;
+  width: 35%;
+}
+
+ #hero-left-box-interconnecta {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right:0px;
@@ -13,79 +22,79 @@
 }
 
 #banner-content-interconnecta {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-    width: 100%;
-    position: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    color: black;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 100%;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  color: black;
 }
 
 #banner-desc-area-ic {
-    margin-left: 0px;
-    width: 100%;
-    margin-right: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    border: 2px dashed #313d3d;
-    border-left: none;
-    border-right: none;
-    color: black;
+  margin-left: 0px;
+  width: 100%;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: 2px dashed #313d3d;
+  border-left: none;
+  border-right: none;
+  color: black;
 }
 
 #banner-title-ic {
-    font-size: 56px;
-    text-align: start;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    color: black;
+  font-size: 56px;
+  text-align: start;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  color: black;
 }
 
 #banner-desc-ic {
-    font-size: 20px;
-    text-align: start;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    color: black;
+  font-size: 20px;
+  text-align: start;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  color: black;
 }
 
 #bnner-desc-p-ic {
-    font-size: 18px;
-    margin-left: 40px;
-    text-align: start;
-    color: black;
+  font-size: 18px;
+  margin-left: 40px;
+  text-align: start;
+  color: black;
 }
 
-#buttons-banner-interconnecta-ic{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    width: 100%;
-    height: auto;
-    margin-right: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content:start;
-    align-items: center;
-    color: black;
+#buttons-banner-interconnecta-ic {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: black;
 }
 
-.span-banner-ic{
-    font-size: 18px;
-    text-align: start;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: black;
-    border: 2px dashed #313d3d;
-    border-radius: 20px;
+.span-banner-ic {
+  font-size: 18px;
+  text-align: start;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  border: 2px dashed #313d3d;
+  border-radius: 20px;
 }
 
 #buttons-banner-interconnecta-ic-button-uno{
@@ -93,65 +102,102 @@
     height: auto;
     margin-right: 20px;
     color: black;
+=========
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
 
-#container-cierre-problema-ic{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 40px;
-    margin-bottom: 40px;
+#tag-section-title-zoho {
+  border: 2px dashed #313d3d;
+  border-radius: 20px;
+  padding: 5px;
+  color: #313d3d;
+  width: 35%;
 }
 
-#texto-cierre-problema-ic{
-    font-size: 24px;
-    text-align: start;
-    font-weight: 500;
-    margin-left: 100px; 
+#banner-content-interconnecta {
+  margin-left: 0px;
 }
 
-#logo-interconnecta-ic-header{
-    width: 150px;
-    height: auto;
+#banner-desc-area-ic {
+  margin-left: 0px;
 }
 
-#logo-interconnecta-ic-header-mobile{
-    width: 150px;
-    height: auto;
-}  
-
-#logo-interconnecta-ic-header-offcanva{
-    width: 150px;
-    height: auto;
+#banner-title-ic {
+  font-size: 56px;
+  text-align: start;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
-#img-zoho-header-service{
-    width: 50px;
-    height:auto;
-    margin-right: 10px;
+#banner-desc-ic {
+  font-size: 20px;
+  text-align: start;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+>>>>>>>>> Temporary merge branch 2
 }
 
-#img-ai-header-soluciones{
-    width: 20px;
-    height:auto;
-    margin-right: 10px;
+#container-cierre-problema-ic {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#header-soluciones-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+#texto-cierre-problema-ic {
+  font-size: 24px;
+  text-align: start;
+  font-weight: 500;
+  margin-left: 100px;
 }
 
-#header-service-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+#logo-interconnecta-ic-header {
+  width: 150px;
+  height: auto;
 }
 
+#logo-interconnecta-ic-header-mobile {
+  width: 150px;
+  height: auto;
+}
+
+#logo-interconnecta-ic-header-offcanva {
+  width: 150px;
+  height: auto;
+}
+
+#img-zoho-header-service {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#img-ai-header-soluciones {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#header-soluciones-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#header-service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 .language-select-container {
   position: relative;
@@ -170,9 +216,9 @@
   padding: 5px 10px 5px 10px;
   font-size: 16px;
 
-  color: whitesmoke; 
-  background-color: #0f121d; 
-  border: 1px solid  whitesmoke;
+  color: whitesmoke;
+  background-color: #0f121d;
+  border: 1px solid whitesmoke;
   border-radius: 5px;
 
   cursor: pointer;
@@ -185,41 +231,38 @@
   border-color: whitesmoke;
 }
 
-
 #language-select:focus {
   border-color: #0f121d;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 #language-select option {
-  background-color:  #0f121d;
+  background-color: #0f121d;
   color: whitesmoke;
 }
 
 #language-select option:hover {
-  background-color:  #0f121d;
+  background-color: #0f121d;
   color: whitesmoke;
 }
 
 #language-select option:focus {
-  background-color:  #0f121d;
+  background-color: #0f121d;
   color: whitesmoke;
 }
 
 #language-select option::after {
-  background-color:  #0f121d;
+  background-color: #0f121d;
   color: whitesmoke;
 }
 
 @media (max-width: 1380px) {
-  
-.language-select-container {
-  position: relative;
-  display: inline-block;
-  z-index: 3000;
-  margin-right: 40px;
-}
-
+  .language-select-container {
+    position: relative;
+    display: inline-block;
+    z-index: 3000;
+    margin-right: 40px;
+  }
 }
 
 #logo-ic-client-title {
@@ -234,9 +277,14 @@
 }
 #h6-client-title-wrapper-logoZoho {
   padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #h6-client-title-wrapper-zoho-ic {
   padding-top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo-zoho-client-title {
@@ -263,6 +311,12 @@
 }
 
 /*Solutions Section*/
+#tag-section-title {
+  border: 2px dashed #313d3d;
+  border-radius: 20px;
+  padding: 5px;
+  color: #313d3d;
+}
 
 /*Casos de estudio Section*/
 #section-casos-de-estudio {
@@ -283,5 +337,12 @@
 #title-card-soluciones-industrias {
   padding: 0;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 80px;
+  flex-wrap: nowrap;
+}
+#card-soluciones-industrias {
+  height: 490px;
+}
+#img-card-soluciones-industrias {
+  height: 400px;
 }
