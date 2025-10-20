@@ -89,7 +89,7 @@ START: Theme Default CSS
   --tj-color-text-body-3: #67787a;
   --tj-color-text-body-4: #18292c;
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
-  --tj-color-theme-primary: #00a73c;
+  --tj-color-theme-primary: #03cd5c;
   --tj-color-theme-bg: #d8e5e5;
   --tj-color-theme-bg-2: #cee0e0;
   --tj-color-theme-bg-3: #202e30;
@@ -125,8 +125,9 @@ body {
   font-size: var(--tj-fs-body);
   font-weight: normal;
   color: var(--tj-color-text-body);
-  background-color: var(--tj-color-grey-1);
+  background-color: var(--tj-color-common-white);
   line-height: 1.5;
+
 }
 
 a {
@@ -317,13 +318,12 @@ input[type=email],
 input[type=url],
 textarea {
   outline: none;
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-grey-1);
   height: auto;
   width: 100%;
-  font-size: var(--tj-fs-body);
-  border: 1px solid var(--tj-color-border-1);
+  font-size:14px;
   color: var(--tj-color-text-body);
-  padding: 10px 15px;
+  padding:0px;
   -webkit-box-shadow: 0 0 0;
           box-shadow: 0 0 0;
 }
@@ -943,7 +943,7 @@ img {
 START: Theme Header CSS
 ----------------------------------------*/
 .header-area {
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-grey-1);
   border-end-start-radius: 12px;
   border-end-end-radius: 12px;
   position: relative;
@@ -962,7 +962,7 @@ START: Theme Header CSS
 }
 .header-area.header-1 .header-wrapper {
   padding: 0 18px;
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-grey-1);
 }
 .header-area.header-2.header-absolute {
   position: absolute;
@@ -1251,6 +1251,7 @@ START: Theme Header CSS
       flex-wrap: wrap;
   z-index: 99;
   position: relative;
+  background-color: var(--tj-color-grey-1);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .header-wrapper {
@@ -1260,7 +1261,7 @@ START: Theme Header CSS
 
 .site_logo .logo {
   display: inline-block;
-  max-width: 136px;
+  max-width: 250px;
   width: 100%;
 }
 
@@ -1290,7 +1291,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > a {
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--tj-color-heading-primary);
   display: block;
   padding: 37px 0;
@@ -1305,7 +1306,7 @@ START: Theme Header CSS
   content: "\e929";
   font-family: "bexon-icons";
   color: inherit;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   top: 40px;
   inset-inline-end: 0;
@@ -3845,7 +3846,7 @@ START: Theme Search CSS
   background: var(--tj-color-common-white);
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 12px;
   font-family: var(--tj-ff-body);
   color: var(--tj-color-text-body);
   border: 1px solid var(--tj-color-border-1);
@@ -7721,9 +7722,10 @@ START: Hero CSS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 792px;
+  min-height: 500px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-area {
@@ -7734,10 +7736,8 @@ START: Hero CSS
 .banner-left-box {
   background-color: #F1FCF6;
   border-radius: 12px;
-  padding: 70px;
+  padding: 0px;
   width: calc(50% - 15px);
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -7774,7 +7774,6 @@ START: Hero CSS
 }
 
 .banner-content {
-  max-width: 635px;
   width: 100%;
   -webkit-margin-start: auto;
           margin-inline-start: auto;
@@ -7964,14 +7963,15 @@ START: Hero CSS
 
 .banner-img {
   width: 100%;
-  height: 100%;
+  height:auto;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+  margin-right: 30px;
 }
 .banner-img img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
@@ -8057,7 +8057,7 @@ START: Hero CSS
 }
 
 .banner-right-box {
-  width: 50%;
+  width: 48%;
   position: relative;
   min-height: 390px;
 }
