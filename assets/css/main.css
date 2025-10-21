@@ -14084,11 +14084,12 @@ START: Working process CSS
 START: Contact CSS
 ----------------------------------------*/
 .tj-contact-section {
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-verdecito);
   border-radius: 12px;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  margin-top: 30px;
 }
 .tj-contact-section .sec-heading {
   -webkit-margin-start: 0;
@@ -14144,13 +14145,14 @@ START: Contact CSS
 }
 
 .contact-form {
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-grey-1);
   -webkit-margin-start: 0;
   margin-inline-start: 0;
   -webkit-margin-end: 15px;
   margin-inline-end: 15px;
   padding: 60px 50px;
   border-radius: 12px;
+  height: 90%;
 }
 .contact-form .title {
   margin-bottom: 35px;
@@ -14171,8 +14173,8 @@ START: Contact CSS
 .contact-form .form-input input[type="tel"],
 .contact-form .form-input input[type="text"],
 .contact-form .form-input input[type="email"] {
-  background-color: transparent;
-  color: var(--tj-color-text-body-3);
+  background-color: var(--tj-color-grey-1);
+  
   padding: 11px 0;
   border: 0;
   border-bottom: 1px dashed var(--tj-color-border-1);
