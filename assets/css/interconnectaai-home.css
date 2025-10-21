@@ -484,9 +484,14 @@
   margin-bottom: 30px;
 }
 
+#metodologia-section{
+  background-color: var(--tj-color-grey-1);
+}
 
 
 /*SECCION CONTACTO */
 #title-section-contact{
   color: #0f121d;
 }
+
+
