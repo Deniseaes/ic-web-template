@@ -41,6 +41,7 @@
   --tj-color-text-body-4: #18292c;
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
   --tj-color-theme-primary: #03cd5c;
+  --tj-color-verdecito: #f1fcf6;
   --tj-color-theme-bg: #d8e5e5;
   --tj-color-theme-bg-2: #cee0e0;
   --tj-color-theme-bg-3: #202e30;
@@ -321,12 +322,14 @@ START: Hero CSS
   padding-inline-start: 0;
   -webkit-padding-end: 15px;
   padding-inline-end: 15px;
+  background-color: var(--tj-color-common-white);
 }
 .box-area::before,
 .box-area::after {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  background-color: var(--tj-color-common-white);
 }
 
 .banner-content .banner-link {
