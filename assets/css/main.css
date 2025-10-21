@@ -8390,14 +8390,14 @@ START: Heading CSS
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack:center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 25px;
   margin-bottom: 52px;
 }
 .heading-wrap-content .sec-heading {
-  max-width: 500px;
+  max-width: 800px;
   -webkit-margin-start: 0;
   margin-inline-start: 0;
   -webkit-margin-end: 0;
@@ -11578,7 +11578,7 @@ START: Project CSS
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 0px;
 }
 .project-area .project-item .project-content .categories a {
   background-color: rgba(255, 255, 255, 0.1);
@@ -11749,7 +11749,7 @@ START: Project CSS
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 0px;
 }
 .project-item .title {
   max-width: 245px;
@@ -13393,6 +13393,12 @@ START: Blog CSS
   border-radius: 6px;
   z-index: 2;
 }
+.blog-date p {
+  font-size: 18px;
+  margin-top: 20px;
+  justify-content: justify  ;
+}
+
 .blog-date .date {
   display: block;
   font-family: var(--tj-ff-heading);
@@ -25389,7 +25395,7 @@ START: Blog CSS
   padding: 20px 25px 30px;
 }
 .h7-blog-wrapper .blog-content .title {
-  max-width: 250px;
+  max-width: 400px;
 }
 .h7-blog-wrapper .blog-content .title-wrapper {
   display: -webkit-box;
