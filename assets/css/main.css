@@ -13403,6 +13403,13 @@ START: Blog CSS
   margin-bottom: 8px;
   line-height: 1;
 }
+
+.blog-date p {
+  font-size: 18px;
+  margin-top: 20px;
+  justify-content: justify  ;
+}
+
 .blog-date .month {
   display: block;
   font-size: 14px;
@@ -25389,7 +25396,7 @@ START: Blog CSS
   padding: 20px 25px 30px;
 }
 .h7-blog-wrapper .blog-content .title {
-  max-width: 250px;
+  max-width: 400px;
 }
 .h7-blog-wrapper .blog-content .title-wrapper {
   display: -webkit-box;
