@@ -9439,6 +9439,10 @@ START: Choose CSS
   margin-inline-end: 0;
 }
 
+.tj-choose-section .section-gap{
+  background-color: var(--tj-color-grey-1);
+}
+
 .choose-box {
   height: 100%;
   padding: 50px 28px 45px;
@@ -13409,6 +13413,13 @@ START: Blog CSS
   margin-bottom: 8px;
   line-height: 1;
 }
+
+.blog-date p {
+  font-size: 18px;
+  margin-top: 20px;
+  justify-content: justify  ;
+}
+
 .blog-date .month {
   display: block;
   font-size: 14px;
@@ -14084,7 +14095,8 @@ START: Working process CSS
 START: Contact CSS
 ----------------------------------------*/
 .tj-contact-section {
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-verdecito);
+  margin-top: 30px;
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -14144,13 +14156,14 @@ START: Contact CSS
 }
 
 .contact-form {
-  background-color: var(--tj-color-common-white);
+   background-color: var(--tj-color-grey-1);
   -webkit-margin-start: 0;
   margin-inline-start: 0;
   -webkit-margin-end: 15px;
   margin-inline-end: 15px;
   padding: 60px 50px;
   border-radius: 12px;
+  height: 90%;
 }
 .contact-form .title {
   margin-bottom: 35px;
@@ -14171,7 +14184,7 @@ START: Contact CSS
 .contact-form .form-input input[type="tel"],
 .contact-form .form-input input[type="text"],
 .contact-form .form-input input[type="email"] {
-  background-color: transparent;
+  background-color: var(--tj-color-grey-1);
   color: var(--tj-color-text-body-3);
   padding: 11px 0;
   border: 0;
