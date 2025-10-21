@@ -321,6 +321,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 #content-portal-section-content {
@@ -376,6 +377,54 @@
   padding-top: 0px;
   padding-bottom: 30px;
   height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: var(--tj-color-grey-1);
+}
+#content-casos-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#content-title-casos-reales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+#casos-reales-title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#casos-reales-title {
+  width: 100%;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+#btn-ver-mas-casos-reales-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
 /*Soluciones Industrias Section*/
@@ -383,18 +432,47 @@
   height: auto;
   background-color: whitesmoke;
   padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
 }
+#soluciones-industrias-content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
 #section-soluciones-industrias-title {
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 #title-card-soluciones-industrias {
   padding: 0;
   padding-left: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+  flex-wrap: nowrap;
+  background-color: var(--tj-color-theme-primary);
+  justify-content: baseline;
+}
+#cont-title-card-soluciones-industrias {
+  width: 348px;
+  justify-content: baseline;
   flex-wrap: nowrap;
 }
+
 #card-soluciones-industrias {
   height: 490px;
+}
+#card-soluciones-industrias-title {
+  margin-top: 28px;
+}
+#card-soluciones-industrias-title-largo {
+  margin-top: 18px;
+  width: 100%;
 }
 #img-card-soluciones-industrias {
   height: 400px;
