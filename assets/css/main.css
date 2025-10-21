@@ -46,14 +46,20 @@
 /**----------------------------------------
 START: Theme Default CSS
 ----------------------------------------*/
+@font-face {
+  font-family: "tt-norms";
+  src: url("../fonts/tt-norms/TTNorms-Regular.otf") format("opentype");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
   /**
      @Font-Family Declaration
    */
-  --tj-ff-body: "Mona Sans", sans-serif;
-  --tj-ff-heading: "Mona Sans", sans-serif;
-  --tj-ff-fontawesome: "Font Awesome 6 Pro";
+
+  --tj-ff-body: "tt-norms", sans-serif;
+  --tj-ff-heading: "tt-norms", sans-serif;
+  --tj-ff-fontawesome: "tt-norms";
   /**
      @Font-weight Declaration
    */
@@ -90,6 +96,7 @@ START: Theme Default CSS
   --tj-color-text-body-4: #18292c;
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
   --tj-color-theme-primary: #03cd5c;
+  --tj-color-verdecito: #f1fcf6;
   --tj-color-theme-bg: #d8e5e5;
   --tj-color-theme-bg-2: #cee0e0;
   --tj-color-theme-bg-3: #202e30;
@@ -127,7 +134,6 @@ body {
   color: var(--tj-color-text-body);
   background-color: var(--tj-color-common-white);
   line-height: 1.5;
-
 }
 
 a {
@@ -326,9 +332,9 @@ textarea {
   background-color: var(--tj-color-grey-1);
   height: auto;
   width: 100%;
-  font-size:14px;
+  font-size: 14px;
   color: var(--tj-color-text-body);
-  padding:0px;
+  padding: 0px;
   -webkit-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
 }
@@ -439,8 +445,8 @@ img {
 }
 
 .section-gap {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-gap {
@@ -969,12 +975,13 @@ START: Theme Header CSS
   background-color: var(--tj-color-grey-1);
   border-end-start-radius: 12px;
   border-end-end-radius: 12px;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 99;
 }
 .header-area.header-1.header-absolute {
   top: 0;
-  position: absolute;
+  position: fixed;
   inset-inline-start: 0;
   width: calc(100% - 30px);
 }
@@ -1313,6 +1320,7 @@ START: Theme Header CSS
   display: inline-block;
   max-width: 250px;
   width: 100%;
+  margin-right: 40px;
 }
 
 .menu-area {
@@ -1341,7 +1349,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > a {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--tj-color-heading-primary);
   display: block;
   padding: 37px 0;
@@ -8541,7 +8549,7 @@ START: Hero CSS
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 500px;
-
+  margin-top: 10px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -8792,7 +8800,7 @@ START: Hero CSS
 
 .banner-img {
   width: 100%;
-  height:auto;
+  height: auto;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -8889,7 +8897,7 @@ START: Hero CSS
 }
 
 .banner-right-box {
-  width: 48%;
+  width: 49%;
   position: relative;
   min-height: 390px;
 }
@@ -8902,6 +8910,7 @@ START: Hero CSS
 }
 .banner-right-box .box-area {
   max-width: 261px;
+  background-color: var(--tj-color-common-white);
 }
 @media (max-width: 575px) {
   .banner-right-box .box-area {
@@ -8910,7 +8919,7 @@ START: Hero CSS
 }
 
 .customers-box {
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-verdecito);
   border-radius: 10px;
   padding: 30px 25px;
 }
@@ -9421,7 +9430,7 @@ START: Choose CSS
   overflow: hidden;
 }
 .tj-choose-section .sec-heading {
-  max-width: 550px;
+  max-width: 800px;
 }
 .tj-choose-section.choose-3 .sec-heading {
   -webkit-margin-start: 0;
@@ -9669,7 +9678,7 @@ START: Client CSS
   overflow: hidden;
 }
 .tj-client-section-2 {
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--tj-color-common-white);
   border-radius: 12px;
   padding: 30px 5px;
   margin-top: 15px;
@@ -9749,7 +9758,7 @@ START: Client CSS
   backdrop-filter: blur(8px);
 }
 .client-content .sec-title {
-  max-width: 200px;
+  max-width: 800px;
   width: 100%;
   letter-spacing: 0;
   font-weight: var(--tj-fw-sbold);
@@ -9936,7 +9945,7 @@ START: Client CSS
 }
 
 .client-logo {
-  width: 284px;
+  width: 100px;
   height: 120px;
   background-color: var(--tj-color-common-white);
   display: -webkit-inline-box;
@@ -10585,7 +10594,7 @@ START: Services CSS
   z-index: 1;
 }
 .tj-service-section .sec-heading {
-  max-width: 550px;
+  max-width: 800px;
 }
 .tj-service-section .sec-heading .sub-title {
   color: var(--tj-color-common-white);
@@ -10640,7 +10649,7 @@ START: Services CSS
 }
 
 .service-item {
-  background: var(--tj-color-common-white);
+  background: var(--tj-color-grey-1);
   padding: 40px 30px 45px;
   margin-bottom: 30px;
   position: relative;
@@ -18592,7 +18601,7 @@ START: Choose CSS
   overflow: hidden;
 }
 .tj-choose-section .sec-heading {
-  max-width: 550px;
+  max-width: 800px;
 }
 .tj-choose-section .countup-item.style-2 {
   background-repeat: no-repeat;
