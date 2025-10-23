@@ -13124,7 +13124,7 @@ START: Blog CSS
 }
 .blog-item .blog-thumb::before {
   content: "";
-  background-color: var(--tj-color-theme-dark);
+  background-color: transparent;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -13133,6 +13133,7 @@ START: Blog CSS
   opacity: 0.25;
   z-index: 1;
   pointer-events: none;
+  padding-top: 30px;
 }
 .blog-item .blog-thumb img {
   width: 100%;
@@ -13142,6 +13143,7 @@ START: Blog CSS
   object-fit: cover;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
+  
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
@@ -14101,6 +14103,7 @@ START: Contact CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
+  
 }
 .tj-contact-section .sec-heading {
   -webkit-margin-start: 0;
