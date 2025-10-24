@@ -465,9 +465,15 @@
 }
 #card-soluciones-industrias-title {
   margin-top: 28px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 100%;
+  
 }
 #card-soluciones-industrias-title-largo {
-  margin-top: 18px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  font-size: 20px;
   width: 100%;
 }
 #img-card-soluciones-industrias {
