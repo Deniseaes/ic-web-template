@@ -1362,7 +1362,7 @@
         <!-- end:Soluciones Industrias Section -->
       
 
-               <!-- start: Metodologia Section -->
+        <!-- start: Metodologia Section -->
         <section id="metodologia-section" class="tj-choose-section section-gap">
           <div class="row">
             <div class="col-12" >
@@ -1524,7 +1524,76 @@
         </section>
         <!-- end: Contact Section -->
 
-
+        <!-- start: post de blogs -->
+        <section id="choose-portal-section" class="tj-choose-section section-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-12" >
+                <div class="sec-heading-wrap" id="content-portal-section">
+                  <span id="tag-section-title" class="sub-title wow fadeInUp" data-wow-delay=".3s"><img id="logo-ic-client-title" src="../assets/images/logoFavicon-interconnecta.png" alt="IC">Blog notes</span>
+                  <div id="content-portal-section-content"  class="heading-wrap-content">
+                    <div id="content-portal-section-title" class="sec-heading">
+                      <h2 class="sec-title title-anim">Latest <span>Resources </span></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-gap-4 h7-blog-wrapper">
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
+                  <div class="blog-thumb">
+                    <a href="blog-details.html"><img id="post-img-1" src="" alt=""></a>
+                  </div>
+                  <div class="blog-content">
+                    <h4 id="post-title-1" class="title"></h4>                    
+                    <div class="blog-date">
+                      <p id="post-excerpt-1"></p>
+                    </div>                      
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
+                  <div class="blog-thumb">
+                    <a href="blog-details.html"><img id="post-img-2" src="" alt=""></a>
+                  </div>
+                  <div class="blog-content">
+                    <div class="title-wrapper">
+                      <h4 id="post-title-2" class="title"></h4>    
+                      <div class="blog-date">
+                        <p id="post-excerpt-2"></p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
+                  <div class="blog-thumb">
+                    <a href="blog-details.html"><img id="post-img-3" src="" alt=""></a>
+                  </div>
+                  <div class="blog-content">
+                    <div class="title-wrapper">
+                      <h4 id="post-title-3" class="title"></h4>    
+                      <div class="blog-date">
+                        <p id="post-excerpt-3"></p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s" id="portal-section-content-button">
+                      <a class="tj-primary-btn" href="#">
+                        <span class="btn-text"><span>Blog</span></span>
+                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                      </a>
+            </div>
+          </div>
+           
+        </section>
+        <!-- end: post de blogs -->
 
       </main>
       
@@ -1548,5 +1617,134 @@
     <script src="../assets/js/meanmenu.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/cambiar-lenguaje.js"></script>
+
+    <script>
+      (async function() {
+        const WP_BASE = 'https://blog.interconnecta.ai'; // <-- cambialo por tu dominio
+        const DEFAULT_IMG = 'img/default.jpg';
+
+        // Extrae primer src de <img> dentro de un HTML string
+        function firstImageFromHtml(html) {
+          if (!html) return null;
+          const match = html.match(/<img[^>]+src=['"]([^'"]+)['"][^>]*>/i);
+          return match ? match[1] : null;
+        }
+
+        // Limpia HTML para el excerpt (quitar tags)
+        function cleanText(html) {
+          if (!html) return '';
+          const tmp = document.createElement('div');
+          tmp.innerHTML = html;
+          return tmp.textContent.trim();
+        }
+
+        // Obtiene la URL de la imagen destacada con varios fallbacks
+        async function getFeaturedImageUrl(post) {
+          // 1) Si WP devolvió _embedded (a veces viene si se pide ?_embed)
+          try {
+            if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]) {
+              const media = post._embedded['wp:featuredmedia'][0];
+              return media.source_url || (media.media_details?.sizes?.full?.source_url) || null;
+            }
+          } catch (e) { /* ignore */ }
+
+          // 2) Si no vino embebido, pedido directo al endpoint media por ID (featured_media)
+          try {
+            if (post.featured_media && Number(post.featured_media) > 0) {
+              const mediaResp = await fetch(`${WP_BASE}/wp-json/wp/v2/media/${post.featured_media}`);
+              if (mediaResp.ok) {
+                const mediaData = await mediaResp.json();
+                return mediaData.source_url || (mediaData.media_details?.sizes?.full?.source_url) || null;
+              }
+            }
+          } catch (e) {
+            console.warn('No se pudo obtener media por ID:', e);
+          }
+
+          // 3) Buscar primera <img> dentro del contenido del post
+          try {
+            const imgFromContent = firstImageFromHtml(post.content?.rendered);
+            if (imgFromContent) return imgFromContent;
+          } catch (e) { /* ignore */ }
+
+          // 4) Fallback
+          return null;
+        }
+
+        async function cargarPosts() {
+          try {
+            // NOTA: dejamos sin _embed para simular tu caso; si tu WP admite ?_embed podés agregarlo
+            const resp = await fetch(`${WP_BASE}/wp-json/wp/v2/posts?per_page=3`);
+            if (!resp.ok) throw new Error('Error fetching posts: ' + resp.status);
+            const posts = await resp.json();
+
+            posts.forEach(async (post, i) => {
+              const index = i + 1;
+              const title = post.title?.rendered || 'Sin título';
+              const excerptHtml = post.excerpt?.rendered || post.content?.rendered || '';
+              const excerpt = cleanText(excerptHtml).slice(0, 220); // recortar si querés
+
+              // obtener imagen con los fallbacks (puede hacer una segunda petición en getFeaturedImageUrl)
+              let imageUrl = await getFeaturedImageUrl(post);
+              if (!imageUrl) imageUrl = DEFAULT_IMG;
+
+              // Reemplazo en DOM (si existen estos IDs)
+              const imgEl = document.getElementById(`post-img-${index}`);
+              const titleEl = document.getElementById(`post-title-${index}`);
+              const excerptEl = document.getElementById(`post-excerpt-${index}`);
+
+              if (imgEl) {
+                imgEl.src = imageUrl;
+                imgEl.alt = title;
+              }
+              if (titleEl) {
+                titleEl.innerHTML = `<a href="${post.link}" target="_blank" rel="noopener noreferrer">${title}</a>`;
+              }
+              if (excerptEl) {
+                excerptEl.textContent = excerpt;
+              }
+            });
+
+          } catch (err) {
+            console.error('Error cargando posts:', err);
+          }
+        }
+
+        // Ejecutar
+        cargarPosts();
+      })();
+    </script>
+  <!--    <script>
+        async function cargarPosts() {
+          const response = await fetch('https://blog.interconnecta.ai/wp-json/wp/v2/posts?per_page=3&_embed');
+          const posts = await response.json();
+
+          console.log(`el post es: ${posts._embedded}`);
+          
+
+          posts.forEach(async (post, i) => {
+            const index = i + 1; // 1, 2, 3
+
+            const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'img/default.jpg';
+            const title = post.title.rendered;
+            const excerpt = post.excerpt.rendered.replace(/<[^>]+>/g, ''); // limpia HTML
+            const link = post.link;
+
+            // Reemplaza los elementos existentes
+            console.log(`esta es la imagen para el ${index}: ${image}`);
+            
+
+            document.getElementById(`post-img-${index}`).src = image;
+            document.getElementById(`post-img-${index}`).alt = title;
+            document.getElementById(`post-title-${index}`).innerHTML = `<a href="${link}" target="_blank">${title}</a>`;
+            document.getElementById(`post-excerpt-${index}`).textContent = excerpt;
+          });
+        }
+
+        cargarPosts();
+    </script>
+
+    -->
+
   </body>
 </html>
