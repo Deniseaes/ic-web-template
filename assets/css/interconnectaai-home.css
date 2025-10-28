@@ -61,13 +61,26 @@
   color: black;
 }
 
-#banner-title-ic {
+/*#banner-title-ic {
   font-size: 56px;
   text-align: start;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
   color: black;
+}*/
+#banner-title-ic {
+  font-size: 48px;
+  text-align: start;
+  margin-bottom: 40px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  font-weight: 600;
+  color: black;
+}
+#banner-title-ic-green{
+  font-weight: 600;
 }
 
 #banner-desc-ic {
@@ -133,14 +146,7 @@
   width: 94%;
 }
 
-#banner-title-ic {
-  font-size: 48px;
-  text-align: start;
-  margin-bottom: 40px;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
+
 
 #banner-desc-ic {
   font-size: 20px;
