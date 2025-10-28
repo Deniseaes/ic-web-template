@@ -9969,7 +9969,7 @@ START: Client CSS
   -ms-flex-align: center;
   align-items: center;
   -webkit-padding-end: 30px;
-  padding-inline-end: 30px;
+  padding-inline-end: 40px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
