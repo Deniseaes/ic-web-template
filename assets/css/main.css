@@ -2901,8 +2901,8 @@ START: Theme Header CSS
   font-size: 10px;
   line-height: 1;
   letter-spacing: -0.025em;
-  color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-black);
+  background-color: var(--tj-color-common-white);
   padding: 3px 7px;
   border-radius: 40px;
 }
@@ -2961,7 +2961,7 @@ START: Theme Header CSS
   .mega-menu-pages
   li
   .mega-menu-title::after {
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-common-white);
 }
 .hamburger_menu
   .mean-container
@@ -4512,7 +4512,7 @@ START: Theme Search CSS
   }
 }
 .hamburger_bg {
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-common-white);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -4546,7 +4546,7 @@ START: Theme Search CSS
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: var(--tj-color-theme-primary);
+  background: var(--tj-color-common-white);
   -webkit-filter: blur(50px);
   filter: blur(50px);
   opacity: 0.26;
@@ -4565,7 +4565,7 @@ START: Theme Search CSS
   display: inline-block;
   font-size: 35px;
   line-height: 1;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-black);
 }
 @media (max-width: 575px) {
   .hamburger_close_btn {
@@ -4596,7 +4596,7 @@ START: Theme Search CSS
   outline: none;
   font-size: 12px;
   font-family: var(--tj-ff-body);
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
   border: 1px solid var(--tj-color-border-1);
   border-radius: 10px;
 }
@@ -4609,7 +4609,7 @@ START: Theme Search CSS
 .hamburger_search input::-webkit-input-placeholder {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
 }
 .hamburger_search select::-moz-placeholder,
 .hamburger_search .nice-select::-moz-placeholder,
@@ -4620,7 +4620,7 @@ START: Theme Search CSS
 .hamburger_search input::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
 }
 .hamburger_search select:-ms-input-placeholder,
 .hamburger_search .nice-select:-ms-input-placeholder,
@@ -4631,7 +4631,7 @@ START: Theme Search CSS
 .hamburger_search input:-ms-input-placeholder {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
 }
 .hamburger_search select::-ms-input-placeholder,
 .hamburger_search .nice-select::-ms-input-placeholder,
@@ -4642,7 +4642,7 @@ START: Theme Search CSS
 .hamburger_search input::-ms-input-placeholder {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
 }
 .hamburger_search select::placeholder,
 .hamburger_search .nice-select::placeholder,
@@ -4653,7 +4653,7 @@ START: Theme Search CSS
 .hamburger_search input::placeholder {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-black);
 }
 .hamburger_search button {
   position: absolute;
@@ -4662,7 +4662,7 @@ START: Theme Search CSS
   top: 50%;
   inset-inline-end: 0;
   font-size: 24px;
-  color: var(--tj-color-theme-dark);
+  color: var(--tj-color-black);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -4671,18 +4671,18 @@ START: Theme Search CSS
 }
 .hamburger_menu .mean-container .mean-bar {
   background: transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   margin-bottom: 30px;
 }
 .hamburger_menu .mean-container .mean-bar * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 .hamburger_menu .mean-nav {
   background: transparent;
   margin-top: 0;
-  overflow: hidden;
+ /* overflow: hidden;*/
 }
 .hamburger_menu .mean-nav > ul {
   display: block !important;
@@ -4694,7 +4694,7 @@ START: Theme Search CSS
   position: relative;
 }
 .hamburger_menu .mean-nav ul li a {
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-black);
   width: 100%;
   font-size: 16px;
   line-height: 1;
@@ -4711,35 +4711,7 @@ START: Theme Search CSS
 .hamburger_menu .mean-nav ul li a:hover {
   color: var(--tj-color-theme-primary);
 }
-.hamburger_menu .mean-nav ul li a.mean-expand {
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  position: absolute;
-  inset-inline-end: 0;
-  top: 12px;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-.hamburger_menu .mean-nav ul li a.mean-expand:hover {
-  color: var(--tj-color-common-white);
-}
-.hamburger_menu .mean-nav ul li a.mean-expand i {
-  font-size: 15px;
-}
-.hamburger_menu .mean-nav ul li a.mean-expand.mean-clicked {
-  color: var(--tj-color-theme-primary);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.hamburger_menu .mean-nav ul li a.mean-expand.mean-clicked i {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+
 .hamburger_menu .mean-nav ul li .sub-menu li {
   -webkit-padding-start: 25px;
   padding-inline-start: 25px;
@@ -4749,10 +4721,7 @@ START: Theme Search CSS
   width: 100%;
   padding: 18px 0;
 }
-.hamburger_menu .mean-nav ul li .sub-menu li a.mean-expand {
-  padding: 0;
-  width: 30px;
-}
+
 .hamburger_menu .mean-nav ul li.dropdown-opened > a {
   color: var(--tj-color-theme-primary);
 }
@@ -4804,7 +4773,7 @@ START: Theme Search CSS
 }
 
 .hamburger-title {
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-black);
   font-size: 22px;
   line-height: 1;
   margin-bottom: 25px;
@@ -4886,7 +4855,7 @@ START: Theme Search CSS
   transition: height 400ms;
 }
 .menu-bar.style-2 button span {
-  background: var(--tj-color-heading-primary);
+  background: var(--tj-color-black);
 }
 .menu-bar.menu-bar-toggeled button {
   -webkit-transform: rotate(45deg);
@@ -8561,7 +8530,7 @@ START: Hero CSS
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-area {
-    min-height: 700px;
+    min-height: 500px;
   }
 }
 
@@ -8581,6 +8550,7 @@ START: Hero CSS
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  height: 500px;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -8589,9 +8559,10 @@ START: Hero CSS
     padding-inline-end: 40px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px),
+@media only screen and (min-width: 1200px) and (max-width: 1340px),
   only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-left-box {
+    width: 100%;
     -webkit-padding-start: 50px;
     padding-inline-start: 50px;
     -webkit-padding-end: 40px;
@@ -8646,32 +8617,32 @@ START: Hero CSS
 .banner-content .banner-title span {
   display: inline-block;
   color: var(--tj-color-theme-primary);
-  font-weight: var(--tj-fw-medium);
+  font-weight: 12px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .banner-content .banner-title {
-    font-size: 68px;
+    font-size: 48px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .banner-content .banner-title {
-    font-size: 58px;
+    font-size: 36px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-content .banner-title {
-    font-size: 50px;
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px) {
   .banner-content .banner-title {
-    font-size: 45px;
+    font-size: 24px;
   }
 }
 @media (max-width: 575px) {
   .banner-content .banner-title {
-    font-size: 38px;
+    font-size: 24px;
   }
 }
 .banner-content .banner-link {
@@ -8746,6 +8717,7 @@ START: Hero CSS
 }
 @media (max-width: 575px) {
   .banner-content .banner-desc-area .banner-desc {
+    max-width: 100%;
     -webkit-padding-start: 35px;
     padding-inline-start: 35px;
   }
@@ -8799,7 +8771,7 @@ START: Hero CSS
   only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .banner-content {
-    max-width: 720px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -8906,7 +8878,7 @@ START: Hero CSS
 .banner-right-box {
   width: 49%;
   position: relative;
-  min-height: 390px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -14162,7 +14134,7 @@ START: Contact CSS
 }
 .contact-info .contact-item .contact-link {
   display: inline-block;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-black);
 }
 .contact-info .contact-item:last-child {
   border: 0;
@@ -18538,35 +18510,35 @@ START: Hero CSS
 .h4-banner-content .banner-title span {
   display: inline-block;
   color: var(--tj-color-theme-primary);
-  font-weight: var(--tj-fw-medium);
+  font-weight: 48px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .h4-banner-content .banner-title {
-    font-size: 85px;
+    font-size: 48px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .h4-banner-content .banner-title {
     max-width: 1000px;
-    font-size: 75px;
+    font-size: 36px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .h4-banner-content .banner-title {
     max-width: 800px;
-    font-size: 60px;
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .h4-banner-content .banner-title {
     max-width: 675px;
-    font-size: 55px;
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .h4-banner-content .banner-title {
-    font-size: 45px;
+    font-size: 24px;
   }
 }
 .h4-banner-content .banner-desc-area {
@@ -22635,13 +22607,15 @@ START: Hero CSS
   border-radius: 16px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px),
-  only screen and (min-width: 1200px) and (max-width: 1399px) {
+  only screen and (min-width: 1200px) and (max-width: 1340px) {
   .h6-hero .banner-left-box {
     padding: 195px 40px 40px 40px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .h6-hero .banner-left-box {
+    width: 100%;
     padding: 180px 30px 40px 30px;
   }
 }
