@@ -158,6 +158,7 @@
     <!-- end: Offcanvas Menu -->
      
 
+    
     <!-- start: Hamburger Menu -->
     <div class="hamburger-area d-lg-none">
       <div class="hamburger_bg"></div>
@@ -168,7 +169,7 @@
           >
             <div class="hamburger_logo">
               <a href="index.html" class="mobile_logo">
-                <img id="logo-interconnecta-ic-header-mobile" src="../assets/images/logo-inter-blanco.svg" alt="Logo" />
+                <img id="logo-interconnecta-ic-header-mobile" src="../assets/images/logo-inter.svg" alt="Logo" />
               </a>
             </div>
             <div class="hamburger_close">
@@ -178,27 +179,25 @@
             </div>
           </div>
           <div class="hamburger_menu">
-            <div class="mobile_menu"></div>
+            <div class="mobile_menu">
+            </div>
           </div>
           <div class="hamburger-infos">
-            <h5 class="hamburger-title">Contact Info</h5>
             <div class="contact-info">
-              <div class="contact-item">
-                <span class="subtitle">Phone</span>
-                <a class="contact-link" href="tel:8089091313">808-909-1313</a>
-              </div>
-              <div class="contact-item">
-                <span class="subtitle">Email</span>
-                <a class="contact-link" href="mailto:info@bexon.com"
-                  >info@bexon.com</a
-                >
-              </div>
-              <div class="contact-item">
-                <span class="subtitle">Location</span>
-                <span class="contact-link"
-                  >993 Renner Burg, West Rond, MT 94251-030</span
-                >
-              </div>
+              <div class="header-button">
+                <a class="tj-primary-btn-modificado" href="contact.html">
+                  <span class="btn-text"><span>Login</span></span>
+                  <span class="btn-icon"
+                    ><i class="tji-arrow-right-long"></i
+                  ></span>
+                </a>
+              </div>  
+              <div class="language-select-container">
+                <select id="language-select">
+                  <option value="EN">ENG</option>
+                  <option value="ES">ESP</option>
+                </select>
+               </div>  
             </div>
           </div>
         </div>
@@ -234,7 +233,7 @@
     <!-- end: Hamburger Menu -->
 
     <!-- start: Header Area -->
-     <header class="header-area header-1 header-absolute section-gap-x">
+    <header class="header-area header-1 header-absolute section-gap-x">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -248,8 +247,9 @@
 
               <!-- navigation -->
               <div class="menu-area d-none d-lg-inline-flex align-items-center">
-                <nav class="mainmenu">
+                <nav id="mobile-menu" class="mainmenu">
                   <ul>
+                    <li><a href="./index.html">Home</a></li>
                     <li class="has-dropdown">
                       <a href="about.html">About Us</a>
                       <ul
@@ -368,7 +368,7 @@
                                   </div>
                                   <div class="feature-images">
                                     <img
-                                      src="assets/images/service/service-ad.webp"
+                                      src="../assets/images/service/service-ad.webp"
                                       alt=""
                                     />
                                   </div>
@@ -381,7 +381,7 @@
                     </li>
                     <li id="header-service-item" class="has-dropdown">
                         <img id="img-zoho-header-service" src="../assets/images/hero/logo-zoho.svg" alt="">
-                        <a href="service.html">Zoho Services</a>                
+                        <a href="service.html">Services</a>                
                       <ul class="sub-menu mega-menu-service">
                         <li>
                           <a
@@ -482,25 +482,15 @@
                       </ul>
                     </li>
                     <li id="header-soluciones-item" class="has-dropdown">
-                      <img id="img-ai-header-soluciones" src="../assets/images/logos/icon-ai.svg" alt="">
-                      <a href="portfolio.html">Ai Interconnecta</a>                
+                      <a href="portfolio.html">Solutions</a>   
+                      <img id="img-ai-header-soluciones" src="../assets/images/logos/icon-ai.svg" alt="">             
                       <ul class="sub-menu">
                         <li><a href="portfolio.html"></a></li>
                         <li>
                           <a href="portfolio-details.html">Portfolio Details</a>
                         </li>
                       </ul>
-                    </li>
-                    <li id="header-soluciones-item" class="has-dropdown">
-                      <img id="img-ai-header-soluciones" src="../assets/images/logoFavicon-interconnecta.png" alt="">
-                      <a href="portfolio.html">Academy</a>                
-                      <ul class="sub-menu">
-                        <li><a href="portfolio.html"></a></li>
-                        <li>
-                          <a href="portfolio-details.html">Portfolio Details</a>
-                        </li>
-                      </ul>
-                    </li>
+                    </li>                   
                     <li class="has-dropdown">
                       <a href="blog.html">Insights</a>
                       <ul class="sub-menu">
@@ -514,13 +504,7 @@
                         <li><a href="blog-details.html">Blog Details</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <div class="language-select-container">
-                      <select id="language-select">
-                        <option value="EN">ENG</option>
-                        <option value="ES">ESP</option>
-                      </select>
-                    </div>       
+                    <li><a href="contact.html">Contact</a></li>     
                   </ul>
                 </nav>
               </div>
@@ -532,16 +516,20 @@
               <div class="menu-area d-none d-lg-inline-flex align-items-center">
                 <nav class="mainmenu">
                   <ul>
-                    <li><a href="contact.html">Free Zoho Trials</a></li>
                     <div class="header-button">
-                      <a class="tj-primary-btn" href="contact.html">
+                      <a class="tj-primary-btn-modificado" href="contact.html">
                         <span class="btn-text"><span>Login</span></span>
                         <span class="btn-icon"
                           ><i class="tji-arrow-right-long"></i
                         ></span>
                       </a>
                     </div>  
-                    <li><a href="contact.html">Support</a></li>
+                    <div class="language-select-container">
+                      <select id="language-select">
+                        <option value="EN">ENG</option>
+                        <option value="ES">ESP</option>
+                      </select>
+                    </div>  
                   </ul>
                 </nav>
 
