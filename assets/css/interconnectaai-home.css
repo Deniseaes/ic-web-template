@@ -44,6 +44,7 @@
 
 #banner-content-interconnecta {
   margin-left: 0px;
+  padding-left: 69px;
   margin-right: 0px;
   padding-right: 0px;
   width: 100%;
@@ -63,7 +64,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  border: 2px dashed #313d3d;
+  border: 2px dashed #03cd5c;
   border-left: none;
   border-right: none;
   color: black;
@@ -111,6 +112,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 0px;
+  padding-left: 69px;
   width: 100%;
   height: auto;
   margin-right: 0px;
@@ -134,13 +136,13 @@
 }
 
 .span-banner-ic {
-  font-size: 18px;
+  font-size: 14px;
   text-align: start;
   padding: 10px;
   margin-bottom: 20px;
   color: black;
   border: 2px dashed #313d3d;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 #buttons-banner-interconnecta-ic-button-uno {
@@ -299,7 +301,7 @@
 }
 
 #logo-ic-client-title {
-  width: 20px;
+  width: 16px;
   height: auto;
   margin-right: 5px;
 }
@@ -309,6 +311,8 @@
   background-color: var(--tj-color-common-white);
 }
 #partners-section-logos {
+  padding-bottom: 10px;
+  padding-top: 10px;
   background-color: var(--tj-color-common-white);
 }
 #h6-client-title-wrapper-logoZoho {
@@ -324,12 +328,13 @@
 }
 
 #logo-zoho-client-title {
-  width: 180px;
+  width: 100px;
   height: auto;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #ic-client-title {
+  font-size: 12px;
   color: black;
 }
 

@@ -983,6 +983,7 @@ START: Theme Header CSS
   border-end-start-radius: 12px;
   border-end-end-radius: 12px;
   position: fixed;
+  margin-left: 44px;
   top: 0;
   z-index: 99;
 }
@@ -990,7 +991,7 @@ START: Theme Header CSS
   top: 0;
   position: fixed;
   inset-inline-start: 0;
-  width: calc(100% - 30px);
+  width: calc(100% - 89px);
 }
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
@@ -999,7 +1000,7 @@ START: Theme Header CSS
   }
 }
 .header-area.header-1 .header-wrapper {
-  padding: 0 18px;
+  padding: 0 0px;
   background-color: var(--tj-color-grey-1);
 }
 .header-area.header-2.header-absolute {
@@ -1105,13 +1106,13 @@ START: Theme Header CSS
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header-area.header-3 .header-wrapper,
   .header-area.header-1 .header-wrapper {
-    padding: 0 8px;
+    padding: 0 0px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-area.header-3 .header-wrapper,
   .header-area.header-1 .header-wrapper {
-    padding: 0 4px;
+    padding: 0 0px;
   }
   .header-area.header-2.header-absolute .header-wrapper {
     padding: 0 16px;
@@ -8525,7 +8526,9 @@ START: Hero CSS
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 500px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -8647,14 +8650,14 @@ START: Hero CSS
 }
 .banner-content .banner-link {
   font-size: 75px;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-verdecito);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   line-height: 1;
   padding: 10px 30px 15px 0;
-  -webkit-border-end: 1px dashed var(--tj-color-border-2);
-  border-inline-end: 1px dashed var(--tj-color-border-2);
+  -webkit-border-end: 2px dashed #03cd5c;
+  border-inline-end: 2px dashed #03cd5c;
 }
 .banner-content .banner-link span {
   overflow: hidden;
