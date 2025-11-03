@@ -58,7 +58,7 @@
 
 #banner-desc-area-ic {
   margin-left: 0px;
-  width: 100%;
+  width: 80%;
   margin-right: 0px;
   display: flex;
   flex-direction: row;
@@ -68,6 +68,7 @@
   border-left: none;
   border-right: none;
   color: black;
+  padding: 0;
 }
 
 #banner-title-ic {
@@ -103,9 +104,10 @@
 
 #bnner-desc-p-ic {
   font-size: 18px;
-  margin-left: 40px;
+  margin-left: 30px;
   text-align: start;
   color: black;
+  margin-top: 10px;
 }
 
 #buttons-banner-interconnecta-ic {
@@ -151,6 +153,11 @@
   margin-right: 20px;
   color: black;
 }
+
+#img-buttons-banner-interconnecta-ic-button-uno{
+  height: 20px;
+}
+
 #tag-section-title-zoho {
   border: 2px dashed #313d3d;
   border-radius: 20px;
@@ -159,14 +166,8 @@
   width: 35%;
 }
 
-#banner-content-interconnecta {
-  margin-left: 0px;
-}
 
-#banner-desc-area-ic {
-  margin-left: 0px;
-  width: 94%;
-}
+
 
 #banner-desc-ic {
   font-size: 20px;
@@ -193,7 +194,7 @@
 }
 
 #logo-interconnecta-ic-header {
-  width: 120px;
+  width: 150px;
   height: auto;
 }
 
@@ -511,7 +512,7 @@
 }
 
 #logo-hero-zoho {
-  width: 150px;
+  width: 110px;
   height: auto;
   margin-bottom: 30px;
 }

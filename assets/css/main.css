@@ -1329,6 +1329,7 @@ START: Theme Header CSS
   max-width: 250px;
   width: 100%;
   margin-right: 0px;
+  padding-left: 90px;
 }
 
 .menu-area {
@@ -8538,7 +8539,7 @@ START: Hero CSS
 }
 
 .banner-left-box {
-  background-color: #f1fcf6;
+  background-color: var(--tj-color-grey-1);
   border-radius: 12px;
   padding: 0px;
   width: calc(50% - 15px);
@@ -8895,7 +8896,7 @@ START: Hero CSS
 }
 .banner-right-box .box-area {
   max-width: 261px;
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-grey-1);
 }
 @media (max-width: 575px) {
   .banner-right-box .box-area {
@@ -8904,7 +8905,7 @@ START: Hero CSS
 }
 
 .customers-box {
-  background-color: var(--tj-color-verdecito);
+  background-color: var(--tj-color-common-white);
   border-radius: 10px;
   padding: 30px 25px;
 }
@@ -8999,13 +9000,13 @@ START: Hero CSS
 }
 
 .customers-number {
-  color: var(--tj-color-theme-dark);
-  font-size: 58px;
+  color: var(--tj-color-theme-primary);
+  font-size: 42px;
   line-height: 0.8;
   letter-spacing: -1.2px;
   font-family: var(--tj-ff-heading);
   font-weight: var(--tj-fw-sbold);
-  padding: 45px 0 13px 0;
+  padding: 25px 0 13px 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px) {
