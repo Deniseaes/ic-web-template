@@ -520,7 +520,13 @@
 #metodologia-section{
   background-color: var(--tj-color-grey-1);
 }
-
+#metodologia-text{
+  text-align: center;
+}
+#icono-metodologia-card{
+  width: 50px;
+  height: auto;
+}
 
 /*SECCION CONTACTO */
 #title-section-contact{
