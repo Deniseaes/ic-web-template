@@ -8623,6 +8623,13 @@ START: Hero CSS
   color: var(--tj-color-theme-primary);
   font-weight: 12px;
 }
+
+.banner-title span {
+  display: inline-block;
+  color: var(--tj-color-theme-primary);
+  font-weight: 12px;
+}
+
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .banner-content .banner-title {
     font-size: 48px;
@@ -22892,7 +22899,7 @@ START: Choose CSS
 START: Home 5 About CSS
 ----------------------------------------*/
 .h6-about {
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-grey-1);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
