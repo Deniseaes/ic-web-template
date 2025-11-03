@@ -336,7 +336,7 @@ START: Hero CSS
   -webkit-padding-start: 0;
   padding-inline-start: 0;
   -webkit-padding-end: 30px;
-  padding-inline-end: 30px;
+  padding-inline-end: 10px;
 }
 .banner-content .banner-link span {
   -webkit-transform: scaleX(-1);
