@@ -749,9 +749,9 @@ img {
   gap: 10px;
   position: relative;
   background-color: var(--tj-color-theme-primary);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: var(--tj-fw-sbold);
-  padding: 10px 10px 10px 30px;
+  padding: 5px 5px 5px 30px;
   text-align: center;
   border-radius: 50px;
   line-height: 1;
@@ -794,8 +794,8 @@ img {
   align-items: center;
   font-size: 24px;
   line-height: 1;
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   overflow: hidden;
   background-color: var(--tj-color-theme-dark);
   border-radius: 50%;
@@ -9431,7 +9431,7 @@ START: Choose CSS
 
 .choose-box {
   height: 100%;
-  padding: 50px 28px 45px;
+  padding: 28px 28px 28px;
   background-color: var(--tj-color-common-white);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -9455,10 +9455,10 @@ START: Choose CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: var(--tj-color-theme-primary);
-  font-size: 88px;
+  font-size: 60px;
   line-height: 1;
-  max-width: 88px;
-  margin-bottom: 43px;
+  max-width: 60px;
+  margin-bottom: 20px;
 }
 .choose-box .choose-icon i {
   line-height: 1;
