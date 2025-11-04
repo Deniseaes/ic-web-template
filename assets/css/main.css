@@ -14554,7 +14554,7 @@ START: Contact CSS
   margin: 0 auto;
 }
 .contact-item.style-2:hover .contact-icon {
-  background: var(--tj-color-theme-primary);
+  background: var(--tj-color-common-white);
 }
 .contact-item.style-2:hover .contact-icon i {
   color: var(--tj-color-common-white);
