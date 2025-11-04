@@ -23,7 +23,7 @@
     font-size: 45px;
 }
 #text-zoho-free-trails-section{
-    font-size: 16px;
+    font-size: 20px;
     color: whitesmoke;
 }
 
@@ -46,8 +46,35 @@
     display: flex;
 
 }
-
+#content-cards-apps-zoho-free-trail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #card-apps-zoho-free-trail{
     border-radius: 30px;
     border: 2px solid var(--tj-color-theme-primary) 2px;
+}
+#card-apps-zoho-free-trail-hover-text{
+    color: whitesmoke;
+    width: 100%;
+}
+#card-apps-zoho-free-trail-hover-content-text{
+    width: 80%;
+}
+#botton-text-card{
+    color: var(--tj-color-theme-primary);
+}
+#content-logo-zoho-featured-apps-cards{
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    border: 3px solid var(--tj-color-theme-primary);
+}
+#logo-zoho-featured-apps-cards{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
