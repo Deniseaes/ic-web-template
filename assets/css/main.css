@@ -1358,7 +1358,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > a {
   position: relative;
-  font-size: 12px;
+  font-size: 16px;
   color: var(--tj-color-heading-primary);
   display: block;
   padding: 33px 0 30px 0;
@@ -31133,7 +31133,7 @@ START: Blog CSS
   gap: 10px;
   position: relative;
   background-color: var(--tj-color-theme-primary);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: var(--tj-fw-sbold);
   padding: 2px 2px 2px 10px;
   text-align: center;
