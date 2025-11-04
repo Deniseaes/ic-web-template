@@ -1,0 +1,80 @@
+#container-zoho-free-trail{
+    width: 100%;
+}
+
+#img-logo-zoho-section{
+    width: 350px;
+    height: auto;
+}
+#section-zoho-free-trail{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#container-section-zoho-free-trail{
+    border-radius: 50px;
+    width: 100%;
+}
+#content-logo-zoho-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title-zoho-free-trails-section{
+    font-size: 45px;
+}
+#text-zoho-free-trails-section{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+/*FEATURED ZOHO APPS*/
+#tag-section-title-featured-apps {
+  border: 2px dashed #313d3d;
+  border-radius: 20px;
+  padding: 5px;
+  color: #313d3d;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+#content-featured-zoho-apps-title-text{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+#content-cards-apps-zoho-free-trail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card-apps-zoho-free-trail{
+    border-radius: 30px;
+    border: 2px solid var(--tj-color-theme-primary) 2px;
+}
+#card-apps-zoho-free-trail-hover-text{
+    color: whitesmoke;
+    width: 100%;
+}
+#card-apps-zoho-free-trail-hover-content-text{
+    width: 80%;
+}
+#botton-text-card{
+    color: var(--tj-color-theme-primary);
+}
+#content-logo-zoho-featured-apps-cards{
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    border: 3px solid var(--tj-color-theme-primary);
+}
+#logo-zoho-featured-apps-cards{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
