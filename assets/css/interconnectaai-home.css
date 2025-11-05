@@ -1,3 +1,4 @@
+
 #logo-hero-zoho {
   width: 150px;
   height: auto;
@@ -538,24 +539,253 @@
 
 
 /*PRUEBA CARRUSEL*/
-#prueba-carrusel-contenedor{
+.item-carrusel-container{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80vh;
-  justify-content: center;
+  height: 500px;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-#carouselExampleInterval{
-  margin-top: 150px;
-}
-
-#carousel-item-container{
+.banner-left-box-new-carrusel {
+  padding: 0px;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 80%;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+
+@media (max-width: 1100px){
+  .banner-left-box-new-carrusel {
+    width: 90%;
+  }
+}
+
+.banner-right-box-new-carrusel {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (max-width: 1100px){
+  .banner-right-box-new-carrusel {
+    display: none;
+  }
+}
+
+
+.banner-left-box-button-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner-content-new-carrusel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.item-carrusel-container-item-1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;
+  border-radius: 20px; 
+}
+
+.item-carrusel-container-item-2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/images/carrusel-home/crm.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+}
+
+.item-carrusel-container-item-3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+}
+
+.item-carrusel-container-item-4{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+}
+
+.item-carrusel-container-item-5{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+  padding-left: 40px;
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-5 {
+    padding-left: 0px;
+    justify-content: center;
+  }
+}
+
+
+
+.banner-right-box-new-carrusel-5{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.item-carrusel-container-item-6{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/hermosa-planta-de-energia-alternativa-con-paneles-solares.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+  padding-left: 40px;
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-6 {
+    padding-left: 0px;
+    justify-content: center;
+  }
+}
+
+.item-carrusel-container-item-7{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(49, 2, 80, 0.8)), url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;      
+  background-position: center;  
+  border-radius: 20px; 
+}
+
+
+
+
+
+
+
+
+/*Carrusel nuevo*/
+
+
+.carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /* El truco principal: oculta lo que se sale */
+    position: relative;
+    border-radius: 15px;
+}
+
+.carousel-slides {
+    display: flex; /* Pone los slides uno al lado del otro */
+    width: 100%;
+    transition: transform 0.5s ease-in-out; /* La animación de deslizamiento */
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
+    box-sizing: border-box;
+    padding: 40px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Estilo para las flechas */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none; /* Evita que se seleccione el texto del botón */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: white;
 }
