@@ -4,12 +4,13 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-left: 60px;
-    padding-right: 35px;
+    padding-left: 59px;
+    padding-right: 32px;
+    margin-bottom: 30px;
 }
 
 #img-logo-zoho-section{
-    width: 350px;
+    width: 160px;
     height: auto;
 }
 #section-zoho-free-trail{
@@ -19,31 +20,72 @@
 #container-section-zoho-free-trail{
     border-radius: 50px;
     width: 100%;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: url("../../assets/images/zohoFreeTrails/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+#container2-section-zoho-free-trail{
+    border-radius: 50px;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--tj-color-black-opacity);
 }
 #content-logo-zoho-section{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+#content-textos-zoho-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #title-zoho-free-trails-section{
-    font-size: 45px;
+    font-size: 40px;
+    font-weight: 600;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 #text-zoho-free-trails-section{
     font-size: 20px;
     color: whitesmoke;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /*FEATURED ZOHO APPS*/
+#section-featured-zoho-apps{
+    background-color: var(--tj-color-grey-1);
+    border-radius: 20px;
+    margin-left: 45px;
+    margin-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 #tag-section-title-featured-apps {
   border: 2px dashed #313d3d;
   border-radius: 20px;
   padding: 5px;
   color: #313d3d;
-  width: 35%;
+  width: 29%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 35px;
 }
 #content-featured-zoho-apps-title-text{
     justify-content: center;
@@ -60,6 +102,7 @@
 #card-apps-zoho-free-trail{
     border-radius: 30px;
     border: 2px solid var(--tj-color-theme-primary) 2px;
+    margin-bottom: 30px;
 }
 #card-apps-zoho-free-trail-hover-text{
     color: whitesmoke;
@@ -77,10 +120,27 @@
     background-color: whitesmoke;
     display: flex;
     border: 3px solid var(--tj-color-theme-primary);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 #logo-zoho-featured-apps-cards{
     width: 50%;
     height: auto;
     justify-content: center;
     align-items: center;
+}
+
+/*sales and marketing*/
+#text-sub-title{
+    color: black;
+    margin-top: 10px;
+}
+
+#title-card-zoho-marketing-automation{
+    font-size: 22.5px;
+}
+.h6-client-title::after, .h6-client-title::before{
+    background-color: var(--tj-color-grey-1);
 }

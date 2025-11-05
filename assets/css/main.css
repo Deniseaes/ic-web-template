@@ -109,6 +109,7 @@ START: Theme Default CSS
   --tj-color-grey-1: #ecf0f0;
   --tj-color-grey-2: #a9b8b8;
   --tj-color-grey-3: rgba(255, 255, 255, 0.1019607843);
+  --tj-color-black-opacity: rgba(0, 0, 0, 0.3);
   --tj-color-border-1: #c9d1d1;
   --tj-color-border-2: #313d3d;
   --tj-color-border-3: rgba(255, 255, 255, 0.1490196078);
