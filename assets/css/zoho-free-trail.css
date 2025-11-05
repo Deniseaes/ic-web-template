@@ -1,5 +1,11 @@
 #container-zoho-free-trail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    padding-left: 60px;
+    padding-right: 35px;
 }
 
 #img-logo-zoho-section{
