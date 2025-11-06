@@ -1,3 +1,17 @@
+.header-global-use-zoho{
+  background-color: var(--tj-color-theme-primary);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header-global-use-zoho-link{
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+
 
 #logo-hero-zoho {
   width: 150px;
@@ -602,13 +616,11 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;
-  border-radius: 20px; 
+  background:#053050;
+  border-radius: 20px;
+  padding-left: 40px; 
 }
 
 .item-carrusel-container-item-2{
@@ -616,13 +628,14 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/crm.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
-  border-radius: 20px; 
+  border-radius: 20px;
+  padding-left: 40px;  
 }
 
 .item-carrusel-container-item-3{
@@ -630,13 +643,14 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
   border-radius: 20px; 
+  padding-left: 40px; 
 }
 
 .item-carrusel-container-item-4{
@@ -644,13 +658,14 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
-  border-radius: 20px; 
+  border-radius: 20px;
+  padding-left: 40px;  
 }
 
 .item-carrusel-container-item-5{
@@ -660,7 +675,7 @@
   height: 500px;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/analitycs.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
@@ -681,7 +696,7 @@
   width: 45%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   height: 100%;
 }
@@ -713,13 +728,23 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(49, 2, 80, 0.8)), url("../../assets/images/carrusel-home/analitycs.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
-  border-radius: 20px; 
+  border-radius: 20px;
+  padding-left: 40px; 
+}
+
+.banner-right-box-new-carrusel-7{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
 }
 
 
@@ -750,6 +775,7 @@
     flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
     box-sizing: border-box;
     padding: 40px;
+    padding-top: 42px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
