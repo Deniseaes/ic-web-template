@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  min-height: 35px;
 }
 
 #header-global-use-zoho-link{
