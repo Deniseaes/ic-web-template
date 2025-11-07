@@ -7,6 +7,13 @@
   min-height: 25px;
 }
 
+@media (max-width: 1100px){
+  .header-global-use-zoho {
+    display: none;
+  }
+}
+
+
 #header-global-use-zoho-link{
   font-size: 12px;
   color: whitesmoke;
@@ -558,9 +565,10 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 80vh;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 20px;
 }
 
 .banner-left-box-new-carrusel {
@@ -575,7 +583,7 @@
 
 @media (max-width: 1100px){
   .banner-left-box-new-carrusel {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -610,25 +618,39 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
+  margin-left: 40px;
 }
+
+@media (max-width: 1100px){
+  .banner-content-new-carrusel-container {
+    margin-left:0px;
+    padding: 15px;
+  }
+}
+
 
 .item-carrusel-container-item-1{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background:#053050;
   border-radius: 20px;
-  padding-left: 40px; 
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-1 {
+    justify-content: center;
+  }
 }
 
 .item-carrusel-container-item-2{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/crm.jpg");
@@ -636,14 +658,19 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px;
-  padding-left: 40px;  
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-2 {
+    justify-content: center;
+  }
 }
 
 .item-carrusel-container-item-3{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
@@ -651,14 +678,19 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px; 
-  padding-left: 40px; 
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-3 {
+    justify-content: center;
+  }
 }
 
 .item-carrusel-container-item-4{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
@@ -666,14 +698,19 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px;
-  padding-left: 40px;  
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-4 {
+    justify-content: center;
+  }
 }
 
 .item-carrusel-container-item-5{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image:  url("../../assets/images/carrusel-home/soporte.jpg");
@@ -681,16 +718,13 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px; 
-  padding-left: 40px;
 }
 
 @media (max-width: 1100px){
   .item-carrusel-container-item-5 {
-    padding-left: 0px;
     justify-content: center;
   }
 }
-
 
 
 .banner-right-box-new-carrusel-5{
@@ -702,11 +736,17 @@
   height: 100%;
 }
 
+@media (max-width: 1100px){
+  .banner-right-box-new-carrusel-5 {
+    display: none;
+  }
+}
+
 .item-carrusel-container-item-6{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/hermosa-planta-de-energia-alternativa-con-paneles-solares.jpg");
@@ -714,12 +754,10 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px; 
-  padding-left: 40px;
 }
 
 @media (max-width: 1100px){
   .item-carrusel-container-item-6 {
-    padding-left: 0px;
     justify-content: center;
   }
 }
@@ -728,7 +766,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-image:  url("../../assets/images/carrusel-home/automatizacion.jpg");
@@ -736,7 +774,12 @@
   background-size: cover;      
   background-position: center;  
   border-radius: 20px;
-  padding-left: 40px; 
+}
+
+@media (max-width: 1100px){
+  .item-carrusel-container-item-7 {
+    justify-content: center;
+  }
 }
 
 .banner-right-box-new-carrusel-7{
@@ -746,6 +789,12 @@
   justify-content: end;
   align-items: center;
   height: 100%;
+}
+
+@media (max-width: 1100px){
+  .banner-right-box-new-carrusel-7 {
+    display: none;
+  }
 }
 
 
@@ -768,18 +817,22 @@
     margin-top:10px;
 }
 
+
+
 .carousel-slides {
     display: flex; /* Pone los slides uno al lado del otro */
     width: 100%;
+    height:80vh;
     transition: transform 0.5s ease-in-out; /* La animación de deslizamiento */
 }
+
 
 .carousel-slide {
     flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
     box-sizing: border-box;
     padding: 45px;
     padding-top: 50px;
-    min-height: 550px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -787,6 +840,32 @@
     color: white;
     padding-left: 45.5px;
 }
+
+@media (max-width: 1100px){
+  .carousel-slide {
+   padding: 20px;
+  }
+}
+
+
+.item-hero-carrusel-title{
+  font-size: 48px; 
+  text-align: start; 
+  color: white;
+}
+
+@media (max-width: 1100px){
+  .item-hero-carrusel-title{
+    font-size: 30px;
+  }
+}
+
+.item-hero-carrusel-title span {
+  display: inline-block;
+  color: var(--tj-color-theme-primary);
+  font-weight: 12px;
+}
+
 
 /* Estilo para las flechas */
 .carousel-btn {
