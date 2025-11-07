@@ -4,11 +4,11 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  min-height: 35px;
+  min-height: 25px;
 }
 
 #header-global-use-zoho-link{
-  font-size: 16px;
+  font-size: 12px;
   color: whitesmoke;
 }
 
@@ -676,7 +676,7 @@
   height: 500px;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-image:  url("../../assets/images/carrusel-home/soporte.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
@@ -731,7 +731,7 @@
   height: 500px;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(49, 2, 80, 0.8)), url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-image:  url("../../assets/images/carrusel-home/automatizacion.jpg");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
@@ -764,6 +764,8 @@
     overflow: hidden; /* El truco principal: oculta lo que se sale */
     position: relative;
     border-radius: 15px;
+    height:80vh;
+    margin-top:10px;
 }
 
 .carousel-slides {
@@ -775,14 +777,15 @@
 .carousel-slide {
     flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
     box-sizing: border-box;
-    padding: 40px;
-    padding-top: 42px;
-    min-height: 300px;
+    padding: 45px;
+    padding-top: 50px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    padding-left: 45.5px;
 }
 
 /* Estilo para las flechas */
