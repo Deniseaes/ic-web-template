@@ -75,6 +75,15 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+#section-featured-zoho-apps-suites{
+    background-color: var(--tj-color-grey-1);
+    border-radius: 20px;
+    margin-left: 45px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 #tag-section-title-featured-apps {
   border: 2px dashed #313d3d;
   border-radius: 20px;

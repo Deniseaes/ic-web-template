@@ -8617,6 +8617,7 @@ START: Heading CSS
 
 .title-anim > div {
   overflow: hidden;
+  font-size: 48px;
 }
 
 .tj-text-invert > div {
@@ -13140,27 +13141,29 @@ START: Faq CSS
 
 .tj-faq .accordion-item {
   margin-bottom: 20px;
-  padding: 0 30px;
+  padding: 0px 30px;
   border-radius: 8px;
   border: 0;
   position: relative;
-    background-color: #f5f5f5
+  background-color: #f5f5f5
+
 }
 .tj-faq .accordion-item:last-child {
   margin-bottom: 0;
 }
 .tj-faq .accordion-item .faq-title {
-  font-size: 18px;
+   font-size: 18px;
   text-align: start;
   color: var(--tj-color-heading-primary);
   font-family: var(--tj-ff-heading);
   font-weight: var(--tj-fw-sbold);
-  padding: 27px 60px 10px 0;
+  padding: 20px 60px 20px 0;
   width: 100%;
   position: relative;
   z-index: 2;
   -webkit-transition: none;
   transition: none;
+
 }
 .tj-faq .accordion-item .faq-title::after {
   content: "\e927";
@@ -13673,7 +13676,8 @@ START: Blog CSS
 START: CTA CSS
 ----------------------------------------*/
 .tj-cta-section {
-  margin-bottom: -195px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-cta-section {

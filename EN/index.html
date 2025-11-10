@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/interconnectaai-home.css" />
     <link rel="stylesheet" href="../assets/css/interconnecta-migrate-to-zoho.css" />
+    <link rel="stylesheet" href="../assets/css/ic-footer.css" />
   </head>
 
   <body>
@@ -2107,114 +2108,51 @@
         </section>
         <!-- end: post de blogs -->
 
+        <!-- start: Cta Section antes del footer -->
+        <section class="tj-cta-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="cta-area">
+                  <div class="cta-content">
+                    <h2 class="title title-anim">Let's partner to drive results.</h2>
+                    <div class="cta-btn wow fadeInUp" data-wow-delay=".6s">
+                      <a class="tj-primary-btn btn-dark" href="contact.html">
+                        <span class="btn-text"><span>Get Started Now</span></span>
+                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cta-img">
+                    <img src="../assets/images/footer/socios.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end: Cta Section antes del footer -->
+
       </main>
-      <footer class="tj-footer-section" style="background-color:#002d4a;color:#fff;">
-      <style>
-        /* === Estilo general === */
-        .tj-footer-section{
-          padding: 0;
-        }
-        .tj-footer-section a {
-          color:#d8e8f0;
-          text-decoration:none;
-          transition:all .3s ease;
-        }
-        .tj-footer-section a:hover { color:#03cd5c; }
-        .tj-footer-section .footer-widget .title {
-          margin-bottom:14px;
-          letter-spacing:.2px;
-          font-weight:600;
-          color:#ffffff;
-        }
-        .tj-footer-section .footer-links li { margin:6px 0; }
-        .tj-footer-section .footer-links li::marker { color:#03cd5c; }
-
-        /* === Espaciado general === */
-        .footer-main { padding-top:55px; padding-bottom:35px; border-bottom:1px solid rgba(255,255,255,.12); }
-        .footer-bottom { padding:28px 0; text-align:center; }
-
-        /* === Newsletter === */
-        .newsletter-form input {
-          background:rgba(255,255,255,0.12);
-          color:#fff;
-          border:none; border-radius:6px;
-          width:100%; padding:10px 12px;
-        }
-        .newsletter-form input::placeholder { color:#bfcad2; }
-        .newsletter-form button {
-          background:#03cd5c; color:#002d4a;
-          border:none; border-radius:6px; padding:8px 14px;
-          margin-top:8px; transition:.3s;
-        }
-        .newsletter-form button:hover { background:#02b655; }
-
-        /* === Contacto & RRSS === */
-        .footer-bottom .contact-group {
-          display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
-          gap:22px; margin-bottom:16px;
-        }
-        .footer-bottom .contact-pill {
-          display:inline-flex; align-items:center; gap:10px; color:#fff;
-        }
-        .footer-bottom .icon {
-          width:32px; height:32px; border-radius:50%;
-          background:#ffffff15; display:flex; align-items:center; justify-content:center;
-          transition:.3s;
-        }
-        .footer-bottom .icon i { color:#ffffff; }
-        .footer-bottom .contact-pill:hover .icon { background:#03cd5c; }
-        .footer-bottom .contact-pill:hover .icon i { color:#002d4a; }
-
-        .footer-bottom .social {
-          display:flex; justify-content:center; gap:14px; margin:0 auto 12px auto;
-        }
-        .footer-bottom .social a {
-          width:32px; height:32px; background:#ffffff15; border-radius:50%;
-          color:#ffffff; display:flex; align-items:center; justify-content:center;
-          transition:.3s;
-        }
-        .footer-bottom .social a:hover { background:#03cd5c; color:#002d4a; }
-
-        /* === Locations === */
-        .footer-locations {
-          border-top:1px solid rgba(255,255,255,.12);
-          padding:35px 0;
-        }
-        .locations-grid {
-          display:grid; grid-template-columns:repeat(4,minmax(160px,1fr));
-          gap:18px; text-align:center;
-        }
-        .locations-grid .title { font-weight:600; color:#ffffff; margin-bottom:3px; }
-        .locations-grid p { margin:0; color:#cfd9e0; font-size:15px; }
-        @media(max-width:991px){ .locations-grid{grid-template-columns:repeat(2,1fr);} }
-        @media(max-width:575px){ .locations-grid{grid-template-columns:1fr;} }
-
-        /* === Firma === */
-        .footer-signature {
-          text-align:center; padding:18px 0;
-          font-size:14px; color:#aebcc4;
-          border-top:1px solid rgba(255,255,255,0.08);
-        }
-        .footer-signature span { color:#03cd5c; font-weight:500; }
-      </style>
-
-      <!-- Contenido principal -->
-      <div class="container footer-main">
+      <footer class="tj-footer-section" id="footer-section">
+        <!-- Contenido principal -->
+        <div class="container footer-main" id="footer-main">
         <div class="row">
+          
           <!-- Logo -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="footer-col-logo">
             <div class="footer-widget about-widget">
               <div class="footer-logo mb-3">
-                <img src="assets/images/logo-light.svg" alt="InterConnecta Logo" style="max-width:170px;">
+                <img src="../assets/images/logos/logo-inter-blanco.svg" alt="InterConnecta Logo" style="max-width:170px;">
               </div>
               <div class="footer-awards mt-2">
-                <img src="assets/images/badges/zoho-premium-partner.svg" alt="Zoho Premium Partner" height="38">
+                <img src="../assets/images/logos/footer-partner-csl.png" alt="Zoho Premium Partner" height="38">
               </div>
             </div>
           </div>
 
           <!-- Industries -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="footer-col-industries">
             <div class="footer-widget">
               <h4 class="title">Industries</h4>
               <ul class="footer-links">
@@ -2232,7 +2170,7 @@
           </div>
 
           <!-- Support -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="footer-col-support">
             <div class="footer-widget">
               <h4 class="title">Support &amp; Resources</h4>
               <ul class="footer-links">
@@ -2247,24 +2185,30 @@
           </div>
 
           <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="footer-col-newsletter">
             <div class="footer-widget">
               <h4 class="title">Subscribe to Our Newsletter</h4>
               <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-                <label class="terms mt-2" style="font-size:14px;display:block;">
-                  <input type="checkbox" required> I agree to the
-                  <a href="/terms-of-use/" style="color:#03cd5c;">Terms &amp; Conditions</a>
-                </label>
+                <div id="newsletter-email-container">
+                  <input type="email" placeholder="Enter your email address" required>
+                  <button type="submit" id="newsletter-email-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <div>
+                  <label class="terms mt-2" style="font-size:14px;display:block;" id="terminos-check-container">
+                    <input type="checkbox" required style="width: 40px;"> I agree to the
+                    <a href="/terms-of-use/" style="color:#03cd5c;">Terms &amp; Conditions</a>
+                  </label>
+                </div>
               </form>
             </div>
           </div>
+
+
         </div>
       </div>
 
-      <!-- Contact & RRSS centrado -->
-      <div class="footer-bottom">
+      <!-- Contact & RRSS -->
+      <div class="footer-bottom" id="footer-bottom">
         <div class="container">
           <div class="contact-group">
             <div class="contact-pill">
@@ -2286,38 +2230,22 @@
       </div>
 
       <!-- Locations -->
-      <div class="footer-locations">
+      <div class="footer-locations" id="footer-locations">
         <div class="container">
           <div class="locations-grid">
-            <div>
-              <div class="title">United States</div>
-              <p>(New York) — +1-646-760-4090</p>
-            </div>
-            <div>
-              <div class="title">Panama</div>
-              <p>(Panama City) — +507-836-0436</p>
-            </div>
-            <div>
-              <div class="title">Puerto Rico</div>
-              <p>(Ponce) — +1-787-719-7072</p>
-            </div>
-            <div>
-              <div class="title">Peru</div>
-              <p>(Lima, Miraflores) — +51-1-644-9084</p>
-            </div>
+            <div><div class="title"style="color:#03cd5c;">NORTH AMERICA</div><div class="title">United States</div><p>(New York) — +1-646-760-4090</p></div>
+            <div><div class="title"style="color:#03cd5c;">CENTRAL AMERICA</div><div class="title">Panama</div><p>(Panama City) — +507-836-0436</p></div>
+            <div><div class="title"style="color:#03cd5c;">CARIBBEAN</div><div class="title">Puerto Rico</div><p>(Ponce) — +1-787-719-7072</p></div>
+            <div><div class="title"style="color:#03cd5c;">SOUTH AMERICA</div><div class="title">Peru</div><p>(Lima, Miraflores) — +51-1-644-9084</p></div>
           </div>
         </div>
       </div>
 
-      <!-- Firma -->
-      <div class="footer-signature">
+      <!-- Signature -->
+      <div class="footer-signature" id="footer-signature">
         © <span id="year"></span> <span>InterConnecta</span> — All rights reserved.
       </div>
-
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
-    </footer>
+      </footer>
 
       
       </div>
