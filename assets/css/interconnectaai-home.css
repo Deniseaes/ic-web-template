@@ -246,14 +246,21 @@
 #header-soluciones-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: row;
 }
 
 #header-service-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  flex-direction: row;
+}
+
+#header-academy-item{
+  display: flex;
+  align-items: center;
+  justify-content: start;
   flex-direction: row;
 }
 

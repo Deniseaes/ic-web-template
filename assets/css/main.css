@@ -1579,28 +1579,31 @@ START: Theme Header CSS
   pointer-events: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: var(--tj-color-common-black);
 }
 .mainmenu ul > li > .sub-menu > li {
   display: block;
   width: 100%;
+  color: var(--tj-color-common-black);
 }
 .mainmenu ul > li > .sub-menu > li > a {
   position: relative;
   padding: 10px 20px;
   display: block;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-common-black);
 }
 .mainmenu ul > li > .sub-menu > li > a::before {
   display: none;
 }
 .mainmenu ul > li > .sub-menu > li:last-child {
   padding-bottom: 0;
+  color: var(--tj-color-common-black);
 }
 .mainmenu ul > li > .sub-menu > li.menu-item-has-children > a::after,
 .mainmenu ul > li > .sub-menu > li.has-dropdown > a::after {
   top: 13px;
   inset-inline-end: 15px;
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-common-black);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -2021,7 +2024,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > .mega-menu-pages,
 .mobile_menu ul > li > .mega-menu-pages {
-  width: 800px;
+  width: var(100% - 30px);
   max-width: 1320px;
   padding: 0;
   margin: 0 auto;
@@ -2045,7 +2048,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > .mega-menu-pages .mega-menu-pages-single,
 .mobile_menu ul > li > .mega-menu-pages .mega-menu-pages-single {
-  width: 315px;
+  width: 400px;
   -webkit-border-start: 1px solid var(--tj-color-border-1);
   border-inline-start: 1px solid var(--tj-color-border-1);
   padding: 26px 30px 20px;
@@ -2119,7 +2122,7 @@ START: Theme Header CSS
   .feature-content
   .title {
   font-size: 74px;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   margin-bottom: 15px;
   line-height: 1;
 }
@@ -2204,7 +2207,7 @@ START: Theme Header CSS
   font-size: 20px;
   font-family: var(--tj-ff-heading);
   font-weight: var(--tj-fw-medium);
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   line-height: 1;
   margin-bottom: 26px;
 }
@@ -2272,7 +2275,7 @@ START: Theme Header CSS
   .feature-content
   .feature-contact
   span {
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   font-size: 18px;
   font-weight: var(--tj-fw-sbold);
   margin: 0;
@@ -2300,7 +2303,7 @@ START: Theme Header CSS
   .feature-content
   .feature-contact
   i {
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   font-size: 20px;
   -webkit-margin-end: 6px;
   margin-inline-end: 6px;
@@ -2540,7 +2543,7 @@ START: Theme Header CSS
   (max-width: 575px) {
   .mainmenu ul > li > .mega-menu-pages .mega-menu-title,
   .mobile_menu ul > li > .mega-menu-pages .mega-menu-title {
-    color: var(--tj-color-common-white);
+    color: var(--tj-color-common-black);
   }
 }
 .mainmenu ul > li > .mega-menu-pages .mega-menu-title::before,
@@ -3102,6 +3105,7 @@ START: Theme Header CSS
 .hamburger_menu .mean-container .mean-nav ul li .mega-menu-service li a,
 .hamburger_menu .mean-container .mean-nav ul li .mega-menu-pages li a {
   border-bottom: 1px solid var(--tj-color-border-2);
+  color: var(--tj-color-common-black);
 }
 .hamburger_menu
   .mean-container
@@ -3111,7 +3115,7 @@ START: Theme Header CSS
   .mega-menu-pages
   li
   .mega-menu-title::after {
-  background-color: var(--tj-color-common-white);
+  background-color: var(--tj-color-common-black);
 }
 .hamburger_menu
   .mean-container
@@ -3124,7 +3128,7 @@ START: Theme Header CSS
   width: 100%;
   padding: 18px 0;
   text-transform: capitalize;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   border-bottom: 1px solid var(--tj-color-border-2);
 }
 .hamburger_menu
@@ -3136,6 +3140,7 @@ START: Theme Header CSS
   li
   a:not(.tj-primary-btn)::before {
   display: none;
+  color: var(--tj-color-common-black);
 }
 .hamburger_menu
   .mean-container
@@ -3145,7 +3150,7 @@ START: Theme Header CSS
   .mega-menu-pages
   li
   a:not(.tj-primary-btn):hover {
-  color: var(--tj-color-text-body);
+  color: var(--tj-color-common-black);
   padding: 18px 0;
 }
 .hamburger_menu
@@ -31410,7 +31415,7 @@ START: Blog CSS
   width: 100%;
   padding: 18px 0;
   text-transform: capitalize;
-  color: var(--tj-color-common-white);
+  color: var(--tj-color-common-black);
   border-bottom: 1px solid var(--tj-color-border-2);
 }
 
