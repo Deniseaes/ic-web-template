@@ -1882,7 +1882,7 @@ START: Theme Header CSS
 }
 .mainmenu ul > li > .mega-menu-pages,
 .mobile_menu ul > li > .mega-menu-pages {
-  width: calc(100% - 30px);
+  width: 800px;
   max-width: 1320px;
   padding: 0;
   margin: 0 auto;
