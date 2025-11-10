@@ -1,0 +1,116 @@
+/* === Estilo general === */
+#footer-section {
+  background-color:#002d4a;
+  color:#fff;
+  padding: 0px;
+}
+#footer-section a {
+  color:#d8e8f0;
+  text-decoration:none;
+  transition:all .3s ease;
+}
+#footer-section a:hover { color:#03cd5c; }
+#footer-section .footer-widget .title {
+  margin-bottom:14px;
+  letter-spacing:.2px;
+  font-weight:600;
+  color:#ffffff;
+}
+#footer-section .footer-links li { margin:6px 0; }
+#footer-section .footer-links li::marker { color:#03cd5c; }
+
+/* === Espaciado general === */
+#footer-main { 
+  padding-top:55px; 
+  padding-bottom:35px; 
+  border-bottom:1px solid rgba(255,255,255,.12); 
+}
+#footer-bottom { 
+  padding:28px 0; 
+  text-align:center; 
+}
+
+/* === Newsletter === */
+#footer-section .newsletter-form input {
+  background:rgba(255,255,255,0.12);
+  color:#fff;
+  border:none; border-radius:6px;
+  width:100%; padding:10px 12px;
+}
+
+#newsletter-email-container{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#terminos-check-container{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+#newsletter-email-btn{
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+#footer-section .newsletter-form input::placeholder { color:#bfcad2; }
+#footer-section .newsletter-form button {
+  background:#03cd5c; color:#002d4a;
+  border:none; border-radius:6px; padding:8px 14px;
+  margin-top:8px; transition:.3s;
+}
+#footer-section .newsletter-form button:hover { background:#02b655; }
+
+/* === Contacto & RRSS === */
+#footer-bottom .contact-group {
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:22px; margin-bottom:16px;
+}
+#footer-bottom .contact-pill {
+  display:inline-flex; align-items:center; gap:10px; color:#fff;
+}
+#footer-bottom .icon {
+  width:32px; height:32px; border-radius:50%;
+  background:#ffffff15; display:flex; align-items:center; justify-content:center;
+  transition:.3s;
+}
+#footer-bottom .icon i { color:#ffffff; }
+#footer-bottom .contact-pill:hover .icon { background:#03cd5c; }
+#footer-bottom .contact-pill:hover .icon i { color:#002d4a; }
+
+#footer-bottom .social {
+  display:flex; justify-content:center; gap:14px; margin:0 auto 12px auto;
+}
+#footer-bottom .social a {
+  width:32px; height:32px; background:#ffffff15; border-radius:50%;
+  color:#ffffff; display:flex; align-items:center; justify-content:center;
+  transition:.3s;
+}
+#footer-bottom .social a:hover { background:#03cd5c; color:#002d4a; }
+
+/* === Locations === */
+#footer-locations {
+  border-top:1px solid rgba(255,255,255,.12);
+  padding:35px 0;
+}
+#footer-locations .locations-grid {
+  display:grid; grid-template-columns:repeat(4,minmax(160px,1fr));
+  gap:18px; text-align:center;
+}
+#footer-locations .locations-grid .title { font-weight:600; color:#ffffff; margin-bottom:3px; }
+#footer-locations .locations-grid p { margin:0; color:#cfd9e0; font-size:15px; }
+@media(max-width:991px){ #footer-locations .locations-grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:575px){ #footer-locations .locations-grid { grid-template-columns:1fr; } }
+
+/* === Firma === */
+#footer-signature {
+  text-align:center; 
+  padding:18px 0;
+  font-size:14px; 
+  color:#aebcc4;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+#footer-signature span { color:#03cd5c; font-weight:500; }
