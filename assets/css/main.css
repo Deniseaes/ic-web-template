@@ -46,9 +46,148 @@
 /**----------------------------------------
 START: Theme Default CSS
 ----------------------------------------*/
+/* Regular */
 @font-face {
-  font-family: "tt-norms";
+  font-family: "TTNorms";
   src: url("../fonts/tt-norms/TTNorms-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Extra Bold Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Heavy */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Heavy.otf") format("opentype");
+  font-weight: 950;
+  font-style: normal;
+}
+
+/* Heavy Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-HeavyItalic.otf") format("opentype");
+  font-weight: 950;
+  font-style: italic;
+}
+
+/* Thin */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Extra Light Italic */
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/tt-norms/TTNorms-ExtraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
@@ -151,8 +290,8 @@ h6 {
   color: var(--tj-color-heading-primary);
   margin-top: 0px;
   font-weight: var(--tj-fw-medium);
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -13005,6 +13144,7 @@ START: Faq CSS
   border-radius: 8px;
   border: 0;
   position: relative;
+    background-color: #f5f5f5
 }
 .tj-faq .accordion-item:last-child {
   margin-bottom: 0;
@@ -13015,7 +13155,7 @@ START: Faq CSS
   color: var(--tj-color-heading-primary);
   font-family: var(--tj-ff-heading);
   font-weight: var(--tj-fw-sbold);
-  padding: 27px 60px 27px 0;
+  padding: 27px 60px 10px 0;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -13035,7 +13175,7 @@ START: Faq CSS
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  border: 2px solid var(--tj-color-theme-primary);
+  border: 2.5px solid var(--tj-color-theme-primary);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -13049,7 +13189,7 @@ START: Faq CSS
 }
 .tj-faq .accordion-item .accordion-body {
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   margin-top: 15px;
   color: var(--tj-color-text-body);
 }
@@ -13057,7 +13197,7 @@ START: Faq CSS
   margin-bottom: 0;
 }
 .tj-faq .accordion-item.active .faq-title {
-  border-bottom: 1px dashed var(--tj-color-border-1);
+  border-bottom: 2px dashed var(--tj-color-border-1);
 }
 .tj-faq .accordion-item.active .faq-title::after {
   content: "\e918";
@@ -13081,11 +13221,11 @@ START: Faq CSS
 }
 .tj-faq.style-2 .accordion-item.active .faq-title {
   color: var(--tj-color-common-white);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
 }
 .tj-faq.style-2 .accordion-item.active .faq-title::after {
   color: var(--tj-color-common-white);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .tj-faq.style-2 .accordion-item.active .accordion-body p {
   color: var(--tj-color-common-white);
@@ -25359,6 +25499,7 @@ START: FAQ CSS
   padding-top: 15px;
   border-top: 1px dashed var(--tj-color-border-3);
   max-width: 585px;
+
 }
 .h7-faq-wrapper.style-2 .accordion-item.active {
   border-radius: 12px;
