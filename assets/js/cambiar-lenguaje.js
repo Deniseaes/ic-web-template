@@ -54,15 +54,15 @@
 
             if (lang === 'ES') {
                 if (endsWithEN) {
-                    newUrl = url.replace(/\/EN\/?$/i, '/ES');
+                    newUrl = url.replace(/\/EN\/?$/i, 'ES');
                 } else if (!endsWithES) {
-                    newUrl = url.replace(/\/$/, '') + '/ES';
+                    newUrl = url.replace(/\/$/, '') + 'ES';
                 }
             } else if (lang === 'EN') {
                 if (endsWithES) {
-                    newUrl = url.replace(/\/ES\/?$/i, '/EN');
+                    newUrl = url.replace(/\/ES\/?$/i, 'EN');
                 } else if (!endsWithEN) {
-                    newUrl = url.replace(/\/$/, '') + '/EN';
+                    newUrl = url.replace(/\/$/, '') + 'EN';
                 }
             }
 
