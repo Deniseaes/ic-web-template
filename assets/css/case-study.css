@@ -1,0 +1,124 @@
+#container-zoho-free-trail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 59px;
+    padding-right: 32px;
+    margin-bottom: 30px;
+}
+
+#img-logo-zoho-section{
+    width: 160px;
+    height: auto;
+}
+#section-zoho-free-trail{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#container-section-zoho-free-trail{
+    border-radius: 50px;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: url("../../assets/images/zohoFreeTrails/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+#container2-section-zoho-free-trail{
+    border-radius: 50px;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--tj-color-black-opacity);
+}
+#content-logo-zoho-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+#content-textos-zoho-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#title-zoho-free-trails-section{
+    font-size: 40px;
+    font-weight: 600;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#text-zoho-free-trails-section{
+    font-size: 20px;
+    color: whitesmoke;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title-section-energia-renovable{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-bienes-raices{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.container-section-case-study{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+}
+
+#title-section-servicios-empresariales{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-construction{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-salud{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-otras-industrias{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-distribucion-y-logistica{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#title-section-educacion-y-capacitacion{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#cta-final-title-case-study{
+    font-size: 36px;
+}
+
+#cta-final-text-case-study{
+    font-size: 24px;
+    color: black;
+}
