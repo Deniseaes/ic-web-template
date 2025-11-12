@@ -2584,7 +2584,7 @@ START: Theme Header CSS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 2px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
