@@ -31517,8 +31517,26 @@ START: Blog CSS
 
 
 
-
-
-
-
 /* !END: Blog CSS */ /*# sourceMappingURL=main.css.map */
+
+
+/* Añade esto a tu archivo CSS */
+.language-switch-button {
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-switch-button:hover {
+    background-color:var(--tj-color-theme-primary);
+    color: white;
+    border: none;
+}
