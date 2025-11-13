@@ -1182,6 +1182,55 @@
         cargarPosts();
       })();
     </script>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            
+            // Confirma que el script se está ejecutando
+            console.log("Script de anclas GSAP cargado.");
+
+            // 1. OBTÉN LA INSTANCIA DE SCROLLSMOOTHER
+            // Esta es la forma robusta de conseguir el "smoother"
+            const smootherInstance = ScrollSmoother.get();
+
+            // Si no encuentra GSAP, no hace nada
+            if (!smootherInstance) {
+                console.warn("ScrollSmoother.get() no encontró una instancia.");
+                return; 
+            }
+
+            // 2. DEFINE TU MENÚ FIJO (HEADER)
+            // ¡¡¡CAMBIA ESTO!!! Usa el ID o la CLASE real de tu menú.
+            const headerSelector = '.tu-clase-de-menu-fijo'; // <--- ⚠️ ¡¡¡CAMBIA ESTO!!!
+            
+            let headerHeight = 0;
+            try {
+                const fixedHeader = document.querySelector(headerSelector);
+                if (fixedHeader) {
+                    headerHeight = fixedHeader.offsetHeight;
+                } else {
+                    console.warn(`No se encontró el header con el selector: "${headerSelector}". El cálculo de altura será 0.`);
+                }
+            } catch (e) {
+                console.error("Error al buscar el header:", e);
+            }
+
+            // 3. CAPTURA LOS CLICS
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault(); // Anula el salto brusco
+                    
+                    const targetId = this.getAttribute('href');
+                    
+                    // 4. USA EL MÉTODO DE GSAP PARA EL SCROLL
+                    smootherInstance.scrollTo(targetId, true, `top top+=120px`);
+                });
+            });
+
+        });
+    </script>
   <!--    <script>
         async function cargarPosts() {
           const response = await fetch('https://blog.interconnecta.ai/wp-json/wp/v2/posts?per_page=3&_embed');
