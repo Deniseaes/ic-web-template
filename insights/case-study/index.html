@@ -483,21 +483,11 @@
 
         
           <!-- start: Zoho free trails Banner Section --> 
-          <section class="tj-cta-section" id="section-zoho-free-trail">
-            <div class="row" id="container-zoho-free-trail">
-              <div class="col-12" id="container-section-zoho-free-trail">
-                <div class="cta-area" id="container2-section-zoho-free-trail">
-                  <div id="content-logo-zoho-section" class="cta-img">
-                    <img id="img-logo-zoho-section" src="/assets/images/hero/logo-zoho.webp" alt="ZOHO">
-                  </div>
-                  <div id="content-textos-zoho-section" class="cta-content">
-                    <h2 id="title-zoho-free-trails-section" class="title title-anim">Real Cases – Strategies That Drive Results</h2>
-                    <div id="text-zoho-free-trails-section" class="cta-btn wow fadeInUp" data-wow-delay=".6s">
-                      <p>Each case showcases how Zoho solutions, powered by InterConnecta, transform operations, teams, and business models.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <section class="section-banner-inicial">
+            <div class="container-banner-inicial">
+              <img class="img-banner-incial" src="/assets/images/hero/logo-zoho.webp" alt="ZOHO">
+              <h2 class="title-banner-incial">Real Cases – Strategies That Drive Results</h2>
+              <p class="text-banner-incial">Each case showcases how Zoho solutions, powered by InterConnecta, transform operations, teams, and business models.</p>
             </div>
           </section>
           <!-- end: Zoho Free Trials Banner Section -->
@@ -506,7 +496,7 @@
           <section class="tj-blog-section section-gap slidebar-stickiy-container">
             <div class="container">
               <div class="row row-gap-5">
-                <div class="col-lg-8">
+                <div class="col-lg-8" id="container-content-case-study">
                   <div class="post-details-wrapper">
                     <div class="blog-text">
 
@@ -850,33 +840,25 @@
 
 
                       <!-- start: Cta Section antes del footer -->
-                      <section class="tj-cta-section">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-12">
-                              <div class="cta-area">
-                                <div class="cta-content">
-                                  <h2 class="title title-anim" id="cta-final-title-case-study">Cada caso demuestra lo que la estrategia y la tecnología pueden lograr.</h2>
-                                  <div class="cta-btn wow fadeInUp" data-wow-delay=".6s">
-                                    <span id="cta-final-text-case-study">Conoce cómo InterConnecta impulsa la eficiencia, la rentabilidad y la innovación en distintas industrias con el ecosistema Zoho.</span>
-                                  </div>
-                                </div>
-                                <div class="cta-img">
-                                  <img src="/assets/images/footer/socios.png" alt="">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                      <section class="cta-section-case-study">
+                        <div class="cta-container-izq-case-study">
+                          <h3 class="cta-title-case-study">Cada caso demuestra lo que la estrategia y la tecnología pueden lograr.</h3>
+                          <p class="cta-text-case-study">Conoce cómo InterConnecta impulsa la eficiencia, la rentabilidad y la innovación en distintas industrias con el ecosistema Zoho.</p>
+                        </div>
+                        <div class="cta-container-der-case-study">
+                          <img class="cta-img-der-case-study" src="/assets/images/footer/socios.png" alt="">
                         </div>
                       </section>
                       <!-- end: Cta Section antes del footer -->
+
+                      
 
                     </div>
                   </div>
                 </div>
 
                 <!--menu lateral servicios -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" id="menu-lateral-hidden-mobile">
                   <div class="tj-main-sidebar slidebar-stickiy">
                     <div id="barra-lateral-case-study-en">
                       <div class="tj-sidebar-widget service-categories wow fadeInUp" data-wow-delay=".1s">
@@ -1220,29 +1202,12 @@
             console.log("Script de anclas GSAP cargado.");
 
             // 1. OBTÉN LA INSTANCIA DE SCROLLSMOOTHER
-            // Esta es la forma robusta de conseguir el "smoother"
             const smootherInstance = ScrollSmoother.get();
 
             // Si no encuentra GSAP, no hace nada
             if (!smootherInstance) {
                 console.warn("ScrollSmoother.get() no encontró una instancia.");
                 return; 
-            }
-
-            // 2. DEFINE TU MENÚ FIJO (HEADER)
-            // ¡¡¡CAMBIA ESTO!!! Usa el ID o la CLASE real de tu menú.
-            const headerSelector = '.tu-clase-de-menu-fijo'; // <--- ⚠️ ¡¡¡CAMBIA ESTO!!!
-            
-            let headerHeight = 0;
-            try {
-                const fixedHeader = document.querySelector(headerSelector);
-                if (fixedHeader) {
-                    headerHeight = fixedHeader.offsetHeight;
-                } else {
-                    console.warn(`No se encontró el header con el selector: "${headerSelector}". El cálculo de altura será 0.`);
-                }
-            } catch (e) {
-                console.error("Error al buscar el header:", e);
             }
 
             // 3. CAPTURA LOS CLICS
@@ -1260,37 +1225,30 @@
 
         });
     </script>
-  <!--    <script>
-        async function cargarPosts() {
-          const response = await fetch('https://blog.interconnecta.ai/wp-json/wp/v2/posts?per_page=3&_embed');
-          const posts = await response.json();
 
-          console.log(`el post es: ${posts._embedded}`);
-          
+    <script>
+          function actualizarClase() {
+            const elemento = document.getElementById('container-content-case-study');
+            const anchoVentana = window.innerWidth;
 
-          posts.forEach(async (post, i) => {
-            const index = i + 1; // 1, 2, 3
+            if (anchoVentana < 1200) {
+              // Es pantalla pequeña: quitar 'clase-grande' y poner 'clase-pequena'
+              elemento.classList.remove('col-lg-8');
+              elemento.classList.add('col-lg-12');
+            } else {
+              // Es pantalla grande: quitar 'clase-pequena' y poner 'clase-grande'
+              elemento.classList.remove('col-lg-12');
+              elemento.classList.add('col-lg-8');
+            }
+          }
 
-            const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'img/default.jpg';
-            const title = post.title.rendered;
-            const excerpt = post.excerpt.rendered.replace(/<[^>]+>/g, ''); // limpia HTML
-            const link = post.link;
+          // 1. Ejecutar la función cuando la página carga por primera vez
+          window.addEventListener('load', actualizarClase);
 
-            // Reemplaza los elementos existentes
-            console.log(`esta es la imagen para el ${index}: ${image}`);
-            
-
-            document.getElementById(`post-img-${index}`).src = image;
-            document.getElementById(`post-img-${index}`).alt = title;
-            document.getElementById(`post-title-${index}`).innerHTML = `<a href="${link}" target="_blank">${title}</a>`;
-            document.getElementById(`post-excerpt-${index}`).textContent = excerpt;
-          });
-        }
-
-        cargarPosts();
+          // 2. Ejecutar la función cada vez que el usuario cambie el tamaño de la ventana
+          window.addEventListener('resize', actualizarClase);
     </script>
 
-    -->
 
   </body>
 </html>

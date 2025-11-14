@@ -4929,7 +4929,7 @@ START: Theme Search CSS
 .hamburger-search-area {
   margin-bottom: 45px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px),
+@media only screen and (min-width: 768px) and (max-width: 1200px),
   only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .hamburger-search-area {
