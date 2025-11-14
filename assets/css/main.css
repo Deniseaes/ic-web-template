@@ -3189,12 +3189,12 @@ START: Theme Footer CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-footer-section {
-    padding-top: 150px;
+    padding-top: 80px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tj-footer-section {
-    padding-top: 135px;
+    padding-top: 55px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3224,7 +3224,7 @@ START: Theme Footer CSS
 }
 
 .footer-logo {
-  max-width: 150px;
+  width: 150px;
 }
 
 .award-logo-area {
