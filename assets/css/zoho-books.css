@@ -1,0 +1,750 @@
+/* ----------------Zoho books*/
+
+/* ============================= */
+/*  Gestión financiera (ic-fin)  */
+/* ============================= */
+.ic-fin-section{
+  --fin-bg:#f5f5f5;
+  --fin-title:#111827;
+  --fin-text:#3c434d;
+  --fin-green:#22c55e;
+  --fin-ink:#0b0f14;
+  --fin-white:#ffffff;
+  --fin-shadow:0 10px 24px rgba(17,24,39,.08);
+  --fin-radius:16px;
+
+  background:var(--fin-bg);
+  border-radius:var(--fin-radius);
+  padding:32px 24px;
+  color:var(--fin-text);
+  margin:25px 0;
+}
+
+.ic-fin-title{
+  margin:0 0 18px 0;
+  font-weight:800;
+  color:var(--fin-title);
+  font-size:clamp(22px,2.6vw,32px);
+}
+
+/* Grid 2×2 → 1×4 en mobile */
+.ic-fin-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:22px;
+}
+
+/* Card */
+.ic-fin-item{
+  background:var(--fin-white);
+  border-radius:12px;
+  box-shadow:var(--fin-shadow);
+  padding:18px 16px;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.ic-fin-item:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 28px rgba(17,24,39,.14);
+}
+
+/* Icono en círculo */
+.ic-fin-ico{
+  width:56px;height:56px;border-radius:50%;
+  background:var(--fin-green);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;
+  margin-bottom:10px;
+  flex-shrink:0;
+}
+.ic-fin-ico i{font-size:22px;line-height:1;}
+
+/* Titular + texto */
+.ic-fin-subtitle{
+  margin:0 0 6px 0;
+  font-size:18px;font-weight:800;color:var(--fin-ink);
+}
+.ic-fin-text{
+  margin:0;
+  font-size:15px;line-height:1.5;color:var(--fin-text);
+}
+
+/* Responsive */
+@media (max-width: 820px){
+  .ic-fin-section{ padding:22px 12px; }
+  .ic-fin-grid{ grid-template-columns:1fr; gap:16px; }
+}
+/* caracteristicas  */
+.ic-books-section {
+  --books-bg: #f5f5f5;
+  --books-white: #ffffff;
+  --books-green: #03cd5c;
+  --books-dark: #111827;
+  --books-text: #3c434d;
+  --books-shadow: 0 6px 18px rgba(17, 24, 39, 0.08);
+  --books-radius: 16px;
+
+  background: var(--books-bg);
+  border-radius: var(--books-radius);
+  padding: 36px 24px;
+  margin: 25px 0;
+  color: var(--books-text);
+}
+
+/* Layout: imagen + lista */
+.ic-books-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.ic-books-figure {
+  margin: 0;
+}
+
+.ic-books-image {
+
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+    width: 100% !important
+}
+
+/* Título */
+.ic-books-title {
+  margin: 0 0 20px 0;
+  font-weight: 800;
+  color: var(--books-dark);
+  font-size: clamp(22px, 2.4vw, 32px);
+  text-align: left;
+}
+
+/* Lista */
+.ic-books-list {
+  background: var(--books-white);
+  border-radius: var(--books-radius);
+  box-shadow: var(--books-shadow);
+  padding: 22px 24px;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+}
+
+.ic-books-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--books-dark);
+}
+
+.ic-books-list i {
+  color: var(--books-green);
+  font-size: 18px;
+}
+
+/* Funciones avanzadas */
+.ic-books-extra {
+  background: var(--books-white);
+  border-radius: var(--books-radius);
+  box-shadow: var(--books-shadow);
+  padding: 24px;
+  margin-top: 28px;
+}
+
+.ic-books-extra h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--books-dark);
+}
+
+.ic-books-features {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--books-text);
+}
+
+.ic-books-note {
+  margin: 0;
+  font-style: italic;
+  color: var(--books-dark);
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .ic-books-wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ic-books-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ic-books-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* =============================== */
+/* Implementación correcta         */
+/* =============================== */
+
+.ic-impl-section {
+  padding: 50px 24px;
+  background: #f5f5f5;
+  border-radius: 16px;
+}
+
+.ic-impl-title {
+  font-weight: 800;
+  color: #111827;
+  font-size: clamp(22px, 2.4vw, 32px);
+  margin-bottom: 16px;
+}
+
+.ic-impl-lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #3c434d;
+  margin-bottom: 10px;
+}
+
+.ic-impl-subheading {
+  margin: 24px 0 20px;
+  font-weight: 700;
+  color: #111827;
+  font-size: 1.1rem;
+}
+
+/* GRID */
+.ic-impl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CADA ITEM */
+.ic-impl-item {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.08);
+  padding: 24px 20px;
+  color: #111827;
+  transition: all 0.3s ease;
+}
+
+.ic-impl-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(3, 205, 92, 0.25);
+}
+
+/* NÚMEROS EN CÍRCULOS */
+.ic-impl-number {
+  background: #03cd5c;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Textos */
+.ic-impl-subtitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.ic-impl-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3c434d;
+  opacity: 0.9;
+}
+
+/* Footer */
+.ic-impl-footer {
+  margin-top: 28px;
+  font-size: 1rem;
+  color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ic-impl-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .ic-impl-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =============================== */
+/* Sección: Tu gestión financiera  */
+/* =============================== */
+
+.ic-green-section {
+  background: #03cd5c; /* verde base */
+  padding:  30px 24px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.ic-green-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Título principal */
+.ic-green-title {
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 34px);
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Estructura vertical */
+.ic-green-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Ítems con fondo blanco semitransparente */
+.ic-green-item {
+  background: rgba(255, 255, 255, 0.9); /* blanco con transparencia */
+  border-radius: 16px;
+  padding:10px 24px;
+  text-align: left;
+  color: #111827;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.ic-green-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.2);
+}
+
+/* Subtítulo y texto */
+.ic-green-subtitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #03cd5c;
+  margin-bottom: 0px;
+}
+
+.ic-green-text {
+  font-size: 0.95rem;
+  color: #3c434d;
+  line-height: 1.6;
+}
+
+/* ================= */
+/* Responsive */
+/* ================= */
+@media (max-width: 768px) {
+  .ic-green-section {
+    padding: 50px 16px;
+  }
+
+  .ic-green-title {
+    font-size: 1.5rem;
+  }
+
+  .ic-green-item {
+    padding: 18px 20px;
+  }
+}
+/* ======================================== */
+/*  Sección: Gestión Financiera con bordes blancos */
+/* ======================================== */
+
+.ic-finance-section {
+  background: #03cd5c; /* fondo verde */
+  padding: 30px 24px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.ic-finance-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Título */
+.ic-finance-title {
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 34px);
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Lista: ítems uno debajo del otro */
+.ic-finance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Ítems con borde blanco */
+.ic-finance-item {
+  border: 2px solid #ffffff;
+    background: #f5f5f5;
+  border-radius: 16px;
+  padding: 10px 24px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.ic-finance-item:hover {
+  background: rgba(255, 255, 255, 0.1); /* leve transparencia al pasar el mouse */
+  transform: translateY(-3px);
+}
+
+/* Subtítulo y texto */
+
+.ic-finance-text {
+  font-size: 0.95rem;
+  color: #3c434d;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ================= */
+/* Responsive */
+/* ================= */
+@media (max-width: 768px) {
+  .ic-finance-section {
+    padding: 50px 16px;
+  }
+
+  .ic-finance-item {
+    padding: 18px 20px;
+  }
+
+  .ic-finance-title {
+    font-size: 1.6rem;
+  }
+}
+/* ============================= */
+/*  Características Zoho Books   */
+/* ============================= */
+
+.ic-books-section {
+  --gray-bg: #f5f5f5;
+  --white: #ffffff;
+  --text: #3c434d;
+  --title: #111827;
+  --green: #03cd5c;
+  --shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+  --radius: 16px;
+
+  background: var(--gray-bg);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 25px 0;
+  color: var(--text);
+}
+
+/* ======= Título ======= */
+.ic-books-title {
+  text-align: left;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+  color: var(--title);
+  font-size: clamp(22px, 2.6vw, 32px);
+}
+
+/* ======= Layout principal ======= */
+.ic-books-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50% imagen / 50% items */
+  gap: 32px;
+  align-items: start;
+}
+
+/* Imagen */
+.ic-books-figure {
+  margin: 0;
+  grid-column: 1 / 2;
+}
+.ic-books-image {
+  width: 50%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+/* Ítems (columna derecha) */
+.ic-books-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 2 / 3;
+}
+
+/* Cada item */
+.ic-books-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 8px 12px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--text);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.ic-books-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.15);
+}
+
+/* Ícono check */
+.ic-books-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 205, 92, 0.1); /* círculo con leve verde */
+  color: var(--green);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.ic-books-icon i {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 980px) {
+  .ic-books-wrap {
+    grid-template-columns: 1fr; /* apilar */
+  }
+  .ic-books-figure {
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+}
+/* ==================================== */
+/*   FUNCIONES AVANZADAS (ic-adv3)      */
+/* ==================================== */
+.ic-adv3-section {
+  --a-bg: #f5f5f5;
+  --a-title: #111827;
+  --a-text: #3c434d;
+  --a-green: #03cd5c;
+  --a-pill: #ffffff;
+  --a-shadow: 0 8px 20px rgba(17,24,39,.08);
+  --a-radius: 16px;
+
+  background: var(--a-bg) !important;
+  border-radius: var(--a-radius);
+  padding: 30px 24px;
+  margin: 25px 0;
+  color: var(--a-text);
+}
+
+/* Título */
+.ic-adv3-heading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--a-title);
+}
+
+/* Layout 3 columnas */
+.ic-adv3-wrap {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.ic-adv3-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Teléfono */
+.ic-adv3-figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.ic-adv3-phone {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 24px;
+  filter: drop-shadow(var(--a-shadow));
+}
+
+/* Items */
+.ic-adv3-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Cards */
+.ic-adv3-card {
+  background: var(--a-pill);
+  border-radius: 12px;
+  box-shadow: var(--a-shadow);
+  padding: 14px 16px;
+}
+.ic-adv3-title {
+  margin: 0 !important;
+  font-size: 16px;
+  font-weight:500;
+  color:#3c434d;
+}
+
+/* Left: línea + punto */
+.ic-adv3-left .ic-adv3-item-left::before {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  width: 36px;
+  height: 2px;
+  background: #1f2937;
+  opacity: .25;
+  transform: translateY(-50%);
+}
+.ic-adv3-left .ic-adv3-marker::before {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1f2937;
+  transform: translateY(-50%);
+}
+
+/* Right: línea + punto */
+.ic-adv3-right .ic-adv3-item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  width: 36px;
+  height: 2px;
+  background: #1f2937;
+  opacity: .25;
+  transform: translateY(-50%);
+}
+.ic-adv3-right .ic-adv3-marker::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1f2937;
+  transform: translateY(-50%);
+}
+
+/* Nota final */
+.ic-adv3-note {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--a-title);
+}
+/* Alinear los ítems de la IZQUIERDA hacia la derecha */
+.ic-adv3-left {
+  align-items: flex-end !important;
+  text-align: right !important;
+}
+
+.ic-adv3-left .ic-adv3-card {
+  text-align: right !important;
+}
+
+/* Ajustar que la línea conecte BEHIND el card correctamente */
+.ic-adv3-left .ic-adv3-item-left::before {
+  right: -28px !important; /* mantiene la línea hacia el centro */
+}
+
+.ic-adv3-left .ic-adv3-marker::before {
+  right: -28px !important;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .ic-adv3-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "phone phone"
+      "left right";
+  }
+  .ic-adv3-figure {
+    grid-area: phone;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  .ic-adv3-figure { display: none !important; }
+  .ic-adv3-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ic-adv3-item::before,
+  .ic-adv3-item-left::before,
+  .ic-adv3-marker::before {
+    display: none !important;
+  }
+  .ic-adv3-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .ic-adv3-section { padding: 20px 10px; }
+  .ic-adv3-wrap { display: block !important; }
+  .ic-adv3-figure { display: none !important; }
+  .ic-adv3-item {
+    display: block !important;
+    margin-bottom: 16px;
+  }
+  .ic-adv3-item::before,
+  .ic-adv3-marker::before {
+    display: none !important;
+  }
+  .ic-adv3-card {
+    width: 100%;
+    padding:16px;
+}
+}
+
