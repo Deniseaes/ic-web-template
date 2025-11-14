@@ -1513,6 +1513,16 @@ START: Theme Header CSS
   font-weight: var(--tj-fw-medium);
   line-height: 1;
 }
+
+@media (max-width: 1380px) {
+  .mainmenu ul > li > a {
+  
+    font-size: 12px;
+   
+  }
+}
+
+
 .mainmenu ul > li.menu-item-has-children > a,
 .mainmenu ul > li.has-dropdown > a {
   -webkit-padding-end: 20px;
@@ -11652,8 +11662,8 @@ START: Project CSS
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  width: 340px;
   min-height: 550px;
-  grid-column: span 1 / span 3;
 }
 .project-area .project-item:first-child,
 .project-area .project-item:last-child {
