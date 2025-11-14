@@ -205,7 +205,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 .container-case-study-item .title {
   width: 70%;
