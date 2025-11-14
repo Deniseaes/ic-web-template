@@ -17631,7 +17631,7 @@ blockquote cite::before {
   font-weight: var(--tj-fw-sbold);
   color: var(--tj-color-heading-primary);
   background: var(--tj-color-common-white);
-  padding: 20px 15px 17px 25px;
+  padding: 10px 5px 5px 10px;
   border-radius: 10px;
 }
 .service-categories ul li a span {
