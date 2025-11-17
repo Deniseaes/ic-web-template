@@ -1,0 +1,36 @@
+.zoho-creator-container-implementations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .zoho-creator-container-implementations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .zoho-creator-container-implementations {
+    grid-template-columns: 1fr;
+  }
+}
+
+#zoho-creator-implementations-title {
+  color: #03cd5c;
+}   
+
+.medidas-reconocido-zoho-creator {
+  background: #03cd5c;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}

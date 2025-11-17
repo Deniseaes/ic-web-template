@@ -287,8 +287,8 @@
 .home-what-is-interconnecta-ai-video-container {
 		width: 80%;
 		height: 400px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 		
 	}
 @media (max-width: 1024px) {
@@ -316,3 +316,10 @@
 			}
 
 	}
+
+.home-what-is-interconnecta-ai-video-container-caption-container{
+  display: flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: end;
+}
