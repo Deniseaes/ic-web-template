@@ -3180,32 +3180,32 @@ START: Theme Header CSS
 START: Theme Footer CSS
 ----------------------------------------*/
 .tj-footer-section {
-  background-color: var(--tj-color-theme-bg);
+  
   position: relative;
   z-index: 1;
-  padding-top: 195px;
+  padding-top: 25px;
   border-radius: 12px;
   overflow: hidden;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-footer-section {
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tj-footer-section {
-    padding-top: 55px;
+    padding-top: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tj-footer-section {
-    padding-top: 320px;
+    padding-top: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .tj-footer-section {
-    padding-top: 270px;
+    padding-top: 20px;
     margin-bottom: 0;
     border-end-start-radius: 0;
     border-end-end-radius: 0;

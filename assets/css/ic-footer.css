@@ -4,8 +4,8 @@
       background:
         linear-gradient(
           to bottom,
-          #e8f1f2 0,
-          #e8f1f2 260px,  /* altura aprox. del CTA */
+          #ECF3F4 0,
+          #ECF3F4 260px,  /* altura aprox. del CTA */
           #002d4a 260px,
           #002d4a 100%
         );
@@ -15,27 +15,41 @@
 
     #footer-cta-section{
       padding-top:40px;
-      padding-bottom:80px;
+      padding-bottom:40px;
+       background: linear-gradient(
+        to bottom,
+        #ECF3F4 0%,
+        #ECF3F4 50%,
+        #002d4a 50%,
+        #002d4a 100%
+      );
     }
 
     /* reutilizamos .cta-area del theme, pero ajustamos un poco */
     #footer-cta-area{
       border-radius:18px;
       overflow:hidden;
-      background:#ffffff;
+     
       display:flex;
       align-items:stretch;
       min-height:220px;
     }
 
     #footer-cta-area .cta-content{
-      flex:0 0 52%;
+       flex:0 0 52%;
       padding:40px 40px 40px 40px;
-      background:#02b655; /* verde InterConnecta suavizado */
       display:flex;
       flex-direction:column;
       justify-content:center;
-      color:#ffffff; /* texto blanco */
+      color:#ffffff;
+      /* base verde IC */
+      background:#03cd5c;
+      /* textura suave */
+      background-image:
+        radial-gradient(circle at 0 0, rgba(255,255,255,0.16) 0, transparent 45%),
+        radial-gradient(circle at 100% 100%, rgba(0,0,0,0.10) 0, transparent 55%),
+        linear-gradient(135deg, #03cd5c 0%, #02b56c 45%, #019458 100%);
+      background-blend-mode:soft-light, normal, normal;
     }
 
     #footer-cta-area .cta-content .sub-title{
@@ -45,6 +59,9 @@
       font-weight:600;
       margin-bottom:12px;
       color:rgba(255,255,255,0.9);
+      display:flex;
+      align-items:center;
+      gap:8px;
     }
 
     #footer-cta-area .cta-content .title{
@@ -92,13 +109,28 @@
       object-fit:cover;
       display:block;
     }
-
+@media (max-width: 1400px){
+      #footer-cta-section{
+        margin-top: 10px;
+        margin-bottom:10px;
+              
+      }
+      #footer-col-support{
+        margin-top: 20px;
+      }
+      #footer-col-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 20px;
+      }
+    }
     /* Versión mobile: pila el contenido */
     @media (max-width: 1060px){
       #footer-cta-section{
         margin-top: 10px;
         margin-bottom:10px;
-        
         
       }
       #footer-col-support{
@@ -233,7 +265,7 @@
     }
     #footer-locations-grid{
       display:grid;
-      grid-template-columns:repeat(3,minmax(200px,1fr));
+      grid-template-columns:repeat(4,minmax(180px,1fr));
       gap:18px;
       text-align:center;
     }
@@ -251,13 +283,14 @@
         grid-template-columns:repeat(2,1fr);
         justify-content: center;
         align-items: center;
-        display: flex;
+       
       }
     }
     @media(max-width:575px){
       #footer-locations-grid{
         grid-template-columns:1fr;
         flex-direction: column;
+         display: flex;
       }
     }
 
