@@ -287,8 +287,14 @@
 .home-what-is-interconnecta-ai-video-container {
 		width: 80%;
 		height: 400px;
+<<<<<<< HEAD
     margin-top: 20px;
     margin-bottom: 60px;
+=======
+        margin-top: 20px;
+        margin-bottom: 20px;
+         overflow: hidden;
+>>>>>>> origin/main
 		
 	}
 @media (max-width: 1024px) {
