@@ -3180,7 +3180,7 @@ START: Theme Header CSS
 START: Theme Footer CSS
 ----------------------------------------*/
 .tj-footer-section {
-  background-color: var(--tj-color-theme-bg);
+  
   position: relative;
   z-index: 1;
   padding-top: 25px;

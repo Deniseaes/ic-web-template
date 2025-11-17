@@ -4,8 +4,8 @@
       background:
         linear-gradient(
           to bottom,
-          #e8f1f2 0,
-          #e8f1f2 260px,  /* altura aprox. del CTA */
+          #ECF3F4 0,
+          #ECF3F4 260px,  /* altura aprox. del CTA */
           #002d4a 260px,
           #002d4a 100%
         );
@@ -18,8 +18,8 @@
       padding-bottom:40px;
        background: linear-gradient(
         to bottom,
-        #ffffff 0%,
-        #ffffff 50%,
+        #ECF3F4 0%,
+        #ECF3F4 50%,
         #002d4a 50%,
         #002d4a 100%
       );
