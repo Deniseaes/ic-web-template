@@ -1,6 +1,143 @@
 /* ----------------Zoho books*/
 
 /* ============================= */
+/* Zia para Zoho Books           */
+/* ============================= */
+
+.ic-zia-section {
+  background:  #f5f5f5;           /* gris f5f5f5 */
+  padding: 24px;
+  border-radius: 25px;
+  margin: 25px auto;
+}
+
+.ic-zia-wrap {
+  display: grid;
+grid-template-columns: 1fr 1fr; /* 50% y 50% */  
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Títulos y texto */
+.ic-zia-title {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 500;
+  color: #3c434d;
+  margin: 0 0 12px 0;
+}
+
+.ic-zia-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3c434d;
+  margin: 0 0 6px 0;
+}
+
+.ic-zia-lead {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #3c434d;
+  margin: 0 0 16px 0;
+}
+
+.ic-zia-block-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c434d;
+  margin: 0 0 8px 0;
+}
+
+/* ====== LISTA PRINCIPAL ====== */
+/* Reseteamos cualquier cosa rara heredada */
+/* Colores de texto de esta sección */
+.ic-zia-lead,
+.ic-zia-block-title,
+.ic-zia-list p,
+.ic-zia-title,
+.ic-zia-subtitle {
+  color: #3c434d;
+}
+
+/* Lista como cards */
+.ic-zia-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada item = tarjeta blanca con icono a la derecha */
+.ic-zia-item {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    margin: 0 !important;
+}
+
+/* Texto dentro del item */
+.ic-zia-item-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #3c434d;
+}
+
+/* Icono a la derecha */
+.ic-zia-item-icon img {
+
+  height: 62px;
+  display: block;
+}
+
+/* Aseguramos que no haya bullets antiguos */
+.ic-zia-item::before,
+.ic-zia-item::after {
+  content: none !important;
+}
+
+/* Responsive: que no se rompa en mobile */
+@media (max-width: 600px) {
+  .ic-zia-item {
+    align-items: flex-start;
+  }
+
+  .ic-zia-item-icon img {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+  }
+}
+
+
+/* ============================= */
+/* Responsive                    */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .ic-zia-wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ic-zia-figure {
+    order: -1;              /* si preferís la imagen abajo, elimina esta línea */
+    justify-content: flex-start;
+  }
+
+  .ic-zia-section {
+    padding: 20px 14px;
+  }
+}
+
+
+/* ============================= */
 /*  Gestión financiera (ic-fin)  */
 /* ============================= */
 .ic-fin-section{
@@ -190,6 +327,98 @@
   }
 }
 
+/* ============================= */
+/*  Sección video Zoho Books     */
+/* ============================= */
+
+.ic-video-section {
+  background: #f5f5f5;     /* gris f5f5f5 */
+  padding: 24px;
+  border-radius: 25px;
+  margin: 25px auto;
+}
+
+.ic-video-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Título */
+.ic-video-title {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 500;
+  color: #3c434d;
+  margin: 0 0 12px 0;
+}
+
+/* Texto introductorio */
+.ic-video-intro {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #3c434d;
+  margin: 0 0 4px 0;
+}
+
+/* Contenedor del video */
+.ic-video-frame {
+  margin: 36px 0 18px 0;
+  border-radius: 20px;
+ 
+  position: relative;
+  aspect-ratio: 16 / 9;                /* mantiene proporción tipo player */
+}
+
+/* Si usás iframe adentro, que ocupe todo */
+.ic-video-frame iframe,
+.ic-video-frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Fuente + descripción */
+.ic-video-source {
+  font-size: 14px;
+  color:#3c434d;
+  margin: 0 0 6px 0;
+}
+
+.ic-video-desc {
+  font-size: 16px;
+  line-height: 1.3;
+  color:#3c434d;
+  margin: 0 0 18px 0;
+}
+
+/* CTA centrado */
+.ic-video-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajuste suave al botón existente */
+.ic-video-btn {
+  border-radius: 999px;
+  padding: 10px 28px;
+}
+
+/* ============================= */
+/*          Responsive           */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .ic-video-section {
+    padding: 20px 14px;
+  }
+
+  .ic-video-frame {
+    margin: 24px 0 16px 0;
+  }
+
+  .ic-video-title {
+    font-size: 22px;
+  }
+}
 
 
 /* =============================== */
@@ -413,10 +642,7 @@
   transition: all 0.3s ease;
 }
 
-.ic-finance-item:hover {
-  background: rgba(255, 255, 255, 0.1); /* leve transparencia al pasar el mouse */
-  transform: translateY(-3px);
-}
+
 
 /* Subtítulo y texto */
 
@@ -744,7 +970,6 @@
   }
   .ic-adv3-card {
     width: 100%;
-    padding:16px;
+    padding: 16px;
+  }
 }
-}
-
