@@ -1,3 +1,4 @@
 **/video/
 **/images/
-
+.vscode/
+node_modules/
