@@ -24,6 +24,13 @@
         #002d4a 100%
       );
     }
+    .flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin-right: 8px;
+    }
 
     /* reutilizamos .cta-area del theme, pero ajustamos un poco */
     #footer-cta-area{
