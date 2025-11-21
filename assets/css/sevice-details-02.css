@@ -1685,6 +1685,11 @@ soluciones*/
   gap: 18px;
 }
 
+/* Última card (IA-ready) centrada */
+.ic-benefitsauto2-grid > :last-child {
+  grid-column: 2 / 3;   /* la pone en la columna central */
+}
+
 /* Tarjetas */
 .ic-benefitsauto2-item {
   background: var(--ic-white);
@@ -1915,9 +1920,24 @@ soluciones*/
 
 .ic-cases-lead {
   margin: 0;
+ 
   font-size: 16px;
   line-height: 1.3;
   color: var(--ic-gray-dark);
+}
+#sol-design-subtitle{
+   margin-bottom: 10px;
+}
+#section-final-sol-design{
+  background-color: var(--ic-lightgray);
+}
+#section-final-sol-design-title{
+  color: var(--ic-gray-dark);
+  text-align: center;
+}
+#section-final-sol-design-text{
+  color: var(--ic-gray-dark);
+  text-align: center;
 }
 
 /* GRID principal: sectores / aplicaciones */
