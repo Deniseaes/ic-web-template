@@ -1960,6 +1960,10 @@ soluciones*/
   margin: 0 0 10px 0;
   color: var(--ic-gray-dark);
 }
+#btn-cyan{
+  background-color:#00B4D8 ;
+}
+
 
 /* ------- TAGS de sectores ------- */
 .ic-cases-tags {
