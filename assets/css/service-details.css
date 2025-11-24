@@ -232,6 +232,12 @@
     column-gap: 36px;
     align-items: center;
 }
+.ic-do-wrap-one {
+    display: grid;
+    grid-template-columns: 1.2fr 0.5fr 0.6fr; /* 3 columnas iguales */
+    column-gap: 36px;
+    align-items: center;
+}
 
 /* Phone: ocupa la 1ª columna (1/3) */
 .ic-do-figure {
@@ -240,8 +246,18 @@
     display: flex;
     justify-content: center;
 }
+
 .ic-do-phone {
     width: 80%;
+    max-width: 300px; /* controla el ancho del teléfono */
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(var(--do-shadow));
+    border-radius: 24px;
+}
+.ic-do-phone-one {
+    width: 95%;
     max-width: 300px; /* controla el ancho del teléfono */
     height: auto;
     display: block;
@@ -257,6 +273,15 @@
     flex-direction: column;
     justify-content: center;
 }
+.ic-do-content-one {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+
 .ic-do-title {
     margin: 0 0 14px 0;
     color: var(--do-title);
@@ -289,6 +314,10 @@
     transform: translateY(-50%);
     z-index: 1;
 }
+
+
+
+
 /* punto */
 .ic-do-marker {
     position: relative;
@@ -353,14 +382,26 @@
         row-gap: 16px;
         align-items: start;
     }
+    .ic-do-wrap-one {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 10px;
+        align-items: start;
+    }
+    
     .ic-do-figure {
         grid-column: 1 / -1;
         justify-self: center;
         max-width: 320px;
     }
+   
     .ic-do-content {
         grid-column: 1 / -1;
     }
+    .ic-do-content-one {
+        grid-column: 1 / -1;
+    }
+    
     .ic-do-step::before {
         display: none;
     } /* sin líneas en mobile */
@@ -499,9 +540,16 @@
     gap: 20px;
     align-items: start;
   }
+  .ic-do-wrap-one{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
 
   /* teléfono arriba */
   .ic-do-figure{ justify-self:center; max-width:300px; }
+ 
 
   /* steps a 1 columna, sin línea ni punto */
   .ic-do-step{
@@ -1272,4 +1320,8 @@ font-size: 1em !important;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+}
+
+#text-feature-contact{
+  font-size: 16px;
 }
