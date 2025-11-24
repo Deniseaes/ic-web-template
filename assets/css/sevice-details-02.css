@@ -2074,3 +2074,464 @@ soluciones*/
 #text-feature-contact{
   font-size: 16px;
 }
+
+
+/*    ------------------------Pagina Diseño y arquitectura------------------------ */
+
+/*Sección pasos*/
+
+.service-item {
+  padding: 20px !important;
+}
+.pasos h4 {
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+.pasos p {
+  line-height: 1.2;
+}
+.service-reveal-bg {
+  margin-left: -13% !important;
+  width: 180px !important;
+  height: 180px !important;
+  margin-top: -10px !important;
+}
+.service-item.style-3 .service-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important; /* alineado a la izquierda */
+  gap: 4px !important; /* espacio entre cada elemento */
+  width: 100% !important;
+}
+.item-icon {
+  font-weight: 500 !important;
+  font-size: 20px;
+  color: #03cd5c;
+}
+
+/* ========= NÚMERO EN CÍRCULO ========= */
+.service-item .ic-step-number {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #03cd5c !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 10px !important;
+  border: solid 2px #f5f5f5;
+}
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .ic-step-number {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .service-content {
+    padding: 0 !important;
+  }
+}
+
+/* version 2 Sección pasos*/
+.pasos-v02 {
+  background-color: #f5f5f5;
+  padding: 24px;
+  border-radius: var(--ic-radius-lg);
+  margin-bottom: 24px !important;
+}
+.pasos-v02 tj-service-section-5 {
+  padding: 24px;
+}
+.pasos-v02 .service-item {
+  background-color: #ffffff !important;
+  padding: 0px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+.pasos-v02 .service-content-area {
+  padding: 24px !important;
+  width: 70% !important;
+  height: 230px;
+  margin: 0px !important;
+}
+.pasos-v02 .service-img {
+  width: 230px !important;
+  height: 230px !important;
+  margin: 0px !important;
+}
+.pasos-v02 .service-content {
+  max-width: 100% !important;
+}
+/* ========= NÚMERO EN CÍRCULO ========= */
+.pasos-v02 .service-item .ic-step-number {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #03cd5c !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 10px !important;
+  border: hidden;
+}
+
+/* ========= texto ========= */
+.pasos-v02 .service-content h3 {
+  color: var(--ic-gray-dark) !important;
+  margin-bottom: 8px !important;
+  font-size: 20px !important;
+}
+.pasos-v02 .service-content p {
+  color: var(--ic-gray-dark) !important;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (min-width: 766px) and (max-width: 1400px) {
+  .pasos-v02 .service-img {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .pasos-v02 .service-img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+  }
+}
+
+/*beneficios*/
+.beneficios-arquitectura {
+  background-color: #f5f5f5 !important;
+  padding: 24px 18px !important;
+  border-radius: var(--ic-radius-lg);
+}
+.choose-box {
+  padding: 14px !important;
+}
+.choose-box.style-2.right-swipe:hover .choose-icon img {
+  filter: brightness(0) invert(1) !important;
+}
+.beneficios-arquitectura img {
+  width: 250px !important;
+}
+.beneficios-arquitectura p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/*confian en nosotros sin animacion*/
+
+.ic-trust-section {
+  background: #00c157; /* verde corporativo */
+  border-radius: 40px;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+/* Título */
+.ic-trust-title {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+/* Texto */
+.ic-trust-text {
+  font-size: 16px;
+  line-height: 1.55;
+  max-width: 95%;
+  text-align: justify;
+}
+
+/* Imagen */
+.ic-trust-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ic-trust-section {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .ic-trust-title {
+    font-size: 2.2rem;
+  }
+
+  .ic-trust-image img {
+    margin-top: 20px;
+  }
+}
+
+/*------------------pag desk ---------*/
+
+
+/*banner principal*/
+.zoho-desk-banner {
+  background-image: url("../images/solutions-desk/banner-header.webp"); /* Usa tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  width: 94%;
+  margin: 25px auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+.zoho-desk-banner  h1{
+color: var(--ic-gray-dark);
+  padding-top: 10px
+}
+.zoho-desk-banner p{
+color: var(--ic-gray-dark);
+ 
+ 
+}
+/*beneficios*/
+.banner-desk .beneficios-arquitectura img {
+    width: 420px !important;
+}
+.banner-desk .beneficios-arquitectura {
+  background-color: var(--ic-green) !important;
+  padding: 24px 10px !important;
+  border-radius: var(--ic-radius-lg);
+  margin-bottom: 25px !important;
+}
+.banner-desk .beneficios-arquitectura h2 {
+  color: #ffffff;
+  margin: 0 !important;
+  padding: 10px 0 
+}
+.banner-desk .beneficios-arquitectura p {
+  color: #ffffff;
+}
+.banner-desk .choose-box {
+  padding:0px !important;
+  background-color: transparent;
+}
+.banner-desk .choose-icon { 
+  margin-bottom: 6px !important;
+}
+.banner-desk .choose-box.style-2.right-swipe .choose-icon {
+  filter: brightness(0) invert(1) !important; 
+} 
+.banner-desk .choose-icon {
+  width: 20px !important;
+}
+.banner-desk .beneficios-arquitectura p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/*caracteristicas*/
+.confian {
+  background-color: #f5f5f5;
+  border-radius: var(--ic-radius-lg);
+  padding: 24px; 
+  z-index: -1 !important;
+    position: relative;
+  overflow: hidden;  
+}
+ 
+.confian h2 {
+  font-size: 34px;
+  margin-bottom: 14px !important;
+  color: var(--ic-gray-dark) !important;
+    padding: 10px 0 
+}
+.confian p {
+  text-align: justify;
+  color: var(--ic-gray-dark) !important;
+}
+.confian .project-img {
+  height: 40px !important;
+}
+.confian .project-img:before {
+  background: #ffffff !important;
+}
+.confian .project-img img {
+  width: 30px;
+  height: auto;
+  background: #ffffff !important;
+}
+.confian h3 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+ 
+.desk-carac {
+  height: auto !important;
+}
+.ic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 1 !important;
+  columns: auto !important;
+  margin-bottom: 0px !important;
+  display: block;
+}
+
+.ic-list ul {
+  margin-bottom: 0px !important;
+}
+
+.ic-list li {
+  display: block; /* fuerza que cada item sea una línea */
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  color: var(--ic-gray-dark) !important;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0px !important;
+}
+
+/* símbolo » verde */
+.ic-list li::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #03cd5c;
+  font-weight: 700; 
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  .project-text h3,
+  li {
+    display: block !important;              /* que no estén en display:none */
+    font-size: 16px !important;             /* rehace el tamaño por si está en 0 */
+    line-height: 1.3 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #3c434d !important;  
+    z-index: 50000 !important; /* texto gris oscuro que usás */
+  }
+
+  .caracteristicas-section li {
+    list-style: none;            /* si no querés bullets nativos */
+  }
+}
+
+/*premios desk*/
+.premios-desk {
+  background-color: #f5f5f5;
+  margin-bottom: 25px ;
+  padding: 24px;
+  border-radius: var(--ic-radius-lg);
+}
+.premios-desk h2{ 
+  text-align: left; 
+  color: var(--ic-gray-dark);
+  font-size: 34px !important;
+    padding: 10px 0 
+}
+.premios-desk h5{ 
+  text-align: left; 
+  color: var(--ic-gray-dark); 
+  font-weight: 400;
+  padding: 0 10px
+}
+.premios-desk p{  
+  padding-top: 20px !important;
+}
+.premios-desk img{
+  width: 60px;
+  text-align: center
+}
+.premios-desk img{
+  width: 60px;
+  text-align: center
+}
+ .tj-award-item:hover  img {
+    filter: brightness(0) invert(1) !important;
+}
+.tj-blog-section .sec-heading {
+    max-width: 100%;
+}
+.sec-heading { 
+    margin-bottom: 14px;
+}
+
+
+
+
+
+
+
+/*------------------pag inventory ---------*/
+
+
+/*banner principal*/
+.zoho-inventory-banner {
+  background-image: url("../images/solutions-inventory/z-invetory.png"); /* Usa tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  width: 94%;
+  margin: 25px auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+.zoho-inventory-banner  h1{
+color: var(--ic-gray-dark);
+  padding-top: 10px
+}
+.zoho-inventory-banner p{
+color: var(--ic-gray-dark);
+ 
+ 
+}
+
+/*Seccion fondo verde*/
+
+/*-seccio celu*/
+.zoho-inventory{
+  margin-top: 0px !important;
+}
