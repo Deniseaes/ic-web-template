@@ -973,3 +973,8 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
     padding: 16px;
   }
 }
+
+
+#btn-cyan{
+  background-color:#00B4D8 ;
+}
