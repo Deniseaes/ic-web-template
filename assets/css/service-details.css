@@ -300,7 +300,9 @@
     column-gap: 12px;
     align-items: center;
     position: relative;
+    
 }
+
 /* línea detrás de la card */
 .ic-do-step::before {
     content: "";
@@ -344,6 +346,12 @@
     padding: 14px 16px;
     position: relative;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ic-do-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(3, 205, 92, 0.25); /* sombra verde sutil */
+  z-index: 5;
 }
 .ic-do-card-title {
     margin: 0 0 6px 0;

@@ -1,0 +1,19 @@
+
+#zoho-crm-banner-ai-tools{
+  background-image: url('../images/solutions-crm/banner-hero.png'); /* Usa tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+    width: 94%;
+    margin: 25px auto;
+      position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}

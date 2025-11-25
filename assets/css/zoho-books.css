@@ -978,3 +978,10 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
 #btn-cyan{
   background-color:#00B4D8 ;
 }
+
+#ic-imp-value-big {
+  font-size: 82px;  
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
