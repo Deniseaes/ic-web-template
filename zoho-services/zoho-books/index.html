@@ -481,13 +481,11 @@
                       ágil, preciso y conectado.
                   </p>
                   <div class="zoho-banner-button">
-                      <a
-                          href="https://bookings.interconnecta.com/#/3881901000008138068"
-                          target="_blank"
-                          class="tj-primary-btn"
-                          style="background-color:#00B4D8;">
-                          <span class="btn-text"><span>Ver Zoho Books en acción</span></span>
-                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                      <a href="#" class="tj-primary-btn" data-bs-toggle="modal" data-bs-target="#videoModal" id="btn-cyan">
+                        <span class="btn-text" style="text-decoration: underline;">
+                          <span>Watch Zoho Books in action</span>
+                        </span>
+                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                       </a>
                       <a
                           href="https://bookings.interconnecta.com/#/3881901000008138068"
@@ -1398,7 +1396,25 @@
       
       </div>
     </div>
-   
+    <!-- Modal Bootstrap POPUP-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+          <button type="button" class="btn-close btn-close-white ms-auto m-2" data-bs-dismiss="modal"></button>
+
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="videoIframe"
+                src=""
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- JS here -->
@@ -1510,6 +1526,24 @@
         // Iniciar todo
         startAutoplay();
       });
+    </script>
+     <!--POPUP VIDEO-->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const videoModal = document.getElementById('videoModal');
+      const videoIframe = document.getElementById('videoIframe');
+      const videoUrl = "https://www.youtube.com/embed/videoseries?list=PLZQaOqRf856bUiYitSKWV7Ru1ArXTp5SD&autoplay=1&rel=0";//Este url se cambia para cambiar el video
+
+      // Cuando se abre el modal
+      videoModal.addEventListener('show.bs.modal', function () {
+        videoIframe.src = videoUrl;
+      });
+
+      // Cuando se cierra el modal
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        videoIframe.src = "";
+      });
+    });
     </script>
   </body>
 </html>
