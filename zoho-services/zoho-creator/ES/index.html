@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="/assets/css/interconnectaai-home.css" />
     <link rel="stylesheet" href="/assets/css/ic-footer.css" />
     <link rel="stylesheet" href="/assets/css/service-details.css" />
+    <link rel="stylesheet" href="/assets/css/zoho-books.css" />
+    <link rel="stylesheet" href="/assets/css/zoho-creator.css" />
     <link rel="stylesheet" href="/assets/css/sevice-details-02.css" />
   </head>
 
@@ -398,29 +400,34 @@
         <main id="primary" class="site-main">
           <div class="space-for-header"></div>
            <!--banner principal Zoho Creator-->
+           <!--banner principal Zoho Creator-->
           <section class="zoho-crm-banner col-12">
             <div class="zoho-banner-content">
               <!-- Ajusta el src según tu logo de Creator -->
               <img
-                src="../assets/images/solutions-creator/logo-creator.svg"
+                style="width: 150px; height: auto; margin-bottom: 20px;"
+                src="/assets/images/logos/zoho-creator-dark.svg"
                 alt="Zoho Creator"
-                class="ass"
               />
               <h1 class="zoho-banner-title">Automatiza. Innova. Escala.</h1>
               <p class="zoho-banner-subtitle">
-                <strong>Zoho Creator</strong> es la plataforma low-code de Zoho que permite crear
-                aplicaciones personalizadas para digitalizar procesos, automatizar flujos y conectar áreas
-                sin depender de desarrollo complejo. <br />
-                Con <strong>InterConnecta</strong>, transformas tus ideas en soluciones empresariales
-                escalables y seguras.
+                Zoho Creator es la plataforma low-code de Zoho para crear aplicaciones personalizadas, automatizar procesos y gestionar
+                datos sin programación avanzada
               </p>
               <div class="zoho-banner-button">
                 <a
-                  href="https://bookings.interconnecta.com/#/3881901000008138068"
-                  target="_blank"
-                  class="tj-primary-btn"
-                >
-                  <span class="btn-text"><span>Habla con un consultor experto</span></span>
+                    href="https://bookings.interconnecta.com/#/3881901000008138068"
+                    target="_blank"
+                    class="tj-primary-btn"
+                    style="background-color:#00B4D8;">
+                    <span class="btn-text"><span>Hablar con un especialista</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+                 <!--Botton popup-->
+                <a href="#" class="tj-primary-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                  <span class="btn-text" style="text-decoration: underline;">
+                    <span>Ver Zoho Creator en acción</span>
+                  </span>
                   <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                 </a>
               </div>
@@ -435,6 +442,7 @@
                   <div class="col-lg-8">
                       <div class="post-details-wrapper">
                       <div class="blog-text">
+
                           <!-- Qué es Zoho Creator -->
                           <section class="ic-zoho-section" aria-labelledby="ic-cr-title">
                           <div class="ic-zoho-wrap">
@@ -453,248 +461,239 @@
                           </div>
                           </section>
 
-                          <!-- Tecnología que se adapta a tu forma de trabajar -->
-                          <section class="ic-brand-section" aria-labelledby="ic-cr-business-title">
-                          <div class="ic-brand-wrap">
-                              <!-- Texto -->
-                              <div class="ic-brand-content">
-                              <h2 id="ic-cr-business-title" class="ic-brand-title">
-                                  Tecnología que se adapta a tu forma de trabajar
-                              </h2>
+                          <!-- Lo que puedes construir con Zoho Creator -->
+                          <section class="ic-do-section">
+                            <h2 id="ic-cr-build-title" style="margin-bottom: 40px;" class="ic-do-title">
+                                Casos de uso reales con Zoho Creator
+                            </h2>
+                            <div class="ic-do-wrap">  
+                              <figure class="ic-do-figure" style="display: flex; flex-direction: column; align-items: center; gap: 10px; justify-content: space-around;">
+                                   <img
+                                      style="width: 95%; margin-bottom: 30px;"
+                                      class="ic-do-phone"
+                                      src="/assets/images/solutions-creator/build-scale-internal.webp"
+                                      alt="Zoho Creator aplicaciones low-code"
+                                  />
+                                  <img
+                                      style="width: 95%; margin-bottom: 30px;"
+                                      class="ic-do-phone"
+                                      src="/assets/images/solutions-creator/build-portal.webp"
+                                      alt="Zoho Creator aplicaciones low-code"
+                                  />
+                                   <img
+                                      style="width: 95%; margin-bottom: 30px;"
+                                      class="ic-do-phone"
+                                      src="/assets/images/solutions-creator/supercharge-extend-app.webp"
+                                      alt="Zoho Creator aplicaciones low-code"
+                                  />
+                                </figure>
 
-                              <p class="ic-brand-lead">
+                                <div class="ic-do-content">
+                                
+
+                                <div class="ic-do-steps">
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Gestión de proyectos internos</h3>
+                                        <p class="ic-do-card-text">
+                                        Seguimiento de tareas, hitos, responsables y recursos en aplicaciones
+                                        a medida para tus equipos.
+                                        </p>
+                                    </div>
+                                    </div>
+
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Control de inventario y logística</h3>
+                                        <p class="ic-do-card-text">
+                                        Registra entradas y salidas, trazabilidad, órdenes de compra y
+                                        estados de entrega en tiempo real.
+                                        </p>
+                                    </div>
+                                    </div>
+
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Portales de clientes o proveedores</h3>
+                                        <p class="ic-do-card-text">
+                                        Autoservicio seguro con acceso a pedidos, facturas, solicitudes o
+                                        documentación específica.
+                                        </p>
+                                    </div>
+                                    </div>
+
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Automatización de aprobaciones</h3>
+                                        <p class="ic-do-card-text">
+                                        Flujos configurables para RR. HH., finanzas o ventas: aprobaciones de
+                                        vacaciones, gastos, descuentos, contratos y más.
+                                        </p>
+                                    </div>
+                                    </div>
+
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Aplicaciones móviles personalizadas</h3>
+                                        <p class="ic-do-card-text">
+                                        Apps creadas una vez y disponibles en cualquier dispositivo, para
+                                        equipos de campo, operación o ventas.
+                                        </p>
+                                    </div>
+                                    </div>
+
+                                    <div class="ic-do-step">
+                                    <div class="ic-do-marker"></div>
+                                    <div class="ic-do-card">
+                                        <h3 class="ic-do-card-title">Integraciones empresariales</h3>
+                                        <p class="ic-do-card-text">
+                                        Conecta Creator con APIs y sistemas externos en pocos pasos para
+                                        construir una arquitectura integrada.
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="ic-do-card-text" style="margin-top: 40px;">
+                                    Más que una herramienta, <strong>Zoho Creator</strong> es una plataforma
+                                    para construir la transformación digital de tu empresa con un enfoque
+                                    iterativo, medible y escalable.
+                            </p>
+                          </section>
+
+                           <!-- Reconocido por su innovación global -->
+                          <section class="ic-impl-section" aria-labelledby="ic-impl-title">
+                              <h3 id="zoho-creator-implementations-title" class="ic-impl-title wow fadeInUp" data-wow-delay=".1s">
+                                 Reconocido por su innovación global
+                              </h3>
+
+                              <p class="ic-impl-lead wow fadeInUp" data-wow-delay=".15s">
+                                 Zoho Creator es una de las plataformas low-code más utilizadas del mundo,
+                                reconocida por su potencia y accesibilidad empresarial:
+                              </p>
+
+                              <div class="zoho-creator-container-implementations">
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".1s">
+                                      <span class="medidas-reconocido-zoho-creator">7M+</span>
+                                      <h5 class="ic-impl-subtitle">
+                                        Aplicaciones creadas globalmente sobre la plataforma.
+                                      </h5>
+                                  </article>
+
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".15s">
+                                      <span class="medidas-reconocido-zoho-creator">15 000+</span>
+                                      <h5 class="ic-impl-subtitle">
+                                        Empresas confían en Creator para transformar sus
+                                        operaciones.
+                                      </h5>
+                                  </article>
+
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".2s">
+                                      <span class="medidas-reconocido-zoho-creator">Líder 2024</span>
+                                      <h5 class="ic-impl-subtitle"> Reconocido por Gartner y G2 como
+                                      plataforma líder en low-code.</h5>
+                                  </article>
+
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".25s">
+                                      <span class="medidas-reconocido-zoho-creator">600+</span>
+                                      <h5 class="ic-impl-subtitle">Integraciones con servicios y APIs disponibles para
+                                      conectar tu ecosistema actual.</h5>
+                                  </article>                               
+                              </div>
+                              <p class="ic-imp-source">
+                                InterConnecta te acompaña desde el diseño hasta la evolución
+                                de tus aplicaciones, asegurando un impacto real en productividad, control y
+                                escalabilidad.
+                              </p>
+
+                          </section>
+
+                          <!-- Tecnología que se adapta a tu forma de trabajar -->
+                          <section style="margin-top: 25px;" class="ic-impl-section" aria-labelledby="ic-impl-title">
+                              <h3 id="zoho-creator-implementations-title" class="ic-impl-title wow fadeInUp" data-wow-delay=".1s">
+                                  Tecnología que se adapta a tu forma de trabajar
+                              </h3>
+
+                              <p class="ic-impl-lead wow fadeInUp" data-wow-delay=".15s">
                                   Zoho Creator combina <strong>diseño low-code</strong> con flexibilidad
                                   empresarial, para ir desde una idea a una aplicación funcional en semanas.
-                              </p>
-
-                              <div class="ic-brand-note">
-                                  <span class="ic-brand-icon" aria-hidden="true">
-                                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none">
-                                      <rect
-                                      x="2.5"
-                                      y="4"
-                                      width="19"
-                                      height="14"
-                                      rx="3"
-                                      stroke="currentColor"
-                                      stroke-width="2"
-                                      />
-                                      <circle cx="8" cy="11" r="1.4" fill="currentColor" />
-                                      <circle cx="12" cy="11" r="1.4" fill="currentColor" />
-                                      <circle cx="16" cy="11" r="1.4" fill="currentColor" />
-                                  </svg>
-                                  </span>
-                                  <p class="ic-brand-note-text">
+                                  <br />
                                   Diseñamos soluciones low-code que respetan cómo
-                                  <em>tu organización realmente opera</em>, en lugar de forzar procesos a
+                                  <strong>tu organización realmente opera</strong>, en lugar de forzar procesos a
                                   una herramienta estándar.
-                                  </p>
-                              </div>
-
-                              <ul class="ic-zoho-text">
-                                  <li>
-                                  <strong>Diseño low-code, alto impacto:</strong> crea aplicaciones a la
-                                  medida de tu operación, sin necesidad de desarrollo complejo.
-                                  </li>
-                                  <li>
-                                  <strong>Automatización integral:</strong> conecta departamentos y optimiza
-                                  procesos con flujos inteligentes, reglas de negocio y tareas automáticas.
-                                  </li>
-                                  <li>
-                                  <strong>Integración total:</strong> sincroniza Creator con Zoho CRM, Books,
-                                  Desk o herramientas externas como Google Workspace, Microsoft 365 y más.
-                                  </li>
-                                  <li>
-                                  <strong>Datos que impulsan decisiones:</strong> convierte información
-                                  operativa en paneles con métricas en tiempo real.
-                                  </li>
-                              </ul>
-                              </div>
-
-                              <!-- Imagen -->
-                              <figure class="ic-brand-figure">
-                              <!-- ajusta la ruta a tu asset -->
-                              <img
-                                  class="ic-brand-image"
-                                  src="../assets/images/solutions-creator/creator-dashboard.png"
-                                  alt="Aplicaciones construidas en Zoho Creator"
-                              />
-                              </figure>
-                          </div>
-                          </section>
-
-                          <!-- Lo que puedes construir con Zoho Creator -->
-                          <section class="ic-do-section" aria-labelledby="ic-cr-build-title">
-                          <div class="ic-do-wrap">
-                              <figure class="ic-do-figure">
-                              <img
-                                  class="ic-do-phone"
-                                  src="../assets/images/solutions-creator/creator-apps.png"
-                                  alt="Zoho Creator aplicaciones low-code"
-                              />
-                              </figure>
-
-                              <div class="ic-do-content">
-                              <h2 id="ic-cr-build-title" class="ic-do-title">
-                                  Lo que puedes construir con Zoho Creator
-                              </h2>
-
-                              <div class="ic-do-steps">
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Gestión de proyectos internos</h3>
-                                      <p class="ic-do-card-text">
-                                      Seguimiento de tareas, hitos, responsables y recursos en aplicaciones
-                                      a medida para tus equipos.
-                                      </p>
-                                  </div>
-                                  </div>
-
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Control de inventario y logística</h3>
-                                      <p class="ic-do-card-text">
-                                      Registra entradas y salidas, trazabilidad, órdenes de compra y
-                                      estados de entrega en tiempo real.
-                                      </p>
-                                  </div>
-                                  </div>
-
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Portales de clientes o proveedores</h3>
-                                      <p class="ic-do-card-text">
-                                      Autoservicio seguro con acceso a pedidos, facturas, solicitudes o
-                                      documentación específica.
-                                      </p>
-                                  </div>
-                                  </div>
-
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Automatización de aprobaciones</h3>
-                                      <p class="ic-do-card-text">
-                                      Flujos configurables para RR. HH., finanzas o ventas: aprobaciones de
-                                      vacaciones, gastos, descuentos, contratos y más.
-                                      </p>
-                                  </div>
-                                  </div>
-
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Aplicaciones móviles personalizadas</h3>
-                                      <p class="ic-do-card-text">
-                                      Apps creadas una vez y disponibles en cualquier dispositivo, para
-                                      equipos de campo, operación o ventas.
-                                      </p>
-                                  </div>
-                                  </div>
-
-                                  <div class="ic-do-step">
-                                  <div class="ic-do-marker"></div>
-                                  <div class="ic-do-card">
-                                      <h3 class="ic-do-card-title">Integraciones empresariales</h3>
-                                      <p class="ic-do-card-text">
-                                      Conecta Creator con APIs y sistemas externos en pocos pasos para
-                                      construir una arquitectura integrada.
-                                      </p>
-                                  </div>
-                                  </div>
-                              </div>
-
-                              <p class="ic-do-card-text">
-                                  Más que una herramienta, <strong>Zoho Creator</strong> es una plataforma
-                                  para construir la transformación digital de tu empresa con un enfoque
-                                  iterativo, medible y escalable.
-                              </p>
-                              </div>
-                          </div>
-                          </section>
-
-                          <!-- Reconocido por su innovación global -->
-                          <section class="ic-imp-section" aria-labelledby="ic-cr-impact-title">
-                          <div class="ic-imp-wrap">
-                              <h2 id="ic-cr-impact-title" class="ic-imp-title">
-                              Reconocido por su innovación global
-                              </h2>
-                              <p class="ic-imp-subtitle">
-                              Zoho Creator es una de las plataformas low-code más utilizadas del mundo,
-                              reconocida por su potencia y accesibilidad empresarial:
                               </p>
 
-                              <div class="ic-imp-grid">
-                              <article class="ic-imp-card">
-                                  <div class="ic-imp-value">7M+</div>
-                                  <p class="ic-imp-text">
-                                  <strong>aplicaciones creadas</strong> globalmente sobre la plataforma.
-                                  </p>
-                              </article>
+                              <div class="zoho-creator-container-implementations">
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".1s">
+                                      <span class="ic-impl-number">1</span>
+                                      <h5 style="font-weight: 700;" class="ic-impl-subtitle">
+                                          Diseño low-code, alto impacto:
+                                      </h5>
+                                      <p class="ic-impl-text">
+                                         Crea aplicaciones a la medida de tu operación, sin necesidad de desarrollo complejo.
+                                      </p>
+                                  </article>
 
-                              <article class="ic-imp-card">
-                                  <div class="ic-imp-value">15 000+</div>
-                                  <p class="ic-imp-text">
-                                  <strong>empresas</strong> confían en Creator para transformar sus
-                                  operaciones.
-                                  </p>
-                              </article>
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".15s">
+                                      <span class="ic-impl-number">2</span>
+                                      <h5 style="font-weight: 700;" class="ic-impl-subtitle">
+                                          Automatización integral:
+                                      </h5>
+                                      <p class="ic-impl-text">
+                                          Conecta departamentos y optimiza procesos con flujos inteligentes, reglas de negocio y tareas automáticas.
+                                      </p>
+                                  </article>
 
-                              <article class="ic-imp-card">
-                                  <div class="ic-imp-value">Líder 2024</div>
-                                  <p class="ic-imp-text">
-                                  Reconocido por <strong>Gartner</strong> y <strong>G2</strong> como
-                                  plataforma líder en low-code.
-                                  </p>
-                              </article>
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".2s">
+                                      <span class="ic-impl-number">3</span>
+                                      <h5 style="font-weight: 700;" class="ic-impl-subtitle">Integración total:</h5>
+                                      <p class="ic-impl-text">
+                                          Sincroniza Creator con Zoho CRM, Books, Desk o herramientas externas como Google Workspace, Microsoft 365 y más.
+                                      </p>
+                                  </article>
 
-                              <article class="ic-imp-card">
-                                  <div class="ic-imp-value">600+</div>
-                                  <p class="ic-imp-text">
-                                  <strong>integraciones</strong> con servicios y APIs disponibles para
-                                  conectar tu ecosistema actual.
-                                  </p>
-                              </article>
+                                  <article class="ic-impl-item wow fadeInUp" data-wow-delay=".25s">
+                                      <span class="ic-impl-number">4</span>
+                                      <h5 style="font-weight: 700;" class="ic-impl-subtitle">Datos que impulsan decisiones:</h5>
+                                      <p class="ic-impl-text">Convierte información operativa en paneles con métricas en tiempo real.</p>
+                                  </article>                               
                               </div>
 
-                              <p class="ic-imp-source">
-                              <strong>InterConnecta</strong> te acompaña desde el diseño hasta la evolución
-                              de tus aplicaciones, asegurando un impacto real en productividad, control y
-                              escalabilidad.
-                              </p>
-                          </div>
-                          </section>
+                          </section>                    
 
                           <!-- CTA -->
                           <div class="cta-card">
-                          <div class="cta-media">
-                              <img
-                              src="../assets/images/solutions-creator/creator-cta.png"
-                              alt="Zoho Creator - Convierte tus ideas en aplicaciones"
-                              />
-                          </div>
+                            <div class="cta-media">
+                                <img
+                                src="/assets/images/solutions-crm/evoluciona-img.png"
+                                alt="Zoho Creator - Convierte tus ideas en aplicaciones"
+                                />
+                            </div>
 
-                          <div class="cta-content">
-                              <h3><b>Convierte tus ideas</b> en aplicaciones que impulsan tu negocio</h3>
-                              <p>
-                              Diseña, implementa y escala soluciones low-code con Zoho Creator e
-                              InterConnecta. Juntos construimos aplicaciones que acompañan el crecimiento de
-                              tu operación.
-                              </p>
-                              <a
-                              class="text-btn"
-                              href="https://bookings.interconnecta.com/#/3881901000008138068"
-                              target="_blank"
-                              >
-                              <span class="btn-text"
-                                  ><span style="color: #03cd5c">Agenda una sesión de diagnóstico</span></span
-                              >
-                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                              </a>
-                          </div>
+                            <div class="cta-content">
+                                <h3><b>Convierte tus ideas</b> en aplicaciones que impulsan tu negocio</h3>
+                                <p>
+                                Diseña, implementa y escala soluciones low-code con Zoho Creator e
+                                InterConnecta. Juntos construimos aplicaciones que acompañan el crecimiento de
+                                tu operación.
+                                </p>
+                                <a
+                                class="text-btn"
+                                href="https://bookings.interconnecta.com/#/3881901000008138068"
+                                target="_blank"
+                                >
+                                <span class="btn-text"
+                                    ><span style="color: #03cd5c">Agenda una sesión de diagnóstico</span></span
+                                >
+                                <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                </a>
+                            </div>
                           </div>
 
                           <!-- FAQs -->
@@ -839,51 +838,11 @@
                 <!-- menu lateral servicios -->
                   <div class="col-lg-4">
                       <div class="tj-main-sidebar slidebar-stickiy">
-                      <div
-                          class="tj-sidebar-widget service-categories wow fadeInUp"
-                          data-wow-delay=".1s"
-                      >
-                          <h4 class="widget-title">Todos los servicios</h4>
-                          <ul>
-                          <li>
-                              <a href="zoho-crm.html">
-                              Zoho CRM<span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="zoho-analytics.html">
-                              Zoho Analytics<span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="zoho-books.html">
-                              Zoho Books<span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="zoho-desk.html">
-                              Zoho Desk <span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="zoho-inventory.html">
-                              Zoho Inventory
-                              <span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a class="active" href="zoho-creator.html">
-                              Zoho Creator<span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="zoho-one.html">
-                              Zoho One<span class="icon"><i class="tji-arrow-right"></i></span>
-                              </a>
-                          </li>
-                          </ul>
-                      </div>
-
+                        <div style="padding-top: 100px; margin-bottom: 40px;">
+                          <div class="tj-sidebar-widget service-categories wow fadeInUp" data-wow-delay=".1s">
+                            <h4 class="widget-title">TAMI</h4>
+                          </div>  
+                        </div>
                       <div
                           class="tj-sidebar-widget widget-feature-item wow fadeInUp"
                           data-wow-delay=".3s"
@@ -892,20 +851,20 @@
                           <div class="feature-content">
                               <img
                               class="trial-img"
-                              src="../assets/images/logos/zoho-logo-letras-blancas.svg"
+                              src="/assets/images/logos/zoho-logo-letras-blancas.svg"
                               alt="Zoho"
                               />
                               <span class="trial-title">Zoho Free Trial</span>
                               <span class="trial-text">
                               Gestiona tu negocio con más de 45 aplicaciones.
                               </span>
-                              <a class="read-more feature-contact" href="../zoho-free-trials.html">
+                              <a class="read-more feature-contact" href="/zoho-free-trials.html">
                               <span id="text-feature-contact">Empieza tu prueba gratuita</span>
                               </a>
                           </div>
                           <div class="feature-images">
                               <img
-                              src="../assets/images/Banners-repetidos/zoho-free-trial.png"
+                              src="/assets/images/Banners-repetidos/zoho-free-trial.png"
                               alt="Zoho Free Trial"
                               />
                           </div>
@@ -1066,7 +1025,26 @@
       </footer>
       </div>
     </div>
-   
+    
+    <!-- Modal Bootstrap POPUP-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+          <button type="button" class="btn-close btn-close-white ms-auto m-2" data-bs-dismiss="modal"></button>
+
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="videoIframe"
+                src=""
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JS here -->
     <script src="/assets/js/cambiar-lenguaje.js"></script>
@@ -1177,5 +1155,25 @@
         startAutoplay();
       });
     </script>
+
+     <!--POPUP VIDEO-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoModal = document.getElementById('videoModal');
+        const videoIframe = document.getElementById('videoIframe');
+        const videoUrl = "https://www.youtube.com/embed/AgDmk6i89Oc";//Este url se cambia para cambiar el video
+
+        // Cuando se abre el modal
+        videoModal.addEventListener('show.bs.modal', function () {
+          videoIframe.src = videoUrl;
+        });
+
+        // Cuando se cierra el modal
+        videoModal.addEventListener('hidden.bs.modal', function () {
+          videoIframe.src = "";
+        });
+      });
+    </script>
+
   </body>
 </html>
