@@ -2,10 +2,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #card-hover-fondo-verde:hover{
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(245, 245, 245, 0.6); /* sombra white sutil */
-    z-index: 5;
-    border: 2px solid #16A34A;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(245, 245, 245, 0.6);
+  outline: 2px solid #16A34A; /* ✅ No mueve el layout */
+  outline-offset: -2px;
 
 }
 #card-hover-fondo-blanco{
@@ -18,3 +18,5 @@
     border: 2px solid #16A34A;
 
 }
+
+
