@@ -639,9 +639,13 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   border-radius: 16px;
   padding: 10px 24px;
   text-align: left;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.ic-finance-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(3, 205, 92, 0.25); /* sombra verde sutil */
+  z-index: 5;
+}
 
 
 /* Subtítulo y texto */
