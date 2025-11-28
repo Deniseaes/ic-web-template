@@ -16,7 +16,12 @@
     box-shadow: 0 8px 20px rgba(3, 205, 92, 0.25); /* sombra verde sutil */
     z-index: 5;
     border: 2px solid #16A34A;
+    
 
 }
 
+#section-items-reverse-verde{
+    background-color: var(--tj-color-theme-primary);
+   
+}
 
