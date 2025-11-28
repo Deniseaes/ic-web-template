@@ -1,0 +1,20 @@
+#card-hover-fondo-verde{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#card-hover-fondo-verde:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(245, 245, 245, 0.6); /* sombra white sutil */
+    z-index: 5;
+    border: 2px solid #16A34A;
+
+}
+#card-hover-fondo-blanco{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#card-hover-fondo-blanco:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(3, 205, 92, 0.25); /* sombra verde sutil */
+    z-index: 5;
+    border: 2px solid #16A34A;
+
+}
