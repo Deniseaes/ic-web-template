@@ -1,0 +1,128 @@
+:root {
+  --ic-gray-light: #7e8283;
+  --ic-gray-dark: #3c434d;
+  --ic-green: #03cd5c;
+  --ic-green-light: #f0fdf6;
+  --ic-lightgray: #f5f5f5;
+  --ic-blue-light: #0296d6;
+  --ic-blue: #006eb9;
+  --ic-blue-dark: #053050;
+  --fin-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+  --ic-white: #ffffff;
+
+  --ic-radius-sm: 8px;
+  --ic-radius-md: 14px;
+  --ic-radius-lg: 22px;
+
+  --ic-transition: 0.3s ease;
+} 
+ 
+.a360{}
+
+/*Hover img case estudio*/
+   .caso-estudio {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      text-decoration: none;
+     border-radius: 15px
+    }
+
+    .caso-estudio img {
+      display: block;
+      width: 400px; /* cambiá el tamaño si querés */
+      height: auto;
+    }
+
+    /* Overlay (pleno al 50%) + texto, oculto al inicio */
+    .caso-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7); /* “pleno” negro al 50% */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ic-green);
+      font-weight: 600;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* HOVER: aparece el overlay con el texto */
+    .caso-estudio:hover .caso-overlay {
+      opacity: 1;
+    }
+ 
+/* PAGINAAAAAA IC ACADEMY*/
+.servicios{
+  background-color: #f5f5f5;
+  border-radius: var(--ic-radius-lg)
+}
+ .section-gap {
+    padding: 30px 24px 0px 24px !important;
+}
+.accordion-item{
+  background-color: #ffffff;
+  padding: 0px 30px !important;
+} 
+.servicios .active{
+  background-color: #ffffff !important;
+border: 2px solid var(--ic-green) !important; 
+  color: var(--ic-green) !important; 
+}
+.servicios .active button{  
+  color: var(--ic-green) !important; 
+}
+.servicios button{  
+  font-size: 18px !important;
+}
+
+
+.servicios .tj-faq .accordion-item .accordion-body {
+    margin-top: 10px;
+    color: var(--tj-color-text-body);
+    padding: 0px 0px 15px;
+}
+   
+.servicio .pricing-box.active .pricing-btn a {
+    background-color: var(--ic-green) !important;
+}
+#pricing-1 .pricing-header {
+    width: 100% !important ;
+  padding: 0px !important; 
+  
+}
+.servicios h3{
+  font-size: 22px !important; 
+  padding-bottom: 10px !important; 
+}
+.pricing-header  .ic-integral-item {
+  margin: 8px 0 !important;  
+}
+.servicios .tj-primary-btn{
+  background-color: var(--ic-green) !important;
+padding: 5px 20px ;
+  border-radius: 25px; 
+  border: 2px solid var(--ic-green) !important; 
+  margin-bottom: 25px; margin-top: 15px
+}
+.servicios .tj-primary-btn span{ 
+color: #ffffff !important;
+}
+.servicios .ic-integral-item {
+  justify-content: flex-start !important
+}
+.servicios .accordion.pricing-accordion .pricing-box.active .faq-title::after {
+    color: var(--ic-green); 
+    border-color:  var(--ic-green);
+}
+
+.certificados{
+  border: 5px solid var(--ic-green)
+}
