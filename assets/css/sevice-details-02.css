@@ -285,6 +285,7 @@ font-size: 1em !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+  margin-bottom: 15px;
 }
 
 /* ---- TARJETA ---- */

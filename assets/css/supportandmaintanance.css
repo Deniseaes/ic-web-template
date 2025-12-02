@@ -7,7 +7,7 @@
   --ic-blue-light: #0296d6;
   --ic-blue: #006eb9;
   --ic-blue-dark: #053050;
-  --fin-shadow:0 10px 24px rgba(17,24,39,.08);
+  --fin-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
   --ic-white: #ffffff;
 
   --ic-radius-sm: 8px;
@@ -17,8 +17,7 @@
   --ic-transition: 0.3s ease;
 }
 
-
-.ic-socio-container-card-dos{
+.ic-socio-container-card-dos {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -30,7 +29,7 @@
 }
 
 @media (max-width: 900px) {
-  .ic-socio-container-card-dos{
+  .ic-socio-container-card-dos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +37,7 @@
     width: 100%;
     gap: 25px;
     margin-top: 25px;
- }
+  }
 }
 
 /* ---- TARJETA ---- */
@@ -49,8 +48,10 @@
   padding: 24px 20px;
   text-align: center;
 
-  box-shadow: var(--ic-shadow-light);  
-  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: var(--ic-shadow-light);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   cursor: default;
 
   display: flex;
@@ -58,33 +59,29 @@
   align-items: center;
   gap: 12px;
   min-height: 204px;
-
 }
 
 /* ANIMACIÓN HOVER */
 .ic-socio-card-dos:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-}
- 
-.ic-socio-card-dos img {
-    width: 60px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
+.ic-socio-card-dos img {
+  width: 60px;
+}
 
 @media (max-width: 1400px) {
-  .ic-socio-card-dos{
+  .ic-socio-card-dos {
     min-height: 240px;
- }
+  }
 }
 
 @media (max-width: 900px) {
-  .ic-socio-card-dos{
+  .ic-socio-card-dos {
     width: 100%;
- }
+  }
 }
-
-
 
 /* ---- LISTA CUSTOMER PORTAL ---- */
 /* Ítems (columna derecha) */
@@ -152,8 +149,6 @@
   }
 }
 
-
-
 /* ---- LISTA Análisis de Necesidades para tu Compañía  ---- */
 /* Ítems (columna derecha) */
 .lista-analisis-de-necesidades-items {
@@ -220,18 +215,18 @@
   }
 }
 
-.ic-solutions-container-2-extras{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    gap: 25px;
-    margin-top: 20px;
+.ic-solutions-container-2-extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 @media (max-width: 820px) {
-  .ic-solutions-container-2-extras{
+  .ic-solutions-container-2-extras {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,31 +234,210 @@
     width: 100%;
     gap: 25px;
     margin-top: 25px;
- }
+  }
 }
 
-.ic-solutions-container-2-extras .ic-solutions-card{
-    width: 30%;
-    min-height: 150px;
+.ic-solutions-container-2-extras .ic-solutions-card {
+  width: 30%;
+  min-height: 150px;
 }
 
 @media (max-width: 820px) {
-  .ic-solutions-container-2-extras .ic-solutions-card{
+  .ic-solutions-container-2-extras .ic-solutions-card {
     width: 100%;
- }
+  }
 }
 
-.supp-and-maint-ecosistem-section{
+.supp-and-maint-ecosistem-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 24px;
+  border-radius: var(--ic-radius-md);
+  width: 100%;
+  height: 300px;
+  background-color: var(--ic-green);
+  margin-bottom: 60px;
+}
+
+/*Soluciones*/
+.soluciones-support {
+  background: #f5f5f5;
+  padding: 0px;
+  border-radius: var(--ic-radius-lg);
+  margin: 25px auto;
+}
+.soluciones-support h4 {
+  font-size: 18px !important;
+  margin-bottom: 0px !important;
+}
+.soluciones-support h2 {
+  font-size: 34px !important;
+  margin-bottom: 14px !important;
+  color: var(--ic-gray-dark) !important;
+  padding: 0 10px 0 0;
+  margin-top: 30px !important;
+}
+.soluciones-support title {
+  vertical-align: middle !important;
+  height: auto;
+}
+.soluciones-support .choose-icon {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: var(--ic-gray-dark);
+}
+.soluciones-support .choose-icon img {
+  width: 80% !important;
+  height: 80% !important;
+}
+.h8-choose-content-wrapper {
+  margin-inline-start: 20px;
+}
+.soluciones-support .choose-content {
+  display: flex;
+  align-items: center; /* Centra verticalmente el icono y el h4 */
+  gap: 12px; /* opcional */
+}
+.soluciones-support .choose-banner {
+  width: auto;
+  height: auto;
+}
+.h8-choose-content-wrapper {
+  padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+  .soluciones-support .h8-choose-banner img {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .ic-integral-icon {
+    display: none;
+  }
+}
+.soporteman .text-btn {
+  border: solid 1px var(--ic-gray-dark);
+  padding: 4px 15px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+/* =============================== */
+/*   SECCIÓN customer portal   */
+/* =============================== */
+.project-item.h4-project-item .project-img {
+  height: auto !important;
+  border-radius: 10px;
+ 
+}
+.customer .container {
+  background-color: #f5f5f5;
+  border-radius: var(--ic-radius-lg);
+  padding: 0 24px;
+  z-index: -1 !important;
+  overflow: hidden;
+}
+/* el bloque sticky de la izquierda */
+.customer .sec-heading {
+  position: sticky;
+  background: #f5f5f5; /* opcional, para que se vea sólido */
+}
+
+/* las cards de la derecha por debajo */
+.customer .project-item {
+  position: relative;
+  z-index: 1;
+}
+
+.customer h2 {
+  font-size: 34px;
+  margin-bottom: 14px !important;
+  color: var(--ic-gray-dark) !important;
+  padding: 0 10px 0 0;
+  margin-top: 30px !important;
+}
+.customer .tj-sticky-panel img {
+  height: 40px !important;
+  width: 40px;
+}
+.customer .project-img:before {
+  background: #ffffff !important;
+}
+.customer h3 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  width: 100%;
+  margin: 60px 20px !important;
+  max-width: 500px !important;
+  height: 30px !important;
+  line-height: 8em !important;
+  top: 30px;
+}
+.customer .project-content {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.customer .project-item.h4-project-item {
+  padding: 0px !important;
+}
+
+/* Ajustes para <= 1025px */
+@media (max-width: 1025px) {
+  /* 1) Ocultar la imagen del portal (celu) */
+  .ic-portal-section .ic-portal-figure,
+  .ic-portal-section .ic-portal-phone {
+    display: none;
+  }
+
+  /* 2) Estructura general en columna (título, subtítulo, columnas) */
+  .ic-portal-section .ic-portal-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 24px;
-    border-radius: var(--ic-radius-md);
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  /* 3) Las columnas izquierda y derecha pasan a ser contenedores flex
+        para poner los recuadros uno al lado del otro */
+  .ic-portal-section .ic-portal-col-left,
+  .ic-portal-section .ic-portal-col-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     width: 100%;
-    height: 300px;
-    background-color: var(--ic-green);
-    margin-bottom: 60px;
+  }
+
+  /* 4) Cada recuadro ocupa 50% aprox (dos por fila) */
+  .ic-portal-section .ic-portal-item {
+    flex: 1 1 calc(50% - 16px);
+  }
+
+  /* 5) Que los recuadros ocupen el ancho del item con padding */
+  .ic-portal-section .ic-portal-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px; /* si preferís 14px, cámbialo acá :) */
+  }
+
+  /* 6) Quitar flechas, líneas y círculos (según cómo estén hechos) */
+  .ic-portal-section .ic-portal-card::after,
+  .ic-portal-section .ic-portal-card::before,
+  .ic-portal-section .ic-portal-item::before,
+  .ic-portal-section .ic-portal-item::after,
+  .ic-portal-section .ic-portal-col-left::before,
+  .ic-portal-section .ic-portal-col-right::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+  }
+}
+ .h7-project-wrapper {
+    max-width: 870px;
+    margin-inline-start: auto;
+    padding: 110px 0 0 0;
+   
 }
