@@ -1,0 +1,38 @@
+#button-thanks{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#title-thanks-section{
+    color: var(--tj-color-theme-primary);
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#title-thanks-banner-section{
+    font-size: 40px;
+    font-weight: 600;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#container-banner-thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 59px;
+    padding-right: 32px;
+    margin-bottom: 5px;
+}
+#section-thanks-texts{
+    background-color: transparent;
+    border-radius: 20px;
+    margin-left: 45px;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 140px;
+}
