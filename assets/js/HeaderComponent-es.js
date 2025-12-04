@@ -240,7 +240,7 @@ class HeaderComponent extends HTMLElement {
                       </ul>
                     </li>
                     <li class="has-dropdown">             
-                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> Productos Potenciados</a>               
+                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> IA Soluciones</a>               
                       <ul class="sub-menu header__mega-menu mega-menu mega-menu-pages">
                         <li>
                           <div class="mega-menu-wrapper">
