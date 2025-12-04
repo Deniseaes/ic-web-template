@@ -2,11 +2,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#title-thanks-section{
-    color: var(--tj-color-theme-primary);
-    font-size: 28px;
+#text-thanks-section{
+    font-size: 25px;
     width: 100%;
     margin-bottom: 15px;
+    text-align: center;
 }
 #title-thanks-banner-section{
     font-size: 40px;
@@ -16,7 +16,7 @@
     align-items: center;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 #container-banner-thanks{
     display: flex;
