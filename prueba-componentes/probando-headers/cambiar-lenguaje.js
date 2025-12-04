@@ -1,5 +1,4 @@
 
-/*
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. CÁLCULO DE DATOS (Se hace una sola vez) ---
