@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
     // 1. ESTRUCTURA HTML
     // ==========================================
     this.innerHTML = `
-    <!-- back to top start -->
+        <!-- back to top start -->
     <div id="tj-back-to-top"><span id="tj-back-to-top-percentage"></span></div>
     <!-- back to top end -->
 
@@ -81,7 +81,7 @@ class HeaderComponent extends HTMLElement {
     <!-- end: Offcanvas Menu -->
 
     <!-- start: Hamburger Menu -->
-    <div class="hamburger-area d-xl-none">
+    <div class="hamburger-area d-lg-none">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
         <div class="hamburger_inner">
@@ -89,7 +89,7 @@ class HeaderComponent extends HTMLElement {
             class="hamburger_top d-flex align-items-center justify-content-between"
           >
             <div class="hamburger_logo">
-              <a href="/index.html" class="mobile_logo">
+              <a href="/ES/index.html" class="mobile_logo">
                 <img id="logo-interconnecta-ic-header-mobile" src="/assets/images/logo-inter.svg" alt="Logo" />
               </a>
             </div>
@@ -114,13 +114,12 @@ class HeaderComponent extends HTMLElement {
                 </a>
               </div>  
               <div class="language-select-container">
-                
               </div>  
             </div>
           </div>
         </div>
         <div class="hamburger-socials">
-          <h5 class="hamburger-title">Follow Us</h5>
+          <h5 class="hamburger-title">Síguenos</h5>
           <div class="social-links style-3">
             <ul>
               <li>
@@ -154,7 +153,7 @@ class HeaderComponent extends HTMLElement {
     <header class="header-area header-1 header-absolute section-gap-x">
       <div class="header-global-use-zoho">
           <span id="header-global-use-zoho-link" style="color:#ffffff;">
-            Register us as your <strong>ZOHO</strong> partner using the code <strong>INTCUSA</strong> | Learn how to do it <strong><u><a href="https://store.zoho.com/html/store/tagyourpartner.html" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">here</a></u></strong>
+            Regístranos como tu socio <strong>ZOHO</strong> utilizando el código <strong>INTCUSA</strong> | Aprende cómo hacerlo <strong><u><a href="https://store.zoho.com/html/store/tagyourpartner.html" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">aquí</a></u></strong>
           </span>
       </div>
       <div class="container-fluid">
@@ -163,226 +162,165 @@ class HeaderComponent extends HTMLElement {
             <div class="header-wrapper">
               <!-- site logo -->
               <div class="site_logo">
-                <a class="logo" href="/index.html"
+                <a class="logo" href="/ES/"
                   ><img id="logo-interconnecta-ic-header" src="/assets/images/logo-inter.svg" alt=""
                 /></a>
               </div>
 
               <!-- navigation -->
-              <div class="menu-area d-none d-xl-inline-flex align-items-center">
+              <div class="menu-area d-none d-lg-inline-flex align-items-center">
                 <nav id="mobile-menu" class="mainmenu">
                   <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/ES/">Inicio</a></li>
                     <li class="has-dropdown">
-                      <a >About Us</a>
+                      <a>Nosotros</a>
                       <ul class="sub-menu">
-                        <li><a href="/about-us/">Who we are</a></li>
-                        <li><a href="/careers/">Careers</a></li>
+                        <li><a href="/about-us/ES/">Quiénes Somos</a></li>
+                        <li><a href="/careers/ES/">Carreras</a></li>
                         <li>
-                          <a href="/partners-certifications/">Partners & Certifications</a>
+                          <a href="/partners-certifications/ES/">Socios & Certificaciones</a>
                         </li>
-                        <li><a href="/sustainability-esg/">Sustainability & ESG</a></li>
+                        <li><a href="/sustainability-esg/ES/">Sostenibilidad & ESG</a></li>
                       </ul>
                     </li>
                     <li class="has-dropdown">                    
-                      <a id="header-service-item"><img id="img-zoho-header-service" src="/assets/images/hero/logo-zoho.svg" alt=""> Services</a>                
+                      <a id="header-service-item"><img id="img-zoho-header-service" src="/assets/images/hero/logo-zoho.svg" alt=""> Servicios</a>                
                       <ul
                         class="sub-menu header__mega-menu mega-menu mega-menu-pages"
                       >
                         <li>
                           <div class="mega-menu-wrapper">
+                                <div class="mega-menu-pages-single">
+                                <div class="mega-menu-pages-single-inner">
+                                  <h6 class="mega-menu-title">Soluciones para la Industria</h6>
+                                  <div class="mega-menu-list">
+                                    <a href="/zoho-services/zoho-crm/ES/">Servicios Empresariales</a>
+                                    <a href="/zoho-services/zoho-crm/ES/">Servicios Financieros</a>
+                                    <a href="#">Manufactura</a>
+                                    <a href="#">Energía y Renovables</a>
+                                    <a href="#">Empresas de Tecnología</a>
+                                    <a href="#">Cuidado de la Salud</a>
+                                    <a href="#">Distribución & Logística</a>
+                                    <a href="#">Gestión de Inventario</a>
+                                    <a href="#">Educación & Capacitación</a>
+                                  </div>
+                                </div>
+                              </div>                            
                               <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">Industry Solutions</h6>
-                                <div class="mega-menu-list">
-                                  <a href="/zoho-services/zoho-crm/index.html">Business Services</a>
-                                  <a href="/zoho-services/zoho-crm/index.html">Financial Services</a>
-                                  <a href="#">Manufacturing</a>
-                                  <a href="#">Energy & Renewables</a>
-                                  <a href="#">Technology Companies</a>
-                                  <a href="#">Healthcare</a>
-                                  <a href="#">Distribution & Logistics</a>
-                                  <a href="#">Inventory Management</a>
-                                  <a href="#">Education & Training</a>
+                                <div class="mega-menu-pages-single-inner">
+                                  <h6 class="mega-menu-title">Servicios del Ecosistema Zoho</h6>
+                                  <div class="mega-menu-list">
+                                    <a href="/zoho-services/solutionsdesign/ES/">Diseño de Soluciones</a>
+                                    <a href="/zoho-services/supportandmaintenance/ES/">Soporte & Mantenimiento</a>
+                                    <a href="#">Aplicaciones e Integraciones para Clientes</a>
+                                    <a href="/zoho-services/zoho-process-automation/ES/">Automatización de Procesos</a>                        
+                                   <a id="header-academy-item" href="/ic-academy/ES/"><img id="img-academy-header" src="/assets/images/logoFavicon-interconnecta.png" alt=""> <Strong>Academy & Training</Strong></a>
+                                  </div>
                                 </div>
                               </div>
-                            </div>                            
-                            <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">Zoho Ecosystem Services</h6>
-                                <div class="mega-menu-list">
-                                  <a href="/zoho-services/solutionsdesign/">Solution Design</a>
-                                  <a href="/zoho-services/supportandmaintenance/">Support & Maintenance</a>
-                                  <a href="#">Customer Apps & Integrations</a>
-                                  <a href="/zoho-services/zoho-process-automation/">Process Automation</a>                        
-                                 <a id="header-academy-item" href="/ic-academy/"><img id="img-academy-header" src="/assets/images/logoFavicon-interconnecta.png" alt=""> <Strong>Academy & Training</Strong></a>
+                              <div class="mega-menu-pages-single">
+                                <div class="mega-menu-pages-single-inner">
+                                  <h6 class="mega-menu-title">ZOHO Business Apps</h6>
+                                  <div class="mega-menu-list">
+                                    <a href="/zoho-services/zoho-one/ES/"><strong>Zoho One (ERP) &#8226 </strong>Plataforma empresarial unificada</a>
+                                    <a href="/zoho-services/zoho-crm/ES/"><strong>Zoho CRM &#8226 </strong>Gestión de ventas & clientes</a>
+                                    <a href="/zoho-services/zoho-analytics/ES/"><strong>Zoho Analytics &#8226 </strong>Informes & análisis de datos</a>
+                                    <a href="/zoho-services/zoho-books/ES/"><strong>Zoho Books &#8226 </strong>Finanzas & Contabilidad</a>
+                                    <a href="/zoho-services/zoho-books-peru/ES/"><strong>Zoho Books Perú &#8226 </strong> Listo para SUNAT</a>
+                                    <a href="/zoho-services/zoho-desk/ES/"><strong>Zoho Desk &#8226 </strong>Soporte al cliente</a>
+                                    <a href="/zoho-services/zoho-inventory/ES/"><strong>Zoho Inventory &#8226 </strong>Control de inventario</a>
+                                    <a href="/zoho-services/zoho-creator/ES/"><strong>Zoho Creator &#8226 </strong>Aplicaciones personalizadas</a>
+                                  </div>
                                 </div>
-                              </div>
+                              </div>  
+                              <div></div> 
+                                                                        
                             </div>
-                            <div class="mega-menu-pages-single">
-                              <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">ZOHO Business Apps</h6>
-                                <div class="mega-menu-list">
-                                  <a href="/zoho-services/zoho-one/"><strong>Zoho One (ERP) &#8226 </strong>Unified business platform</a>
-                                  <a href="/zoho-services/zoho-crm/"><strong>Zoho CRM &#8226 </strong>Sales & customer management</a>
-                                  <a href="/zoho-services/zoho-analytics/"><strong>Zoho Analytics &#8226 </strong>Data insights & reporting</a>
-                                  <a href="/zoho-services/zoho-books/"><strong>Zoho Books &#8226 </strong>Finance & Accounting</a>
-                                  <!--<a href="/zoho-services/zoho-books-peru/"><strong>Zoho Books Peru &#8226 </strong>SUNAT Ready</a>-->
-                                  <a href="/zoho-services/zoho-desk/"><strong>Zoho Desk &#8226 </strong>Customer support</a>
-                                  <a href="/zoho-services/zoho-inventory/"><strong>Zoho Inventory &#8226 </strong>Inventory control</a>
-                                  <a href="/zoho-services/zoho-creator/"><strong>Zoho Creator &#8226 </strong>Custom apps</a>
-                                </div>
-                              </div>
-                            </div>  
-                            <div></div> 
-                                                                      
-                          </div>
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown">             
-                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> Powered Products</a>               
-                      <ul
-                        class="sub-menu header__mega-menu mega-menu mega-menu-pages"
-                      >
+                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> Productos Potenciados</a>               
+                      <ul class="sub-menu header__mega-menu mega-menu mega-menu-pages">
                         <li>
                           <div class="mega-menu-wrapper">
-                            <div class="mega-menu-pages-single">                              
+                            <div class="mega-menu-pages-single">
                                <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">AI - Automation</h6>
+                                <h6 class="mega-menu-title">IA - Automatización</h6>
                                 <div class="mega-menu-list">
-                                  <a class="link-menu-header" href="/ai-tools/">AI Tools</a>
-                                  <a class="link-menu-header" href="#">IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#">Commission tools <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#"> InterRetail <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#">Sales portal <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#">Dispatch App <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#">Checking Apps <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="#">InterBot <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="/ai-tools/ES/">AI Tools</a>
+                                    <a class="link-menu-header" href="#">IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">Herramientas de comisiones <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">InterRetail <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">Portal de ventas <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">App de despacho <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">Apps de verificación <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                    <a class="link-menu-header" href="#">InterBot <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
                                 </div>
                               </div>
                             </div>
                             <div class="mega-menu-pages-single">
                               <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">AI Services</h6>
+                                <h6 class="mega-menu-title">IA Servicios</h6>
                                 <div class="mega-menu-list">
-                                  <a href="/ai-matrix/">Intelligent Decision Engine</a>
-                                  <a href="/data-iq/">Advanced Analytics & Predictive BI</a>
-                                  <a href="/ic-academy-360/"><img id="img-ai-header-products" src="/assets/images/logoFavicon-interconnecta.png" alt=""> Academy 360º</a>
-                                  <a href="https://www.interconnecta.ai/mcp/EN/">AI Insights Blog</a>
+                                  <a href="/ai-matrix/ES/">Motor de Decisiones Inteligente</a>
+                                  <a href="/data-iq/ES/">Analítica Avanzada y BI Predictivo</a>
+                                  <a href="/ic-academy-360/ES/"><img id="img-ai-header-products" src="/assets/images/logoFavicon-interconnecta.png" alt=""> Academy 360º</a>
+                                  <a href="https://www.interconnecta.ai/mcp/ES/">AI Insights Blog</a>
                                 </div>
                               </div>
                             </div>
                             <div class="mega-menu-pages-single">
                               <div class="mega-menu-pages-single-inner">
-                                <h6 class="mega-menu-title">AI - Agents</h6>
+                                <h6 class="mega-menu-title">IA - Agentes</h6>
                                 <div class="mega-menu-list">
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/mia/EN/"
-                                    >Sales & Marketing <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                  </a>
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/manny/EN/">Project Management <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/caly/EN/">Finance & Accounting <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/ari/EN/"
-                                    >Human Resources Training <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                  </a>
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/devon/EN/"
-                                    >Development Code <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/tami/EN/">Bussines Intelligence <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/mia/ES/">Agente de Ventas & Marketing <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/manny/ES/">Agente de Gestión de Proyectos <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/caly/ES/">Agente de Finanzas & Contabilidad <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/ari/ES/">Agente de RRHH & Capacitación <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/devon/ES/">Agente de Desarrollo de Software <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://www.interconnecta.ai/agent/tami/ES/">Agente de Inteligencia de Negocios <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
                                 </div>
                               </div>
-                            </div>
-                            <div></div> 
-                                              
+                            </div>                                                    
                           </div>
                         </li>
                       </ul>
                     </li>  
-                    
-                   <!-- <li><a href="https://appshub.interconnecta.com/">Customer Apps Hub</a></li>-->
-
+                    <!--<li><a href="https://appshub.interconnecta.com/">Customer Apps Hub</a></li>-->     
                     <li class="has-dropdown">
-                      <a >Insights</a>
+                      <a>Insights</a>
                       <ul class="sub-menu">
-                        <li><a href="https://interconnecta.com/insights">Blog &#8226 Zoho & Business</a></li>
-                        <li><a href="https://blog.interconnecta.ai">Blog &#8226 AI Solutions</a></li>
-                        <li><a href="/insights/case-study/">Case Studies</a></li>
-                        <li>
-                          <a href="/zoho-free-trail/"
-                            >Free Zoho Trial</a
-                          >
-                        </li>
+                        <li><a href="https://interconnecta.com/es/insights">Blog &#8226 Zoho & Negocios</a></li>
+                        <li><a href="https://blog.interconnecta.ai">Blog &#8226 Soluciones con IA</a></li>
+                        <li><a href="/insights/case-study/ES">Casos de Éxito</a></li>
+                        <li><a href="/zoho-free-trail/ES/">Prueba Zoho Gratuita</a></li>
                       </ul>
                     </li>
-                    <li><a href="/contact/index.html">Contact</a></li>     
+                    <li><a href="/contact/ES/">Contacto</a></li>     
                   </ul>
                 </nav>
               </div>
 
-
-              
               <!-- header right info -->
-            
               <div class="menu-area d-none d-lg-inline-flex align-items-center">
-              <nav class="mainmenu">
-                <ul>
-                  <li>
+                <nav class="mainmenu">
+                  <ul>
                     <div class="header-button">
-                      <a class="tj-primary-btn-modificado" href="contact.html">
+                      <a class="tj-primary-btn-modificado" href="#">
                         <span class="btn-text"><span>Login</span></span>
                         <span class="btn-icon"
                           ><i class="tji-arrow-right-long"></i
                         ></span>
                       </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="language-select-container"></div>
-                  </li>
+                    </div>  
+                    <div class="language-select-container">
+                    </div>  
                   </ul>
-              </nav>
-
-                <!--
-                <div class="header-search">
-                  <button class="search">
-                    <i class="tji-search"></i>
-                  </button>
-                  <button type="button" class="search_close_btn">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 1L1 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M1 1L17 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="header-button">
-                  <a class="tj-primary-btn" href="contact.html">
-                    <span class="btn-text"><span>Let’s Talk</span></span>
-                    <span class="btn-icon"
-                      ><i class="tji-arrow-right-long"></i
-                    ></span>
-                  </a>
-                </div>   
-              -->     
+                </nav>
               </div>
-              <!-- menu bar -->
-              <div class="menu_bar mobile_menu_bar d-xl-none">
+
+              <div class="menu_bar mobile_menu_bar d-lg-none">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -405,7 +343,7 @@ class HeaderComponent extends HTMLElement {
                         <input
                           class="search-form-input"
                           type="text"
-                          placeholder="Type Words and Hit Enter"
+                          placeholder="Escribe y presiona Enter"
                           required
                         />
                         <button type="submit">
@@ -831,7 +769,7 @@ class HeaderComponent extends HTMLElement {
 
 }
 
-customElements.define("componente-header", HeaderComponent);
+customElements.define("componente-header-es", HeaderComponent);
 /*
 
 ### Requisitos Finales (¡Muy Importante!)
