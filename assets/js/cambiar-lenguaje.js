@@ -1,4 +1,5 @@
 
+/*
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. CÁLCULO DE DATOS (Se hace una sola vez) ---
@@ -149,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 */
-  
+
+
   /*
   document.addEventListener('DOMContentLoaded', () => {
         const originalSelect = document.getElementById('language-select');

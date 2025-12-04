@@ -3,9 +3,9 @@
 ****************************************************
 Preloader js
 Data js
-Sticky Nav Js
-Mobile Menu Js
-Search Bar Js
+Sticky Nav Js  <-- DESACTIVADO (Ahora en HeaderComponent)
+Mobile Menu Js <-- DESACTIVADO (Ahora en HeaderComponent)
+Search Bar Js  <-- DESACTIVADO (Ahora en HeaderComponent)
 Rating Js
 Client-slider Js
 Marquee slider Js
@@ -19,7 +19,7 @@ Service Slider Js
 Blog Slider Js
 Accordion Js
 Project Hover active
-Backtotop Js
+Backtotop Js   <-- DESACTIVADO (Ahora en HeaderComponent)
 Odometer js
 VenoBox Js
 Progressbar js
@@ -89,7 +89,8 @@ Progressbar js
 	});
 
 	////////////////////////////////////////////////////
-	// Sticky Nav Js
+	// Sticky Nav Js -> MOVIDO A HeaderComponent.js
+    /*
 	var lastScrollTop = "";
 	function stickyMenu($targetMenu, $toggleClass) {
 		var st = $(window).scrollTop();
@@ -111,19 +112,21 @@ Progressbar js
 			stickyMenu($(".header-sticky"), "sticky");
 		}
 	});
+    */
 
 	////////////////////////////////////////////////////
-	// Mobile Menu Js
+	// Mobile Menu Js -> MOVIDO A HeaderComponent.js
+    /*
 	$(".mobile_menu_bar").on("click", function () {
 		$(this).toggleClass("on");
 	});
 
-	// Mobile Menu Js
-	$("#mobile-menu").meanmenu({
-		meanMenuContainer: ".mobile_menu",
-		meanScreenWidth: "991",
-		meanExpand: ['<i class="tji-arrow-down"></i>'],
-	});
+	// Mobile Menu Js - MeanMenu ya no es necesario
+	// $("#mobile-menu").meanmenu({
+	// 	meanMenuContainer: ".mobile_menu",
+	// 	meanScreenWidth: "991",
+	// 	meanExpand: ['<i class="tji-arrow-down"></i>'],
+	// });
 
 	// Hamburger Menu Js
 	$(".mobile_menu_bar").on("click", function () {
@@ -150,9 +153,11 @@ Progressbar js
 		$(".body-overlay").removeClass("opened");
 		$("body").toggleClass("overflow-hidden");
 	});
+    */
 
 	////////////////////////////////////////////////////
-	// Search Bar Js
+	// Search Bar Js -> MOVIDO A HeaderComponent.js
+    /*
 	$(".header-search .search").on("click", function () {
 		$(this).addClass("search-hide");
 		$(".search_close_btn").addClass("close-show");
@@ -165,6 +170,7 @@ Progressbar js
 		$(".search-popup-overlay").removeClass("search-popup-overlay-open");
 		$(".search_close_btn").removeClass("close-show");
 	});
+    */
 
 	////////////////////////////////////////////////////
 	// Rating Js
@@ -953,7 +959,8 @@ Progressbar js
 	}
 
 	////////////////////////////////////////////////////
-	// Backtotop Js
+	// Backtotop Js -> MOVIDO A HeaderComponent.js
+    /*
 	function tjBaackTopController() {
 		const scrollElementWrap = $("#tj-back-to-top");
 		if (scrollElementWrap?.length) {
@@ -1000,6 +1007,7 @@ Progressbar js
 	}
 
 	tjBaackTopController();
+    */
 
 	////////////////////////////////////////////////////
 	// Odometer js
