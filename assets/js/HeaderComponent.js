@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
     // 1. ESTRUCTURA HTML
     // ==========================================
     this.innerHTML = `
-    <!-- back to top start -->
+     <!-- back to top start -->
     <div id="tj-back-to-top"><span id="tj-back-to-top-percentage"></span></div>
     <!-- back to top end -->
 
@@ -241,7 +241,7 @@ class HeaderComponent extends HTMLElement {
                       </ul>
                     </li>
                     <li class="has-dropdown">             
-                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> AI Solutions</a>               
+                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt="">AI Solutions</a>               
                       <ul
                         class="sub-menu header__mega-menu mega-menu mega-menu-pages"
                       >
