@@ -692,7 +692,7 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/analitycs.jpg");
+  background-image: url("../../assets/images/carrusel-home/analitycs.webp");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
@@ -768,7 +768,7 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/hermosa-planta-de-energia-alternativa-con-paneles-solares.jpg");
+  background-image: linear-gradient(rgba(2, 45, 80, 0.8), rgba(2, 45, 80, 0.8)), url("../../assets/images/carrusel-home/hermosa-planta-de-energia-alternativa-con-paneles-solares.webp");
   background-repeat: no-repeat; 
   background-size: cover;      
   background-position: center;  
