@@ -252,7 +252,7 @@ class HeaderComponent extends HTMLElement {
                                 <h6 class="mega-menu-title">AI - Automation</h6>
                                 <div class="mega-menu-list">
                                   <a class="link-menu-header" href="/ai-tools/">AI Tools</a>
-                                  <a class="link-menu-header" href="#">IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
+                                  <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002">IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
                                   <a class="link-menu-header" href="#">Commission tools <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
                                   <a class="link-menu-header" href="#"> InterRetail <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
                                   <a class="link-menu-header" href="#">Sales portal <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
