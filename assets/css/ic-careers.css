@@ -20,6 +20,15 @@
     margin-bottom: 100px;
 }
 
+@media (max-width: 980px) {
+    #title-careers-banner-section{
+         width: 80%;
+         font-size: 32px;
+         color: white;
+    }
+}
+
+
 /*TEXTO*/
 /*FEATURED ZOHO APPS*/
 #section-carrers-texts{
@@ -35,6 +44,13 @@
     font-size: 32px;
     width: 90%;
 }
+
+@media (max-width: 980px) {
+    #title-careers-section{
+         font-size: 24px;
+    }
+}
+
 
 #text-careers-section{
     font-size: 20px;

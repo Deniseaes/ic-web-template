@@ -25,3 +25,11 @@
    
 }
 
+
+@media (max-width: 1000px) {
+    .menu_lateral_escoder_mobile{
+        display: none;
+    }
+}
+
+

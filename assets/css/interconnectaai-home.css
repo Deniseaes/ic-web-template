@@ -189,6 +189,12 @@
   width: 35%;
 }
 
+@media (max-width: 1200px){
+  #tag-section-title-zoho {
+    min-width: 200px;
+    width: auto;
+  }
+}
 
 
 
@@ -283,7 +289,6 @@
   margin-right: 20px;
   width: 80px;
   font-size: 12px;
-  background-color: #ecf0f0;
 }
 
 #language-select {
@@ -334,12 +339,13 @@
   color: #ecf0f0;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1200px) {
   .language-select-container {
     position: relative;
     display: inline-block;
     z-index: 3000;
     margin-right: 40px;
+    margin-top: 40px;
   }
 }
 
@@ -364,6 +370,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+
+
 #h6-client-title-wrapper-zoho-ic {
   padding-top: 0;
   justify-content: center;
