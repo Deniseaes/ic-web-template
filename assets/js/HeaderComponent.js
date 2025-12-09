@@ -119,33 +119,6 @@ class HeaderComponent extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="hamburger-socials">
-          <h5 class="hamburger-title">Follow Us</h5>
-          <div class="social-links style-3">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://x.com/" target="_blank"
-                  ><i class="fa-brands fa-x-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
     <!-- end: Hamburger Menu -->
@@ -340,7 +313,7 @@ class HeaderComponent extends HTMLElement {
               
               <!-- header right info -->
             
-              <div class="menu-area d-none d-lg-inline-flex align-items-center">
+              <div class="menu-area d-none d-xl-inline-flex align-items-center">
               <nav class="mainmenu">
                 <ul>
                   <li>
@@ -683,17 +656,19 @@ class HeaderComponent extends HTMLElement {
     })(jQuery);
   }
 
+  // --- EJECUCIÓN (AQUÍ ESTÁ LA CLAVE DEL ARREGLO) ---
   initMeanMenuExecution() {
-    // Aquí es donde configuramos el plugin para tu estructura específica
-    const $mobileMenu = jQuery(this.querySelector("#mobile-menu"));
+    const $mobileMenu = jQuery(this).find("#mobile-menu");
+    const $mobileContainer = jQuery(this).find(".mobile_menu");
     
-    if ($mobileMenu.length) {
+    if ($mobileMenu.length && $mobileContainer.length) {
         $mobileMenu.meanmenu({
-            meanMenuContainer: ".mobile_menu", // IMPORTANTE: Aquí decimos dónde poner el menú clonado
-            meanScreenWidth: "991",          // Tu breakpoint
-            meanExpand: ['<i class="tji-arrow-down"></i>'], // Tu icono de flecha
+            meanMenuContainer: $mobileContainer,
+            meanScreenWidth: "1199",             // <--- ¡AQUÍ ESTÁ EL CAMBIO! (Coincide con d-xl-none)
+            meanExpand: ['<i class="tji-arrow-down"></i>'],
+            meanContract: ['<i class="tji-arrow-up"></i>'],
         });
-        console.log("MeanMenu (Interno) Activado.");
+        console.log("MeanMenu activado con breakpoint 1199px");
     }
   }
 

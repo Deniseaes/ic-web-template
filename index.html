@@ -484,10 +484,10 @@
               <div id="content-hero-zoho" class="col-12">
                 <div id="h6-client-title-wrapper-logoZoho" class="h6-client-title-wrapper">
                   <img  id="logo-zoho-client-title" class="h6-client-title-wrapper" src="/assets/images/hero/logo-zoho.svg" alt="Zoho">
-                <div id="tag-section-title-zoho" class="h6-client-title-wrapper">
-                  <img id="logo-ic-client-title" src="/assets/images/logoFavicon-interconnecta.png" alt="IC">
-                  <h6 id="ic-client-title" class="h6-client-title">ALL YOUR OPERATIONS CONNECTED WITH ZOHO</h6>
-                </div>
+                  <div id="tag-section-title-zoho" class="h6-client-title-wrapper">
+                    <img id="logo-ic-client-title" src="/assets/images/logoFavicon-interconnecta.png" alt="IC">
+                    <h6 id="ic-client-title" class="h6-client-title">ALL YOUR OPERATIONS CONNECTED WITH ZOHO</h6>
+                  </div>
                 </div>
               </div>
                <div class="col-12">
@@ -1701,37 +1701,7 @@
         cargarPosts();
       })();
     </script>
-  <!--    <script>
-        async function cargarPosts() {
-          const response = await fetch('https://blog.interconnecta.ai/wp-json/wp/v2/posts?per_page=3&_embed');
-          const posts = await response.json();
-
-          console.log(`el post es: ${posts._embedded}`);
-          
-
-          posts.forEach(async (post, i) => {
-            const index = i + 1; // 1, 2, 3
-
-            const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'img/default.jpg';
-            const title = post.title.rendered;
-            const excerpt = post.excerpt.rendered.replace(/<[^>]+>/g, ''); // limpia HTML
-            const link = post.link;
-
-            // Reemplaza los elementos existentes
-            console.log(`esta es la imagen para el ${index}: ${image}`);
-            
-
-            document.getElementById(`post-img-${index}`).src = image;
-            document.getElementById(`post-img-${index}`).alt = title;
-            document.getElementById(`post-title-${index}`).innerHTML = `<a href="${link}" target="_blank">${title}</a>`;
-            document.getElementById(`post-excerpt-${index}`).textContent = excerpt;
-          });
-        }
-
-        cargarPosts();
-    </script>
-
-    -->
+    
 
     <script>
         // JavaScript Vainilla (Modificado)
