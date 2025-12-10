@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 94%;
-    height: 600px;
+    height: auto;
 }
 
 .bloque-principal-about-us-container-img{
@@ -44,6 +44,56 @@
     text-align: start;
 }
 
+@media (max-width: 980px) {
+  .container-bloque-principal-about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 94%;
+        height: auto;
+    }
+    .bloque-principal-about-us-container-img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-principal-about-us-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .bloque-principal-about-us-container-contenido{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .bloque-principal-about-us-contenido-title{
+        font-size: 24px;
+        font-weight: 700;
+        color:#111827;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    
+    .bloque-principal-about-us-contenido-parrafo{
+        font-size: 14px;
+        font-weight: 500;
+        color:#6b7280;
+        text-align: start;
+        width: 80%;
+    }
+}
+
 .title-areas-especializacion{
     font-size: 34px;
     font-weight: 700;
@@ -60,4 +110,62 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
+}
+
+
+@media (max-width: 980px) {
+
+    .title-areas-especializacion{
+        font-size: 24px;
+        font-weight: 700;
+        color:#111827;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+}
+
+.container-cards-innovacion-global{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-cards-innovacion-global-dos-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+    height: auto;
+    margin-top:40px ;
+}
+
+@media (max-width: 980px) {
+
+   .container-cards-innovacion-global-dos-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container-verticales-de-negocio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

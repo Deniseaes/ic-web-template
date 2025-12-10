@@ -1266,7 +1266,8 @@ soluciones*/
   }
 
   .ic-trust-tags {
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .ic-trust-logos {
