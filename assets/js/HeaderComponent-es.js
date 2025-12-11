@@ -17,7 +17,7 @@ class HeaderComponent extends HTMLElement {
     <!-- end: Search Popup -->
 
     <!-- start: Offcanvas Menu -->
-    <div class="tj-offcanvas-area d-none d-lg-block">
+    <div class="tj-offcanvas-area d-none d-xl-block">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
         <div class="hamburger_inner">
@@ -62,26 +62,12 @@ class HeaderComponent extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="hamburger-socials">
-          <h5 class="hamburger-title">Follow Us</h5>
-          <div class="social-links style-3">
-            <ul>
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
     <!-- end: Offcanvas Menu -->
 
     <!-- start: Hamburger Menu -->
-    <div class="hamburger-area d-lg-none">
+    <div class="hamburger-area d-xl-none">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
         <div class="hamburger_inner">
@@ -168,7 +154,7 @@ class HeaderComponent extends HTMLElement {
               </div>
 
               <!-- navigation -->
-              <div class="menu-area d-none d-lg-inline-flex align-items-center">
+              <div class="menu-area d-none d-xl-inline-flex align-items-center">
                 <nav id="mobile-menu" class="mainmenu">
                   <ul>
                     <li><a href="/ES/">Inicio</a></li>
@@ -249,8 +235,12 @@ class HeaderComponent extends HTMLElement {
                                 <h6 class="mega-menu-title">IA - Automatización</h6>
                                 <div class="mega-menu-list">
                                     <a class="link-menu-header" href="/ai-tools/ES/">AI Tools</a>
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002">IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>
-                                                                          Herramientas de comisiones <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002">
+                                      IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>                                     
+                                    </a>
+
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/commission-tool/231250000041733021">
+                                      Herramientas de comisiones <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
                                     <a class="link-menu-header" href="https://appshub.interconnecta.com/products/inter-retail/231250000042677009">
@@ -319,7 +309,7 @@ class HeaderComponent extends HTMLElement {
               </div>
 
               <!-- header right info -->
-              <div class="menu-area d-none d-lg-inline-flex align-items-center">
+              <div class="menu-area d-none d-xl-inline-flex align-items-center">
                 <nav class="mainmenu">
                   <ul>
                     <div class="header-button">
@@ -336,7 +326,7 @@ class HeaderComponent extends HTMLElement {
                 </nav>
               </div>
 
-              <div class="menu_bar mobile_menu_bar d-lg-none">
+              <div class="menu_bar mobile_menu_bar d-xl-none">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -619,17 +609,19 @@ class HeaderComponent extends HTMLElement {
     })(jQuery);
   }
 
+   // --- EJECUCIÓN (AQUÍ ESTÁ LA CLAVE DEL ARREGLO) ---
   initMeanMenuExecution() {
-    // Aquí es donde configuramos el plugin para tu estructura específica
-    const $mobileMenu = jQuery(this.querySelector("#mobile-menu"));
+    const $mobileMenu = jQuery(this).find("#mobile-menu");
+    const $mobileContainer = jQuery(this).find(".mobile_menu");
     
-    if ($mobileMenu.length) {
+    if ($mobileMenu.length && $mobileContainer.length) {
         $mobileMenu.meanmenu({
-            meanMenuContainer: ".mobile_menu", // IMPORTANTE: Aquí decimos dónde poner el menú clonado
-            meanScreenWidth: "991",          // Tu breakpoint
-            meanExpand: ['<i class="tji-arrow-down"></i>'], // Tu icono de flecha
+            meanMenuContainer: $mobileContainer,
+            meanScreenWidth: "1199",             // <--- ¡AQUÍ ESTÁ EL CAMBIO! (Coincide con d-xl-none)
+            meanExpand: ['<i class="tji-arrow-down"></i>'],
+            meanContract: ['<i class="tji-arrow-up"></i>'],
         });
-        console.log("MeanMenu (Interno) Activado.");
+        console.log("MeanMenu activado con breakpoint 1199px");
     }
   }
 

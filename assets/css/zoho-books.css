@@ -310,22 +310,6 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   color: var(--books-dark);
 }
 
-/* Responsive */
-@media (max-width: 880px) {
-  .ic-books-wrap {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .ic-books-list {
-    grid-template-columns: 1fr;
-  }
-
-  .ic-books-image {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
 
 /* ============================= */
 /*  Sección video Zoho Books     */
@@ -768,16 +752,6 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   line-height: 1;
 }
 
-/* ======= Responsive ======= */
-@media (max-width: 980px) {
-  .ic-books-wrap {
-    grid-template-columns: 1fr; /* apilar */
-  }
-  .ic-books-figure {
-    max-width: 500px;
-    margin: 0 auto 20px;
-  }
-}
 /* ==================================== */
 /*   FUNCIONES AVANZADAS (ic-adv3)      */
 /* ==================================== */
@@ -988,4 +962,49 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   font-weight: 800;
   line-height: 1;
   text-align: center;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 990px) {
+  .ic-books-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    /* grid-template-columns: 1fr; 
+     */
+  }
+  .ic-books-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 990px) {
+  .ic-books-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    /*
+    grid-template-columns: 1fr;
+    gap: 20px;*/
+  }
+
+  .ic-books-list {
+    width: 100%;
+    /*
+    grid-template-columns: 1fr;
+    */
+  }
+
+  .ic-books-image {
+    width: 300px;
+  }
 }
