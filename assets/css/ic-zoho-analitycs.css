@@ -108,50 +108,84 @@
   object-fit: contain;
 }
 
-/* ==============================
-   RESPONSIVE
-   ============================== */
-@media (max-width: 1024px) {
-  #ic-benefits3-wrap {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "left  phone"
-      "right phone";
+/* =========================================
+   SOLUCIÓN DEFINITIVA DE SOLAPAMIENTO
+   (Max-width 992px)
+   ========================================= */
+@media screen and (max-width: 992px) {
+
+  /* 1. ATACAMOS LA SECTION PADRE (El envoltorio externo) */
+  /* Esto es lo que evitará que se pegue a las otras secciones */
+  section#ic-benefits3-section-wrapper {
+    display: block !important;       /* Asegura comportamiento de bloque normal */
+    height: auto !important;         /* ⚠️ CRUCIAL: Permite que crezca según el contenido */
+    min-height: auto !important;     /* Resetea alturas mínimas forzadas */
+    padding-top: 100px !important;   /* Empuja el contenido de ARRIBA */
+    padding-bottom: 100px !important;/* Empuja el contenido de ABAJO */
+    overflow: visible !important;    /* Deja ver todo el contenido */
+    background-color: #ffffff;       /* Opcional: Evita transparencias si hay algo detrás */
   }
 
-  #ic-benefits3-phone {
-    height: 600px;
-  }
-}
-
-@media (max-width: 768px) {
+  /* 2. EL CONTENEDOR INTERNO (El Grid que pasamos a Flex) */
   #ic-benefits3-wrap {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "phone"
-      "left"
-      "right";
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
     gap: 40px;
+    margin: 0;
+    padding: 0 20px; /* Margen lateral para que no toque bordes del celular */
+    box-sizing: border-box;
+    /* Quitamos grid y positions */
+    grid-template-columns: none !important;
+  }
+
+  /* 3. RESET COMPLETO DEL TÍTULO */
+  #ic-benefits3-title {
+    margin: 0 0 30px 0 !important; /* Margen positivo abajo, 0 en el resto */
+    position: static !important;
+    order: 1;
+    width: 100%;
+    text-align: center;
+    /* Aseguramos que no flote ni se superponga */
+    transform: none !important; 
+  }
+
+  /* 4. IMAGEN */
+  #ic-benefits3-phone-wrapper {
+    order: 2;
+    margin-bottom: 30px;
+    height: auto !important;
+    display: block; /* A veces flex en el wrapper de imagen causa colapsos */
+    text-align: center;
   }
 
   #ic-benefits3-phone {
-    height: 420px;
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
   }
 
+  /* 5. COLUMNAS DE TEXTO */
   #ic-benefits3-left-col,
   #ic-benefits3-right-col {
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
+    gap: 30px;
+    margin: 0 !important;
   }
 
-  #ic-benefits3-wrap .ic-benefits3-card {
-    width: 100%;
-    max-width: 300px;
-  }
+  #ic-benefits3-left-col { order: 3; }
+  #ic-benefits3-right-col { order: 4; }
 
-  #ic-benefits3-wrap .ic-benefits3-marker {
-    margin: 0 auto;
+  /* 6. TARJETAS */
+  .ic-benefits3-card {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
   }
 }
 
@@ -348,7 +382,7 @@
   flex-direction: row;
 }
 #section-dashboards-cards{
-  width: 380px;
+  width: 320px;
   height: auto;
   margin-right: 5px;
   margin-left: 5px;
