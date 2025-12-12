@@ -72,7 +72,7 @@
   border-radius: 20px;
   font-weight: 700;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 /* === Contenedor general del video === */
 .home-what-is-interconnecta-ai-video-container {
@@ -108,3 +108,58 @@
 			}
 
 	}
+
+
+
+@media (max-width: 600px) {
+
+	.spam-button-zoho-one{
+		font-size: 14px;
+  }
+
+}
+
+
+.ic-zoho-one-card {
+    background: var(--do-pill);
+    border-radius: 12px;
+    box-shadow: var(--do-shadow);
+    padding: 14px 16px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ic-zoho-one-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(3, 205, 92, 0.25); /* sombra verde sutil */
+  z-index: 5;
+}
+.ic-zoho-one-card-title {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--do-green);
+}
+.ic-zoho-one-card-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--do-text);
+}
+
+@media (max-width: 600px){
+ 
+  /* cards full width y texto normal (sin cortes raros) */
+  .ic-zoho-one-card{
+    width:340px !important;
+    text-align:left;
+    box-shadow:0 6px 16px rgba(17,24,39,.08);
+  }
+  .ic-zoho-one-card-title,
+  .ic-zoho-one-card-text{
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere;   /* permite romper si hay palabros muy largos */
+    hyphens: auto;
+  }
+}
