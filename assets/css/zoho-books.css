@@ -239,14 +239,6 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   margin: 0;
 }
 
-.ic-books-image {
-
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  border: none !important;
-    width: 100% !important
-}
-
 /* Título */
 .ic-books-title {
   margin: 0 0 20px 0;
@@ -892,10 +884,6 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
   text-align: right !important;
 }
 
-.ic-adv3-left .ic-adv3-card {
-  text-align: right !important;
-}
-
 /* Ajustar que la línea conecte BEHIND el card correctamente */
 .ic-adv3-left .ic-adv3-item-left::before {
   right: -28px !important; /* mantiene la línea hacia el centro */
@@ -950,6 +938,8 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
     width: 100%;
     padding: 16px;
   }
+
+  
 }
 
 
@@ -1006,5 +996,34 @@ grid-template-columns: 1fr 1fr; /* 50% y 50% */
 
   .ic-books-image {
     width: 300px;
+  }
+}
+
+.ic-books-image {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .ic-books-image {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .ic-adv3-left .ic-adv3-item-left {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+}
+
+@media (max-width: 990px){
+  .banner-exp{
+    margin-top: 40px;
+    align-self: center;
   }
 }
