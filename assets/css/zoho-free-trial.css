@@ -1,4 +1,4 @@
-#container-zoho-free-trail{
+#container-zoho-free-trial{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,21 +13,21 @@
     width: 160px;
     height: auto;
 }
-#section-zoho-free-trail{
+#section-zoho-free-trial{
     margin-bottom: 10px;
     width: 100%;
 }
-#container-section-zoho-free-trail{
+#container-section-zoho-free-trial{
     border-radius: 50px;
     width: 100%;
     flex-direction: column;
     border-radius: 20px;
-    background-image: url("../../assets/images/zohoFreeTrails/background.webp");
+    background-image: url("../../assets/images/zohoFreetrials/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
-#container2-section-zoho-free-trail{
+#container2-section-zoho-free-trial{
     border-radius: 50px;
     width: 100%;
     flex-direction: column;
@@ -102,7 +102,7 @@
 }
 
 
-#text-zoho-free-trails-section{
+#text-zoho-free-trials-section{
     font-size: 20px;
     color: whitesmoke;
     width: 60%;
@@ -150,21 +150,21 @@
     display: flex;
 
 }
-#content-cards-apps-zoho-free-trail{
+#content-cards-apps-zoho-free-trial{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#card-apps-zoho-free-trail{
+#card-apps-zoho-free-trial{
     border-radius: 30px;
     border: 2px solid var(--tj-color-theme-primary) 2px;
     margin-bottom: 30px;
 }
-#card-apps-zoho-free-trail-hover-text{
+#card-apps-zoho-free-trial-hover-text{
     color: whitesmoke;
     width: 100%;
 }
-#card-apps-zoho-free-trail-hover-content-text{
+#card-apps-zoho-free-trial-hover-content-text{
     width: 80%;
 }
 #botton-text-card{

@@ -274,7 +274,7 @@ class HeaderComponent extends HTMLElement {
                         <li><a href="https://interconnecta.com/es/insights">Blog &#8226 Zoho & Negocios</a></li>
                         <li><a href="https://blog.interconnecta.ai">Blog &#8226 Soluciones con IA</a></li>
                         <li><a href="/insights/case-study/ES">Casos de Éxito</a></li>
-                        <li><a href="/zoho-free-trail/ES/">Prueba Zoho Gratuita</a></li>
+                        <li><a href="/zoho-free-trial/ES/">Prueba Zoho Gratuita</a></li>
                       </ul>
                     </li>
                     <li><a href="/contact/ES/">Contacto</a></li>     
