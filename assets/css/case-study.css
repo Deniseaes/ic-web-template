@@ -1,4 +1,4 @@
-#container-zoho-free-trail{
+#container-zoho-free-trial{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,21 +13,21 @@
     width: 160px;
     height: auto;
 }
-#section-zoho-free-trail{
+#section-zoho-free-trial{
     margin-bottom: 10px;
     width: 100%;
 }
-#container-section-zoho-free-trail{
+#container-section-zoho-free-trial{
     border-radius: 50px;
     width: 100%;
     flex-direction: column;
     border-radius: 20px;
-    background-image: url("../../assets/images/zohoFreeTrails/background.webp");
+    background-image: url("../../assets/images/zohoFreetrials/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
-#container2-section-zoho-free-trail{
+#container2-section-zoho-free-trial{
     border-radius: 50px;
     width: 100%;
     flex-direction: column;
@@ -49,7 +49,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-#title-zoho-free-trails-section{
+#title-zoho-free-trials-section{
     font-size: 40px;
     font-weight: 600;
     width: 50%;
@@ -57,7 +57,7 @@
     align-items: center;
     text-align: center;
 }
-#text-zoho-free-trails-section{
+#text-zoho-free-trials-section{
     font-size: 20px;
     color: whitesmoke;
     width: 60%;
@@ -251,7 +251,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    background-image: url("/assets/images/zohoFreeTrails/background.webp");
+    background-image: url("/assets/images/zohoFreetrials/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

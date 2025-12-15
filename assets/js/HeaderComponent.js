@@ -282,7 +282,7 @@ class HeaderComponent extends HTMLElement {
                         <li><a href="https://blog.interconnecta.ai">Blog &#8226 AI Solutions</a></li>
                         <li><a href="/insights/case-study/">Case Studies</a></li>
                         <li>
-                          <a href="/zoho-free-trail/"
+                          <a href="/zoho-free-trial/"
                             >Free Zoho Trial</a
                           >
                         </li>
