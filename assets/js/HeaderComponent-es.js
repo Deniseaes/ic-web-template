@@ -180,7 +180,7 @@ class HeaderComponent extends HTMLElement {
                                 <div class="mega-menu-pages-single-inner">
                                   <h6 class="mega-menu-title">ZOHO Business Apps</h6>
                                   <div class="mega-menu-list">
-                                    <a href="/zoho-services/ES/"><strong>Todos los Servicios &#8226 </strong>Descrubre tu servicio de Zoho ideal</a>
+                                    <a href="/zoho-services/ES/"><strong>Todos los Servicios &#8226 </strong>Descubre tu servicio de Zoho ideal</a>
                                     <a href="/zoho-services/zoho-one/ES/"><strong>Zoho One (ERP) &#8226 </strong>Plataforma empresarial unificada</a>
                                     <a href="/zoho-services/zoho-crm/ES/"><strong>Zoho CRM &#8226 </strong>Gestión de ventas & clientes</a>
                                     <a href="/zoho-services/zoho-analytics/ES/"><strong>Zoho Analytics &#8226 </strong>Informes & análisis de datos</a>
