@@ -235,31 +235,31 @@ class HeaderComponent extends HTMLElement {
                                 <h6 class="mega-menu-title">IA - Automatización</h6>
                                 <div class="mega-menu-list">
                                     <a class="link-menu-header" href="/ai-tools/ES/">AI Tools</a>
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002#">
                                       IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>                                     
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/commission-tool/231250000041733021">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/commission-tool/231250000041733021#">
                                       Herramientas de comisiones <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/inter-retail/231250000042677009">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/inter-retail/231250000042677009#">
                                       InterRetail <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/salesportal/231250000042816005">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/salesportal/231250000042816005#">
                                       Portal de ventas <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/dispatchapp/231250000044240059">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/dispatchapp/231250000044240059#">
                                       App de despacho <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="#">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/checking-app/231250000060127022#">
                                       Apps de verificación <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/interbot/231250000045407009">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/interbot/231250000045407009#">
                                       InterBot <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
                                 </div>

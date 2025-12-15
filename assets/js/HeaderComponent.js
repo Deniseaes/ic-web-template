@@ -242,7 +242,7 @@ class HeaderComponent extends HTMLElement {
                                     Dispatch App <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                   </a>
 
-                                  <a class="link-menu-header" href="#">
+                                  <a class="link-menu-header" href="https://appshub.interconnecta.com/products/checking-app/231250000060127022">
                                     Checking Apps <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                   </a>
 
