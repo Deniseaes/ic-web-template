@@ -33,3 +33,69 @@
 }
 
 
+/*soluciones*/
+/* === Tarjeta completa === */
+.ia-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* Lift effect */
+.ia-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.12);
+}
+
+/* === Banda gris superior === */
+.ia-card-header {
+  background: #212c33;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background .3s ease;
+}
+
+/* === Logo (SVG) === */
+.ia-card-logo {
+ height: 40px;
+  filter: brightness(0) invert(1); /* logo en blanco por defecto */
+  transition: filter .3s ease;
+}
+
+/* Hover: banda baja opacidad y logo vuelve al color original */
+.ia-card:hover .ia-card-header {
+  background: rgba(33, 44, 51, 0.2);
+}
+
+.ia-card:hover .ia-card-logo {
+  filter: none;
+}
+
+/* === Body === */
+.ia-card-body {
+  padding: 28px;
+}
+
+.ia-card-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+/*integracion ocmpleta*/
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* la imagen rellena la columna */
+  border-radius: 15px;   /* borde */
+}
