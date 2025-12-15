@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
     // 1. ESTRUCTURA HTML
     // ==========================================
     this.innerHTML = `
-        <!-- back to top start -->
+       <!-- back to top start -->
     <div id="tj-back-to-top"><span id="tj-back-to-top-percentage"></span></div>
     <!-- back to top end -->
 
@@ -17,7 +17,7 @@ class HeaderComponent extends HTMLElement {
     <!-- end: Search Popup -->
 
     <!-- start: Offcanvas Menu -->
-    <div class="tj-offcanvas-area d-none d-xl-block">
+    <div class="tj-offcanvas-area d-none d-lg-block">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
         <div class="hamburger_inner">
@@ -67,7 +67,7 @@ class HeaderComponent extends HTMLElement {
     <!-- end: Offcanvas Menu -->
 
     <!-- start: Hamburger Menu -->
-    <div class="hamburger-area d-xl-none">
+    <div class="hamburger-area d-lg-none">
       <div class="hamburger_bg"></div>
       <div class="hamburger_wrapper">
         <div class="hamburger_inner">
@@ -92,7 +92,7 @@ class HeaderComponent extends HTMLElement {
           <div class="hamburger-infos">
             <div class="contact-info">
               <div class="header-button">
-                <a class="tj-primary-btn-modificado" href="contact.html">
+                <a class="tj-primary-btn-modificado" href="https://portal.interconnecta.com/" target="_blank">
                   <span class="btn-text"><span>Login</span></span>
                   <span class="btn-icon"
                     ><i class="tji-arrow-right-long"></i
@@ -102,33 +102,6 @@ class HeaderComponent extends HTMLElement {
               <div class="language-select-container">
               </div>  
             </div>
-          </div>
-        </div>
-        <div class="hamburger-socials">
-          <h5 class="hamburger-title">Síguenos</h5>
-          <div class="social-links style-3">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://x.com/" target="_blank"
-                  ><i class="fa-brands fa-x-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -154,7 +127,7 @@ class HeaderComponent extends HTMLElement {
               </div>
 
               <!-- navigation -->
-              <div class="menu-area d-none d-xl-inline-flex align-items-center">
+              <div class="menu-area d-none d-lg-inline-flex align-items-center">
                 <nav id="mobile-menu" class="mainmenu">
                   <ul>
                     <li><a href="/ES/">Inicio</a></li>
@@ -198,7 +171,6 @@ class HeaderComponent extends HTMLElement {
                                   <div class="mega-menu-list">
                                     <a href="/zoho-services/solutionsdesign/ES/">Diseño de Soluciones</a>
                                     <a href="/zoho-services/supportandmaintenance/ES/">Soporte & Mantenimiento</a>
-                                    <a href="#">Aplicaciones e Integraciones para Clientes</a>
                                     <a href="/zoho-services/zoho-process-automation/ES/">Automatización de Procesos</a>                        
                                    <a id="header-academy-item" href="/ic-academy/ES/"><img id="img-academy-header" src="/assets/images/logoFavicon-interconnecta.png" alt=""> <Strong>Academy & Training</Strong></a>
                                   </div>
@@ -208,6 +180,7 @@ class HeaderComponent extends HTMLElement {
                                 <div class="mega-menu-pages-single-inner">
                                   <h6 class="mega-menu-title">ZOHO Business Apps</h6>
                                   <div class="mega-menu-list">
+                                    <a href="/zoho-services/ES/"><strong>Todos los Servicios &#8226 </strong>Descubre tu servicio de Zoho ideal</a>
                                     <a href="/zoho-services/zoho-one/ES/"><strong>Zoho One (ERP) &#8226 </strong>Plataforma empresarial unificada</a>
                                     <a href="/zoho-services/zoho-crm/ES/"><strong>Zoho CRM &#8226 </strong>Gestión de ventas & clientes</a>
                                     <a href="/zoho-services/zoho-analytics/ES/"><strong>Zoho Analytics &#8226 </strong>Informes & análisis de datos</a>
@@ -226,7 +199,7 @@ class HeaderComponent extends HTMLElement {
                       </ul>
                     </li>
                     <li class="has-dropdown">             
-                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt=""> IA Soluciones</a>               
+                      <a id="header-soluciones-item"><img id="img-ai-header-soluciones" src="/assets/images/logos/icon-ai.svg" alt="">IA Soluciones</a>               
                       <ul class="sub-menu header__mega-menu mega-menu mega-menu-pages">
                         <li>
                           <div class="mega-menu-wrapper">
@@ -235,33 +208,34 @@ class HeaderComponent extends HTMLElement {
                                 <h6 class="mega-menu-title">IA - Automatización</h6>
                                 <div class="mega-menu-list">
                                     <a class="link-menu-header" href="/ai-tools/ES/">AI Tools</a>
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/mediflow/231250000060127002#">
                                       IC • MediFlow <span class="btn-icon"><i class="tji-arrow-right-long"></i></span></a>                                     
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/commission-tool/231250000041733021">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/commission-tool/231250000041733021#">
                                       Herramientas de comisiones <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/inter-retail/231250000042677009">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/inter-retail/231250000042677009#">
                                       InterRetail <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/salesportal/231250000042816005">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/salesportal/231250000042816005#">
                                       Portal de ventas <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/dispatchapp/231250000044240059">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/dispatchapp/231250000044240059#">
                                       App de despacho <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="#">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/checking-app/231250000060127022#">
                                       Apps de verificación <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
 
-                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/interbot/231250000045407009">
+                                    <a class="link-menu-header" href="https://appshub.interconnecta.com/products/interbot/231250000045407009#">
                                       InterBot <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </a>
+
                                 </div>
                               </div>
                             </div>
@@ -272,7 +246,7 @@ class HeaderComponent extends HTMLElement {
                                   <a href="/ai-matrix/ES/">Motor de Decisiones Inteligente</a>
                                   <a href="/data-iq/ES/">Analítica Avanzada y BI Predictivo</a>
                                   <a href="/ic-academy-360/ES/"><img id="img-ai-header-products" src="/assets/images/logoFavicon-interconnecta.png" alt=""> Academy 360º</a>
-                                  <a href="https://www.interconnecta.ai/mcp/ES/">AI Insights Blog</a>
+                                  <a href="https://blog.interconnecta.ai/">AI Insights Blog</a>
                                 </div>
                               </div>
                             </div>
@@ -309,11 +283,11 @@ class HeaderComponent extends HTMLElement {
               </div>
 
               <!-- header right info -->
-              <div class="menu-area d-none d-xl-inline-flex align-items-center">
+              <div class="menu-area d-none d-lg-inline-flex align-items-center">
                 <nav class="mainmenu">
                   <ul>
                     <div class="header-button">
-                      <a class="tj-primary-btn-modificado" href="#">
+                      <a class="tj-primary-btn-modificado" href="https://portal.interconnecta.com/" target="_blank">
                         <span class="btn-text"><span>Login</span></span>
                         <span class="btn-icon"
                           ><i class="tji-arrow-right-long"></i
@@ -326,7 +300,7 @@ class HeaderComponent extends HTMLElement {
                 </nav>
               </div>
 
-              <div class="menu_bar mobile_menu_bar d-xl-none">
+              <div class="menu_bar mobile_menu_bar d-lg-none">
                 <span></span>
                 <span></span>
                 <span></span>

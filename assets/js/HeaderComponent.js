@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
     // 1. ESTRUCTURA HTML
     // ==========================================
     this.innerHTML = `
-     <!-- back to top start -->
+    <!-- back to top start -->
     <div id="tj-back-to-top"><span id="tj-back-to-top-percentage"></span></div>
     <!-- back to top end -->
 
@@ -62,20 +62,6 @@ class HeaderComponent extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="hamburger-socials">
-          <h5 class="hamburger-title">Follow Us</h5>
-          <div class="social-links style-3">
-            <ul>
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
     <!-- end: Offcanvas Menu -->
@@ -106,7 +92,7 @@ class HeaderComponent extends HTMLElement {
           <div class="hamburger-infos">
             <div class="contact-info">
               <div class="header-button">
-                <a class="tj-primary-btn-modificado" href="contact.html">
+                <a class="tj-primary-btn-modificado" href="https://portal.interconnecta.com/" target="_blank">
                   <span class="btn-text"><span>Login</span></span>
                   <span class="btn-icon"
                     ><i class="tji-arrow-right-long"></i
@@ -186,7 +172,6 @@ class HeaderComponent extends HTMLElement {
                                 <div class="mega-menu-list">
                                   <a href="/zoho-services/solutionsdesign/">Solution Design</a>
                                   <a href="/zoho-services/supportandmaintenance/">Support & Maintenance</a>
-                                  <a href="#">Customer Apps & Integrations</a>
                                   <a href="/zoho-services/zoho-process-automation/">Process Automation</a>                        
                                  <a id="header-academy-item" href="/ic-academy/"><img id="img-academy-header" src="/assets/images/logoFavicon-interconnecta.png" alt=""> <Strong>Academy & Training</Strong></a>
                                 </div>
@@ -196,6 +181,7 @@ class HeaderComponent extends HTMLElement {
                               <div class="mega-menu-pages-single-inner">
                                 <h6 class="mega-menu-title">ZOHO Business Apps</h6>
                                 <div class="mega-menu-list">
+                                  <a href="/zoho-services/"><strong>All Services &#8226 </strong>Discover your ideal Zoho service</a>
                                   <a href="/zoho-services/zoho-one/"><strong>Zoho One (ERP) &#8226 </strong>Unified business platform</a>
                                   <a href="/zoho-services/zoho-crm/"><strong>Zoho CRM &#8226 </strong>Sales & customer management</a>
                                   <a href="/zoho-services/zoho-analytics/"><strong>Zoho Analytics &#8226 </strong>Data insights & reporting</a>
@@ -242,7 +228,7 @@ class HeaderComponent extends HTMLElement {
                                     Dispatch App <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                   </a>
 
-                                  <a class="link-menu-header" href="#">
+                                  <a class="link-menu-header" href="https://appshub.interconnecta.com/products/checking-app/231250000060127022">
                                     Checking Apps <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                   </a>
 
@@ -260,7 +246,7 @@ class HeaderComponent extends HTMLElement {
                                   <a href="/ai-matrix/">Intelligent Decision Engine</a>
                                   <a href="/data-iq/">Advanced Analytics & Predictive BI</a>
                                   <a href="/ic-academy-360/"><img id="img-ai-header-products" src="/assets/images/logoFavicon-interconnecta.png" alt=""> Academy 360º</a>
-                                  <a href="https://www.interconnecta.ai/mcp/EN/">AI Insights Blog</a>
+                                  <a href="https://blog.interconnecta.ai/">AI Insights Blog</a>
                                 </div>
                               </div>
                             </div>
@@ -287,9 +273,7 @@ class HeaderComponent extends HTMLElement {
                           </div>
                         </li>
                       </ul>
-                    </li>  
-                    
-                   <!-- <li><a href="https://appshub.interconnecta.com/">Customer Apps Hub</a></li>-->
+                    </li>                    
 
                     <li class="has-dropdown">
                       <a >Insights</a>
@@ -313,12 +297,12 @@ class HeaderComponent extends HTMLElement {
               
               <!-- header right info -->
             
-              <div class="menu-area d-none d-xl-inline-flex align-items-center">
+              <div class="menu-area d-none d-lg-inline-flex align-items-center">
               <nav class="mainmenu">
                 <ul>
                   <li>
                     <div class="header-button">
-                      <a class="tj-primary-btn-modificado" href="contact.html">
+                      <a class="tj-primary-btn-modificado" href="https://portal.interconnecta.com/" target="_blank">
                         <span class="btn-text"><span>Login</span></span>
                         <span class="btn-icon"
                           ><i class="tji-arrow-right-long"></i
