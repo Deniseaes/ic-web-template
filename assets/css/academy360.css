@@ -252,7 +252,7 @@ color: #ffffff !important;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
   font-size: 16px;
   font-weight: var(--tj-fw-sbold);
