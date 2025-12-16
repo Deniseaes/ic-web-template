@@ -70,3 +70,85 @@
     width: 100%;
   }
 }
+
+
+
+.copia-tj-primary-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  background-color: var(--tj-color-theme-primary);
+  font-size: 18px;
+  font-weight: var(--tj-fw-sbold);
+  padding: 5px 5px 5px 30px;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 1;
+  z-index: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  border: white 2px solid;
+}
+
+.copia-tj-primary-btn .btn-text {
+  color: var(--tj-color-common-white);
+  overflow: hidden;
+}
+.copia-tj-primary-btn .btn-text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  text-shadow: 0 30px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.copia-tj-primary-btn .btn-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  background-color: var(--tj-color-theme-dark);
+  border-radius: 50%;
+}
+.copia-tj-primary-btn .btn-icon i {
+  color: var(--tj-color-common-white);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.copia-tj-primary-btn:hover .btn-text span {
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+.copia-tj-primary-btn:hover .btn-icon i {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
