@@ -63,8 +63,7 @@
                 </p>
                 <div class="zoho-banner-button">
                   <a
-                    href="/insights/case-study/"
-                    target="_blank"
+                    href=#case-study-ancla 
                     class="tj-primary-btn"
                   >
                     <span class="btn-text"><span>View case study</span></span>
@@ -98,7 +97,7 @@
                                 on-demand content available anytime.
                               </p>
                               <div class="ic-evolve-btn">
-                                <a href="/contact/" target="_blank" class="tj-primary-btn">
+                                <a href="/contact/" class="tj-primary-btn">
                                   <span class="btn-text"><span>Consult a custom plan</span></span>
                                   <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                 </a>
@@ -299,7 +298,7 @@
 
                         
                         <!-- case study-->
-                        <section class="ic-integral-section">
+                        <section class="ic-integral-section" id="case-study-ancla">
                           <div class="ic-integral-container">
                             <!-- TITLE -->
                             <h2 class="ic-integral-title">Real learning stories that drive results.</h2>
@@ -323,7 +322,7 @@
 
                               <!-- RIGHT COLUMN: IMAGE + LINK -->
                               <a
-                                href="https://workdrive.zohoexternal.com/external/a648868b08cdcd33279c73d1b1390651e14c4d2e3fd1310a584d8789a3eec754"
+                                href="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsESP/formperma/vx4tB2ti9Cux-ZnKi49Uu9yU3hCPTPICpga65ubSqKI?link=https://workdrive.zohoexternal.com/external/a648868b08cdcd33279c73d1b1390651e14c4d2e3fd1310a584d8789a3eec754"
                                 class="caso-estudio"
                               >
                                 <img
@@ -737,6 +736,36 @@
         // Iniciar todo
         startAutoplay();
       });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            
+            // Confirma que el script se está ejecutando
+            console.log("Script de anclas GSAP cargado.");
+
+            // 1. OBTÉN LA INSTANCIA DE SCROLLSMOOTHER
+            const smootherInstance = ScrollSmoother.get();
+
+            // Si no encuentra GSAP, no hace nada
+            if (!smootherInstance) {
+                console.warn("ScrollSmoother.get() no encontró una instancia.");
+                return; 
+            }
+
+            // 3. CAPTURA LOS CLICS
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault(); // Anula el salto brusco
+                    
+                    const targetId = this.getAttribute('href');
+                    
+                    // 4. USA EL MÉTODO DE GSAP PARA EL SCROLL
+                    smootherInstance.scrollTo(targetId, true, `top top+=120px`);
+                });
+            });
+
+        });
     </script>
   </body>
 </html>
