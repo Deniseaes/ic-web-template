@@ -71,7 +71,6 @@
                       </a>
                       <a
                           href="/contact/"
-                          target="_blank"
                           class="tj-primary-btn">
                           <span class="btn-text"><span>Talk to a consultant</span></span>
                           <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
@@ -951,7 +950,7 @@
               <iframe id="videoIframe"
                 src=""
                 allowfullscreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                allow="encrypted-media; picture-in-picture">
               </iframe>
             </div>
           </div>
@@ -1074,7 +1073,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const videoModal = document.getElementById('videoModal');
       const videoIframe = document.getElementById('videoIframe');
-      const videoUrl = "https://www.youtube.com/embed/vNu7HEAQG5A?autoplay=1&rel=0";//Este url se cambia para cambiar el video
+      const videoUrl = "https://www.youtube.com/embed/vNu7HEAQG5A?&rel=0";//Este url se cambia para cambiar el video
 
       // Cuando se abre el modal
       videoModal.addEventListener('show.bs.modal', function () {

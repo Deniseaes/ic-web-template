@@ -733,7 +733,7 @@
               <iframe id="videoIframe"
                 src=""
                 allowfullscreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                allow="encrypted-media; picture-in-picture">
               </iframe>
             </div>
           </div>
@@ -855,7 +855,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const videoModal = document.getElementById('videoModal');
       const videoIframe = document.getElementById('videoIframe');
-      const videoUrl = "https://www.youtube.com/embed/videoseries?list=PLZQaOqRf856bUiYitSKWV7Ru1ArXTp5SD&autoplay=1&rel=0";//Este url se cambia para cambiar el video
+      const videoUrl = "https://www.youtube.com/embed/videoseries?list=PLZQaOqRf856bUiYitSKWV7Ru1ArXTp5SD&&rel=0";//Este url se cambia para cambiar el video
 
       // Cuando se abre el modal
       videoModal.addEventListener('show.bs.modal', function () {
