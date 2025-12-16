@@ -62,3 +62,144 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+
+ 
+/* Banner verde centrado */
+.careers-banner {
+  background:  
+    var(--ic-green)
+  ;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Título */
+.careers-banner h2 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 34px;
+  text-align: left
+}
+
+/* Texto */
+.careers-banner p {
+  color: #ffffff;  
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 18px
+}
+
+/* Mail */
+.careers-banner a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.careers-banner a:hover {
+  opacity: 0.85;
+}
+#section-carrers-texts {
+    background-color: transparent;
+    border-radius: 20px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sec-heading {
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto;
+    width: 100%;
+    margin-bottom: 22px;
+}
+/* Fondo blanco de la sección */
+.ic-std-white {
+  background: #ffffff;
+  padding: 40px 0;
+}
+
+/* Recuadro centrado (como tu ejemplo) */
+.ic-std-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f5f5f5;
+  border-radius: 28px;
+  text-align: center;
+}
+
+/* Título + intro */
+.ic-std-h2 {
+  margin: 0 0 14px 0;
+}
+
+.ic-std-p {
+  max-width: 820px;
+  margin: 0 auto 34px auto;
+}
+
+/* Grid de items (3 columnas) */
+.ic-std-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+/* Cada item tipo “pill/card” */
+.ic-std-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+    border: solid 1px var(--ic-green)
+}
+
+/* Icono: mismo gif pero rotado 90° (flecha hacia abajo) */
+.ic-std-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px; 
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px;
+}
+
+/* Texto item */
+.ic-std-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* Nota */
+.ic-std-note {
+  margin-top: 26px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ic-std-wrap {
+    padding: 42px 22px;
+    border-radius: 22px;
+  }
+
+  .ic-std-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .ic-std-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

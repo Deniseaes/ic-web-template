@@ -1,0 +1,137 @@
+ :root {
+  --ic-gray-light: #7e8283;
+  --ic-gray-dark: #3c434d;
+  --ic-green: #03cd5c;
+  --ic-green-light: #f0fdf6;
+  --ic-lightgray: #f5f5f5;
+  --ic-blue-light: #0296d6;
+  --ic-blue: #006eb9;
+    --ic-blue-dark: #053050; 
+}
+.service-item { 
+    background: #ffffff 
+}
+.service-item.style-4 .service-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px !important;
+   background: #f5f5f5 !important;
+}
+ .service-item.style-4 .service-icon img {
+    width: 60px;
+    height: auto; 
+}
+.service-item.style-4 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item.style-4 .service-content {
+  flex-grow: 1;
+}
+ /* === CONTENEDOR DEL LINK === */
+/* ===============================
+   TEXT LINK "VER MÁS"
+================================ */
+
+/* Link base + recuadro */
+.ic-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 4px 6px 4px 20px;
+  border: 1.5px solid var(--ic-green);
+  border-radius: 30px;
+  font-weight: 500;
+  color: var(--ic-green);
+  text-decoration: none;
+  transition: 
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* Texto */
+.ic-text-link .ic-text {
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ===============================
+   FLECHA CON CÍRCULO
+================================ */
+
+/* Círculo */
+.ic-text-link .btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Flecha */
+.ic-text-link .btn-icon i {
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* ===============================
+   HOVER (DESDE LA CARD)
+================================ */
+
+.service-item.style-4:hover .ic-text-link {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Flecha: movimiento + color */
+.service-item.style-4:hover .ic-text-link .btn-icon {
+  background-color: #ffffff;
+  transform: translateX(6px);
+}
+
+.service-item.style-4:hover .ic-text-link .btn-icon i {
+  color: #000000;
+}
+.service-item.style-4:hover .ic-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 4px 12px 4px 20px ;
+}
+
+
+ .s-g {
+  background-color: #f5f5f5;
+   padding:40px !important; 
+  border-radius: 40px;
+  margin:  60px !important
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+   
+  .s-g {
+  background-color: #f5f5f5;
+   padding:40px 10px !important; 
+  border-radius: 20px;
+  margin: 20px 0 !important;
+      margin: 10px 0 !important
+}
+}
+h2{
+  font-size: 36px
+}
