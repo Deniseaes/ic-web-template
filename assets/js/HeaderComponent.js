@@ -110,16 +110,16 @@ class HeaderComponent extends HTMLElement {
     <!-- end: Hamburger Menu -->
 
     <!-- start: Header Area -->
-    <header class="header-area header-1 header-absolute section-gap-x">
+    <header style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="header-area header-1 header-absolute section-gap-x">
       <div class="header-global-use-zoho">
           <span id="header-global-use-zoho-link" style="color:#ffffff;">
             Register us as your <strong>ZOHO</strong> partner using the code <strong>INTCUSA</strong> | Learn how to do it <strong><u><a href="https://store.zoho.com/html/store/tagyourpartner.html" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">here</a></u></strong>
           </span>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-wrapper">
+      <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="container-fluid">
+        <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="row">
+          <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="col-12">
+            <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="header-wrapper">
               <!-- site logo -->
               <div class="site_logo">
                 <a class="logo" href="/index.html"
@@ -181,7 +181,6 @@ class HeaderComponent extends HTMLElement {
                               <div class="mega-menu-pages-single-inner">
                                 <h6 class="mega-menu-title">ZOHO Business Apps</h6>
                                 <div class="mega-menu-list">
-                                  <a href="/zoho-services/"><strong>All Services &#8226 </strong>Discover your ideal Zoho service</a>
                                   <a href="/zoho-services/zoho-one/"><strong>Zoho One (ERP) &#8226 </strong>Unified business platform</a>
                                   <a href="/zoho-services/zoho-crm/"><strong>Zoho CRM &#8226 </strong>Sales & customer management</a>
                                   <a href="/zoho-services/zoho-analytics/"><strong>Zoho Analytics &#8226 </strong>Data insights & reporting</a>
