@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a class="text-btn"
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#formModal"
+        data-form-url="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsENG/formperma/xsV_PfO34nQs2STk4_OKF2m-facZ_eqA0MubfE-ICN8?link=https://workdrive.zohoexternal.com/external/8a4d86f9c54b2e0904505b40dcc085e9eb1913112cc91c89b12d8ec7375c13ec"
+    >
+        <span class="btn-text"><span>Read More</span></span>
+        <span class="btn-icon"
+        ><i class="tji-arrow-right-long"></i
+        ></span>
+    </a>
+
+    <!--formulario modal-->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal"></button>
+          <div class="modal-body p-0">
+            <iframe id="formIframe" src="" style="width: 100%; height: 80vh; border: 0" loading="lazy"> </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {  
+        const formModal = document.getElementById("formModal");
+        const formIframe = document.getElementById("formIframe");
+
+        formModal.addEventListener("show.bs.modal", function (event) {
+          const trigger = event.relatedTarget;
+          const url = trigger?.getAttribute("data-form-url") || "";
+          formIframe.src = url;
+        });
+
+        formModal.addEventListener("hidden.bs.modal", function () {
+        formIframe.src = "";
+        });
+      });
+    </script>
+</html>
