@@ -245,7 +245,7 @@ class HeaderComponent extends HTMLElement {
                                   <a href="/ai-matrix/">Intelligent Decision Engine</a>
                                   <a href="/data-iq/">Advanced Analytics & Predictive BI</a>
                                   <a href="/ic-academy-360/"><img id="img-ai-header-products" src="/assets/images/logoFavicon-interconnecta.png" alt=""> Academy 360º</a>
-                                  <a href="https://blog.interconnecta.ai/">AI Insights Blog</a>
+                                  <a target="_blank" href="https://blog.interconnecta.ai/">AI Insights Blog</a>
                                 </div>
                               </div>
                             </div>

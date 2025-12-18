@@ -19,7 +19,7 @@ class FooterComponent extends HTMLElement {
                     </div>
                   </div>
                   <div class="cta-img">
-                    <img src="/assets/images/footer/cta-bg.svg" alt="InterConnecta Enterprise Partner">
+                    <img src="/assets/images/footer/cta-bg.webp" alt="InterConnecta Enterprise Partner">
                   </div>
                 </div>
               </div>
@@ -50,12 +50,12 @@ class FooterComponent extends HTMLElement {
                     ZIA Agents + IC Agents: the synergy that transforms intelligence
                   </a>
                 </li>
-                <li><a href="/zoho-services/healthcare/">How AI Agents redefine healthcare operations</a></li>
-                <li><a href="/zoho-services/b2b/">AI for B2B: From the first lead to expansion</a></li>
-                <li><a href="/zoho-services/manufacturing/">Construction 5.0: AI optimizing projects &amp; costs</a></li>
-                <li><a href="/zoho-services/energy-renewables/">Smart renewable energy with AI</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/ai-in-healthcare-from-administrative-optimization-to-better-patient-care/">How AI Agents redefine healthcare operations</a></li>
+                <li><a target="_blank"href="https://blog.interconnecta.ai/ai-for-b2b-from-the-first-lead-to-customer-expansion/">AI for B2B: From the first lead to expansion</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/construction-5-0-how-ai-agents-will-optimize-your-projects-costs-and-timelines/">Construction 5.0: AI optimizing projects &amp; costs</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/smart-renewable-energy-how-ai-accelerates-your-sustainable-impact/">Smart renewable energy with AI</a></li>
               </ul>
-              <a class="footer-cta" target="_blank" rel="noopener noreferrer" href="https://interconnecta.com/insights/">
+              <a class="footer-cta" target="_blank" rel="noopener noreferrer" href="https://blog.interconnecta.ai/">
                 See all AI insights →
               </a>
             </div>
