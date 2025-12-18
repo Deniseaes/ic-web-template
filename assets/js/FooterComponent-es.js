@@ -20,7 +20,7 @@ class FooterComponentES extends HTMLElement {
                     </div>
                   </div>
                   <div class="cta-img">
-                    <img src="/assets/images/footer/cta-bg.svg" alt="InterConnecta Socio Empresarial">
+                    <img src="/assets/images/footer/cta-bg.webp" alt="InterConnecta Socio Empresarial">
                   </div>
                 </div>
               </div>
@@ -52,12 +52,12 @@ class FooterComponentES extends HTMLElement {
                     ZIA Agents + IC Agents: la sinergia que transforma la inteligencia
                   </a>
                 </li>
-                <li><a href="/zoho-services/healthcare/ES/">Cómo los Agentes de IA redefinen las operaciones de salud</a></li>
-                <li><a href="/zoho-services/b2b/ES/">IA para B2B: desde el primer lead hasta la expansión</a></li>
-                <li><a href="/zoho-services/manufacturing/ES/">Construcción 5.0: IA optimizando proyectos y costos</a></li>
-                <li><a href="/zoho-services/energy-renewables/ES/">Energía renovable inteligente con IA</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/es/ia-en-salud-de-la-optimizacion-administrativa-a-la-mejora-del-cuidado-al-paciente/">Cómo los Agentes de IA redefinen las operaciones de salud</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/es/ai-for-b2b-from-the-first-lead-to-customer-expansion/">IA para B2B: desde el primer lead hasta la expansión</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/es/construction-5-0-how-ai-agents-will-optimize-your-projects-costs-and-timelines/">Construcción 5.0: IA optimizando proyectos y costos</a></li>
+                <li><a target="_blank" href="https://blog.interconnecta.ai/es/smart-renewable-energy-how-ai-accelerates-your-sustainable-impact/">Energía renovable inteligente con IA</a></li>
               </ul>
-              <a class="footer-cta" target="_blank" rel="noopener noreferrer" href="https://interconnecta.com/es/insights/">
+              <a class="footer-cta" target="_blank" rel="noopener noreferrer" href="https://blog.interconnecta.ai/es/">
                 Ver todos los insights de IA →
               </a>
             </div>
