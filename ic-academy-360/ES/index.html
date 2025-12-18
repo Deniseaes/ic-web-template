@@ -265,8 +265,12 @@
                               </div>
                               <!-- COLUMNA DERECHA: IMAGEN -->
                               <a
-                                href="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsESP/formperma/vx4tB2ti9Cux-ZnKi49Uu9yU3hCPTPICpga65ubSqKI?link=https://workdrive.zohoexternal.com/external/a648868b08cdcd33279c73d1b1390651e14c4d2e3fd1310a584d8789a3eec754"
-                                class="caso-estudio">
+                                class="text-btn caso-estudio"
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#formModal"
+                                data-form-url="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsESP/formperma/vx4tB2ti9Cux-ZnKi49Uu9yU3hCPTPICpga65ubSqKI?link=https://workdrive.zohoexternal.com/external/a648868b08cdcd33279c73d1b1390651e14c4d2e3fd1310a584d8789a3eec754"
+                              > 
                                 <img src="/assets/images/academy/case-estudy-esp.webp" alt="Caso de estudio" />
                                 <div class="caso-overlay">Ver caso de estudio »</div>
                               </a>
@@ -379,7 +383,18 @@
         <componente-footer-es></componente-footer-es>
       </div>
     </div>
-   
+    
+    <!--formulario modal-->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal"></button>
+          <div class="modal-body p-0">
+            <iframe id="formIframe" src="" style="width: 100%; height: 80vh; border: 0" loading="lazy"> </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JS here -->
     <script src="/assets/js/jquery.min.js"></script>
@@ -518,6 +533,23 @@
             });
 
         });
+    </script>
+
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {  
+        const formModal = document.getElementById("formModal");
+        const formIframe = document.getElementById("formIframe");
+
+        formModal.addEventListener("show.bs.modal", function (event) {
+          const trigger = event.relatedTarget;
+          const url = trigger?.getAttribute("data-form-url") || "";
+          formIframe.src = url;
+        });
+
+        formModal.addEventListener("hidden.bs.modal", function () {
+        formIframe.src = "";
+        });
+      });
     </script>
   </body>
 </html>

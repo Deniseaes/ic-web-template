@@ -54,15 +54,19 @@
                 <h1 class="zoho-banner-title">El ERP todo-en-uno que conecta y potencia toda tu empresa.</h1>
                 <p class="zoho-banner-subtitle">
                   Con <b>Zoho One</b>, integras cada área de tu organización en un único ecosistema
-          que combina tecnología, visibilidad y control. Con <b>InterConnecta</b>, conviertes
-          esa integración en una ventaja competitiva real.
+                  que combina tecnología, visibilidad y control. Con <b>InterConnecta</b>, conviertes
+                  esa integración en una ventaja competitiva real.
                 </p>
 
                 <div class="zoho-banner-button">
-                    <a
-                        href="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsESP/formperma/vx4tB2ti9Cux-ZnKi49Uu9yU3hCPTPICpga65ubSqKI?link=https://workdrive.zohoexternal.com/external/a2fb22c86fff6bae3e189601c74f87c5a0c6617d7412533bd9c9e3ebb3c0e867"
-                        target="_blank"
-                        class="tj-primary-btn" id="btn-cyan">
+                    <a  
+                      class="tj-primary-btn"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      data-form-url="https://forms.zohopublic.com/zohopeople970/form/CaseStudyFormsESP/formperma/vx4tB2ti9Cux-ZnKi49Uu9yU3hCPTPICpga65ubSqKI?link=https://workdrive.zohoexternal.com/external/a2fb22c86fff6bae3e189601c74f87c5a0c6617d7412533bd9c9e3ebb3c0e867"
+                      style="background-color:#00B4D8;"
+                    >
                         <span class="btn-text"><span>Ver caso de estudio</span></span>
                         <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                     </a>
@@ -728,6 +732,17 @@
       </div>
     </div>
 
+    <!--formulario modal-->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal"></button>
+          <div class="modal-body p-0">
+            <iframe id="formIframe" src="" style="width: 100%; height: 80vh; border: 0" loading="lazy"> </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JS here -->
     <script src="/assets/js/jquery.min.js"></script>
@@ -855,6 +870,23 @@
         videoIframe.src = "";
       });
     });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {  
+        const formModal = document.getElementById("formModal");
+        const formIframe = document.getElementById("formIframe");
+
+        formModal.addEventListener("show.bs.modal", function (event) {
+          const trigger = event.relatedTarget;
+          const url = trigger?.getAttribute("data-form-url") || "";
+          formIframe.src = url;
+        });
+
+        formModal.addEventListener("hidden.bs.modal", function () {
+        formIframe.src = "";
+        });
+      });
     </script>
   </body>
 </html>
