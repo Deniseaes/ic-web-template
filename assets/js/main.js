@@ -1,7 +1,6 @@
 /***************************************************
 ==================== JS INDEX ======================
 ****************************************************
-Preloader js
 Data js
 Sticky Nav Js  <-- DESACTIVADO (Ahora en HeaderComponent)
 Mobile Menu Js <-- DESACTIVADO (Ahora en HeaderComponent)
@@ -28,41 +27,11 @@ Progressbar js
 
 (function ($) {
 	"use strict";
-	// Weave Animation Js
-	const target = document.getElementById("tj-weave-anim");
-	function splitTextToSpans(targetElement) {
-		if (targetElement) {
-			const text = targetElement.textContent;
-			targetElement.innerHTML = "";
 
-			for (let character of text) {
-				const span = document.createElement("span");
-				if (character === " ") {
-					span.innerHTML = "&nbsp;";
-				} else {
-					span.textContent = character;
-				}
-				targetElement.appendChild(span);
-			}
-		}
-	}
-	splitTextToSpans(target);
-	// Preloader js
+	// Inicialización cuando carga la página (sin preloader para mayor velocidad)
 	$(window).on("load", function () {
-		const tjPreloader = $(".tj-preloader");
-		if (tjPreloader?.length) {
-			setTimeout(function () {
-				tjPreloader.removeClass("is-loading").addClass("is-loaded");
-				setTimeout(function () {
-					tjPreloader.fadeOut(400);
-					wowController();
-					gsapController();
-				}, 700);
-			}, 2000);
-		} else {
-			wowController();
-			gsapController();
-		}
+		wowController();
+		gsapController();
 	});
 
 	/* ------------- Gsap registration Js -------------*/
