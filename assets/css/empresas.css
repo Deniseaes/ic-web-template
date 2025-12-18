@@ -29,7 +29,7 @@
 } 
 .s-g {
   background-color: #f5f5f5;
-   padding:40px !important; 
+   padding:30px !important; 
   border-radius: 20px;
   margin: 30px 0 !important
 }
@@ -59,7 +59,7 @@
   color: #ffffff
 }
 .s-v h2{
-  color: #ffffff
+  color: #ffffff !important;
 }
 .row-gap-5 {
   row-gap: 0rem !important;
@@ -691,7 +691,7 @@ modulo caracteristicas*/
 
 /* Desktop: 5 columnas */
 .ic-socio-card {
-    width: calc(20% - 20px);
+    
     text-align: center;
 }
 
@@ -740,7 +740,7 @@ modulo caracteristicas*/
 .kpi-card{
   border:1px solid rgba(0,0,0,.12);
   border-radius:16px;
-  padding:18px;
+  padding:10px;
   background:#fff;
   text-align:left;
   box-shadow:0 8px 20px rgba(0,0,0,.06);
@@ -760,24 +760,26 @@ modulo caracteristicas*/
 .faq-quote{
   position:relative;
   margin:20px 0 0 0;
-  padding:10px 20px 10px 86px; /* espacio para la comilla */
+  padding:30px 20px 30px 76px; /* espacio para la comilla */
   border-radius:14px;
   background: var(--ic-green)
 }
-
 .faq-quote::before{
-  content:"“";
-  position:absolute;
-  left:20px;
-  top:18px;
-  font-size:78px;
-  line-height:1;
-  font-weight:800;
-  color: #ffffff;
- 
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 30px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("/assets/images/empresa-inventario/comillas.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .faq-quote p{
-  margin:0 0 6px; 
+  margin:0 !important ; 
   font-size:18px;
   color:#ffffff !important;
   font-weight: 400;
@@ -901,7 +903,7 @@ Modulo info
 }
 s.go p{
   color: #ffffff !important
-    ,
+     
 }
 s.go h2 {
   color: #ffffff !important,
@@ -912,4 +914,42 @@ s.go h2 {
 /* opcional: si querés que en desktop la imagen tenga alto mínimo */
 @media (min-width:1200px){
   .s-go-media-img{ min-height:360px; }
+}
+
+/*soluciones recomendadas iconos*/
+
+/* Icon base */
+.faq-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--ic-gray-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.faq-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Active state (accordion open) */
+.faq-title:not(.collapsed) .faq-icon {
+  background-color: var(--ic-green);
+}
+/* Desktop: ocultar flechas solo cuando el div tiene la clase */
+@media (min-width: 768px) {
+  .slider-navigation.only-two {
+    display: none !important;
+  }
+}
+
+/* Mobile: se siguen viendo */
+@media (max-width: 767px) {
+  .slider-navigation.only-two {
+    display: flex !important;
+  }
 }
