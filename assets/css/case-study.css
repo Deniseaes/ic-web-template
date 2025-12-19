@@ -149,6 +149,7 @@
     width: 340px;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 .container-case-study-item .project-img{
@@ -162,6 +163,7 @@
 .container-case-study-item .project-img img{
     width: 100%;
     height: auto;
+    border-radius: 15px 15px 0 0 
 }
 
 .container-case-study-item .container-case-study-item .project-content .project-btn {
@@ -191,7 +193,10 @@
 }
 
 .container-case-study-item .project-content {
-  padding: 25px 20px 25px 30px;
+  padding: 25px 20px;
+    background-color: #f5f5f5;
+    border-radius: 0 0 15px 15px;  margin-bottom: 15px;
+    border: solid 2px #ddd
 }
 .container-case-study-item .project-text {
   display: -webkit-box;
@@ -205,11 +210,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 20px
 }
 .container-case-study-item .title {
   width: 70%;
-  font-weight: var(--tj-fw-sbold);
+  font-weight:500;
   margin-bottom: 0;
 }
 .container-case-study-item .title a:hover {
