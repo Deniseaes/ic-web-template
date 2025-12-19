@@ -138,7 +138,7 @@
                       </h1>      
                       <p style=" font-size: 18px; text-align: start; color: white; margin-top: 10px;">Gestión centralizada de soporte, proyectos y datos con <br> inteligencia integrada.</p>
                       <div class="banner-left-box-button-container">
-                          <a class="tj-primary-btn" href="https://portal.interconnecta.com/" target="_blank">
+                          <a class="tj-primary-btn"  href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <span class="btn-text"><span>Explora el portal</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                           </a>
@@ -251,7 +251,7 @@
                   </div>
                   </div>
                 </div>
-                <div class="col-12">
+                <div style="margin-top: 40px; margin-bottom: 20px;" class="col-12">
                   <div class="swiper client-slider client-slider-2 h6-client-slider">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide client-item">
@@ -860,7 +860,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/inventory-management/ES/">GESTIÓN DE INVENTARIO</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/supply-chain-operations/ES/">Cadena de suministro y operaciones</a></h4>
                               
                             </div>
                           </div>
@@ -1214,6 +1214,26 @@
       </div>
     </div>
 
+     <!-- Modal Bootstrap POPUP-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+          <button type="button" class="btn-close btn-close-white ms-auto m-2" data-bs-dismiss="modal"></button>
+
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="videoIframe"
+                src=""
+                allowfullscreen
+                allow="encrypted-media; picture-in-picture">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--formulario modal-->
     <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1256,17 +1276,24 @@
           return match ? match[1] : null;
         }
 
-        // Limpia HTML para el excerpt (quitar tags)
+        // --- FIX: Limpia HTML para el excerpt (decodifica entidades Y quita tags residuales) ---
         function cleanText(html) {
           if (!html) return '';
           const tmp = document.createElement('div');
           tmp.innerHTML = html;
-          return tmp.textContent.trim();
+          
+          // 1. Decodificar entidades HTML (ej: &lt; pasa a <)
+          let text = tmp.textContent || tmp.innerText || '';
+          
+          // 2. Eliminar cualquier tag HTML que haya quedado expuesto (ej: <img ...>)
+          text = text.replace(/<[^>]+>/g, '');
+          
+          return text.trim();
         }
 
         // Obtiene la URL de la imagen destacada con varios fallbacks
         async function getFeaturedImageUrl(post) {
-          // 1) Si WP devolvió _embedded (a veces viene si se pide ?_embed)
+          // 1) Si WP devolvió _embedded
           try {
             if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]) {
               const media = post._embedded['wp:featuredmedia'][0];
@@ -1274,7 +1301,7 @@
             }
           } catch (e) { /* ignore */ }
 
-          // 2) Si no vino embebido, pedido directo al endpoint media por ID (featured_media)
+          // 2) Si no vino embebido, pedido directo al endpoint media por ID
           try {
             if (post.featured_media && Number(post.featured_media) > 0) {
               const mediaResp = await fetch(`${WP_BASE}/wp-json/wp/v2/media/${post.featured_media}`);
@@ -1287,7 +1314,7 @@
             console.warn('No se pudo obtener media por ID:', e);
           }
 
-          // 3) Buscar primera <img> dentro del contenido del post
+          // 3) Buscar primera <img> dentro del contenido
           try {
             const imgFromContent = firstImageFromHtml(post.content?.rendered);
             if (imgFromContent) return imgFromContent;
@@ -1299,7 +1326,6 @@
 
         async function cargarPosts() {
           try {
-            // NOTA: dejamos sin _embed para simular tu caso; si tu WP admite ?_embed podés agregarlo
             const resp = await fetch(`${WP_BASE}/wp-json/wp/v2/posts?per_page=3`);
             if (!resp.ok) throw new Error('Error fetching posts: ' + resp.status);
             const posts = await resp.json();
@@ -1307,21 +1333,25 @@
             posts.forEach(async (post, i) => {
               const index = i + 1;
               const title = post.title?.rendered || 'Sin título';
+              
+              // Usamos el excerpt si existe, sino el content
               const excerptHtml = post.excerpt?.rendered || post.content?.rendered || '';
-              const excerpt = cleanText(excerptHtml).slice(0, 220); // recortar si querés
+              
+              // APLICAMOS LA NUEVA LIMPIEZA
+              const excerpt = cleanText(excerptHtml).slice(0, 220) + '...'; 
 
-              // obtener imagen con los fallbacks (puede hacer una segunda petición en getFeaturedImageUrl)
+              // Obtener imagen
               let imageUrl = await getFeaturedImageUrl(post);
               if (!imageUrl) imageUrl = DEFAULT_IMG;
 
-              // Reemplazo en DOM (si existen estos IDs)
+              // Reemplazo en DOM
               const imgEl = document.getElementById(`post-img-${index}`);
               const titleEl = document.getElementById(`post-title-${index}`);
               const excerptEl = document.getElementById(`post-excerpt-${index}`);
 
               if (imgEl) {
                 imgEl.src = imageUrl;
-                imgEl.alt = title;
+                imgEl.alt = cleanText(title); // También limpiamos el título por si acaso
               }
               if (titleEl) {
                 titleEl.innerHTML = `<a href="${post.link}" target="_blank" rel="noopener noreferrer">${title}</a>`;
@@ -1446,6 +1476,25 @@
 
         formModal.addEventListener("hidden.bs.modal", function () {
         formIframe.src = "";
+        });
+      });
+    </script>
+
+     <!--POPUP VIDEO-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoModal = document.getElementById('videoModal');
+        const videoIframe = document.getElementById('videoIframe');
+        const videoUrl = "https://www.youtube.com/embed/fj-R13Dxfks?&rel=0";//Este url se cambia para cambiar el video
+
+        // Cuando se abre el modal
+        videoModal.addEventListener('show.bs.modal', function () {
+          videoIframe.src = videoUrl;
+        });
+
+        // Cuando se cierra el modal
+        videoModal.addEventListener('hidden.bs.modal', function () {
+          videoIframe.src = "";
         });
       });
     </script>

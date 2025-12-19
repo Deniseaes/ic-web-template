@@ -161,7 +161,7 @@ class HeaderComponent extends HTMLElement {
                                   <a href="/zoho-services/technology-companies/">Technology Companies</a>
                                   <a href="/zoho-services/healthcare/">Healthcare</a>
                                   <a href="/zoho-services/distribution-logistics/">Distribution & Logistics</a>
-                                  <a href="/zoho-services/inventory-management/">Inventory Management</a>
+                                  <a href="/zoho-services/supply-chain-operations/">Supply Chain & Operations</a>
                                   <a href="/zoho-services/education-training/">Education & Training</a>
                                 </div>
                               </div>

@@ -262,7 +262,7 @@
                           </p>
                           <div class="banner-left-box-button-container">
                               <a class="tj-primary-btn" href="/contact/">
-                                <span class="btn-text"><span>Talk to a Zoho Implementation Expert</span></span>
+                                <span class="btn-text"><span id="boton-card-1-carrusel-home-hero">Talk to a Zoho Implementation Expert</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                               </a>
                           </div>              
@@ -291,7 +291,7 @@
                           </p>
                           <div class="banner-left-box-button-container">
                               <a class="tj-primary-btn" href="/zoho-services/zoho-crm/">
-                                <span class="btn-text"><span>Explore Zoho CRM</span></span>
+                                <span class="btn-text"><span id="boton-card-2-carrusel-home-hero">Explore Zoho CRM</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                               </a>
                           </div>              
@@ -320,7 +320,7 @@
                       </p>
                       <div class="banner-left-box-button-container">
                           <a class="tj-primary-btn" href="/zoho-services/zoho-analytics/">
-                            <span class="btn-text"><span>Explore Zoho Analytics</span></span>
+                            <span class="btn-text"><span id="boton-card-3-carrusel-home-hero">Explore Zoho Analytics</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                           </a>
                       </div>              
@@ -348,8 +348,8 @@
                         Centralized support, project and data management <br> powered by integrated intelligence.
                       </p>
                       <div class="banner-left-box-button-container">
-                          <a class="tj-primary-btn" href="https://portal.interconnecta.com/" target="_blank">
-                            <span class="btn-text"><span>Explore the Portal</span></span>
+                          <a class="tj-primary-btn"  href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <span class="btn-text"><span id="boton-card-4-carrusel-home-hero">Explore the Portal</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                           </a>
                       </div>              
@@ -379,7 +379,7 @@
                       </p>
                       <div class="banner-left-box-button-container">
                           <a class="tj-primary-btn" href="/zoho-services/supportandmaintenance/">
-                            <span class="btn-text"><span>Learn More</span></span>
+                            <span class="btn-text" id="boton-card-5-carrusel-home-hero"><span>Learn More</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                           </a>
                       </div>              
@@ -407,7 +407,7 @@
                       </p>
                       <div class="banner-left-box-button-container">
                           <a class="tj-primary-btn" href="https://appshub.interconnecta.com/" target="_blank">
-                            <span class="btn-text"><span>Access the AI Tools Hub</span></span>
+                            <span class="btn-text" id="boton-card-6-carrusel-home-hero"><span>Access the AI Tools Hub</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                           </a>
                       </div>              
@@ -436,7 +436,7 @@
                           </p>
                           <div class="banner-left-box-button-container">
                               <a class="tj-primary-btn" href="https://interconnecta.ai/agents/EN/">
-                                <span class="btn-text"><span>See IC Agents</span></span>
+                                <span class="btn-text" id="boton-card-7-carrusel-home-hero"><span>See IC Agents</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                               </a>
                           </div>              
@@ -473,7 +473,7 @@
                   </div>
                 </div>
               </div>
-               <div class="col-12">
+              <div style="margin-top: 40px; margin-bottom: 20px;" class="col-12">
                 <div class="swiper client-slider client-slider-2 h6-client-slider">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide client-item">
@@ -999,7 +999,8 @@
               <div class="col-12" id="#content-casos-section">
                 <div class="sec-heading-wrap" id="soluciones-industrias-content-title">
                   <span id="tag-section-title" class="sub-title wow fadeInUp" data-wow-delay=".3s"
-                      ><img id="logo-ic-client-title" src="/assets/images/logoFavicon-interconnecta.png" alt="IC">PROVEN SOLUTIONS FOR EVERY INDUSTRY</span
+                      ><img id="logo-ic-client-title" src="/assets/images/logoFavicon-interconnecta.png" alt="IC">PROVEN SOLUTIONS FOR EVERY INDUSTRY
+                      </span
                     >
                   <div class="heading-wrap-content">
                     <div class="sec-heading style-3">
@@ -1070,7 +1071,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/inventory-management/">INVENTORY MANAGEMENT</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/supply-chain-operations/">Supply Chain & Operations</a></h4>
                               
                             </div>
                           </div>
@@ -1430,6 +1431,26 @@
         </div>
       </div>
     </div>
+
+     <!-- Modal Bootstrap POPUP-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+          <button type="button" class="btn-close btn-close-white ms-auto m-2" data-bs-dismiss="modal"></button>
+
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="videoIframe"
+                src=""
+                allowfullscreen
+                allow="encrypted-media; picture-in-picture">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- JS here -->
     <script src="/assets/js/jquery.min.js"></script>
@@ -1463,17 +1484,24 @@
           return match ? match[1] : null;
         }
 
-        // Limpia HTML para el excerpt (quitar tags)
+        // --- FIX: Limpia HTML para el excerpt (decodifica entidades Y quita tags residuales) ---
         function cleanText(html) {
           if (!html) return '';
           const tmp = document.createElement('div');
           tmp.innerHTML = html;
-          return tmp.textContent.trim();
+          
+          // 1. Decodificar entidades HTML (ej: &lt; pasa a <)
+          let text = tmp.textContent || tmp.innerText || '';
+          
+          // 2. Eliminar cualquier tag HTML que haya quedado expuesto (ej: <img ...>)
+          text = text.replace(/<[^>]+>/g, '');
+          
+          return text.trim();
         }
 
         // Obtiene la URL de la imagen destacada con varios fallbacks
         async function getFeaturedImageUrl(post) {
-          // 1) Si WP devolvió _embedded (a veces viene si se pide ?_embed)
+          // 1) Si WP devolvió _embedded
           try {
             if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]) {
               const media = post._embedded['wp:featuredmedia'][0];
@@ -1481,7 +1509,7 @@
             }
           } catch (e) { /* ignore */ }
 
-          // 2) Si no vino embebido, pedido directo al endpoint media por ID (featured_media)
+          // 2) Si no vino embebido, pedido directo al endpoint media por ID
           try {
             if (post.featured_media && Number(post.featured_media) > 0) {
               const mediaResp = await fetch(`${WP_BASE}/wp-json/wp/v2/media/${post.featured_media}`);
@@ -1494,7 +1522,7 @@
             console.warn('No se pudo obtener media por ID:', e);
           }
 
-          // 3) Buscar primera <img> dentro del contenido del post
+          // 3) Buscar primera <img> dentro del contenido
           try {
             const imgFromContent = firstImageFromHtml(post.content?.rendered);
             if (imgFromContent) return imgFromContent;
@@ -1506,7 +1534,6 @@
 
         async function cargarPosts() {
           try {
-            // NOTA: dejamos sin _embed para simular tu caso; si tu WP admite ?_embed podés agregarlo
             const resp = await fetch(`${WP_BASE}/wp-json/wp/v2/posts?per_page=3`);
             if (!resp.ok) throw new Error('Error fetching posts: ' + resp.status);
             const posts = await resp.json();
@@ -1514,21 +1541,25 @@
             posts.forEach(async (post, i) => {
               const index = i + 1;
               const title = post.title?.rendered || 'Sin título';
+              
+              // Usamos el excerpt si existe, sino el content
               const excerptHtml = post.excerpt?.rendered || post.content?.rendered || '';
-              const excerpt = cleanText(excerptHtml).slice(0, 220); // recortar si querés
+              
+              // APLICAMOS LA NUEVA LIMPIEZA
+              const excerpt = cleanText(excerptHtml).slice(0, 220) + '...'; 
 
-              // obtener imagen con los fallbacks (puede hacer una segunda petición en getFeaturedImageUrl)
+              // Obtener imagen
               let imageUrl = await getFeaturedImageUrl(post);
               if (!imageUrl) imageUrl = DEFAULT_IMG;
 
-              // Reemplazo en DOM (si existen estos IDs)
+              // Reemplazo en DOM
               const imgEl = document.getElementById(`post-img-${index}`);
               const titleEl = document.getElementById(`post-title-${index}`);
               const excerptEl = document.getElementById(`post-excerpt-${index}`);
 
               if (imgEl) {
                 imgEl.src = imageUrl;
-                imgEl.alt = title;
+                imgEl.alt = cleanText(title); // También limpiamos el título por si acaso
               }
               if (titleEl) {
                 titleEl.innerHTML = `<a href="${post.link}" target="_blank" rel="noopener noreferrer">${title}</a>`;
@@ -1656,6 +1687,25 @@
         formIframe.src = "";
         });
       });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const videoModal = document.getElementById('videoModal');
+          const videoIframe = document.getElementById('videoIframe');
+          const videoUrl = "https://www.youtube.com/embed/SGkofeI_lqE?&rel=0";//Este url se cambia para cambiar el video
+
+          // Cuando se abre el modal
+          videoModal.addEventListener('show.bs.modal', function () {
+            videoIframe.src = videoUrl;
+          });
+
+          // Cuando se cierra el modal
+          videoModal.addEventListener('hidden.bs.modal', function () {
+            videoIframe.src = "";
+          });
+        });
     </script>
   </body>
 </html>

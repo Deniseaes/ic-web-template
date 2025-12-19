@@ -193,6 +193,7 @@
   #tag-section-title-zoho {
     min-width: 200px;
     width: auto;
+    align-items: start;
   }
 }
 
@@ -437,8 +438,16 @@
   border-radius: 20px;
   padding: 5px;
   color: #313d3d;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  #tag-section-title {
+    align-items:start;
+  }
 }
 
 #content-end-to-end-title {
@@ -975,3 +984,47 @@
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+
+@media (max-width: 1200px){
+  #boton-card-1-carrusel-home-hero{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-2-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-3-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-4-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-5-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-6-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px){
+  #boton-card-7-carrusel-home-hero{
+    font-size: 14px;
+  }
+}
+
+
