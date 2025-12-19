@@ -101,194 +101,29 @@
     
 
     <script>
-      (async function() {
-        const WP_BASE = 'https://blog.interconnecta.ai'; // <-- cambialo por tu dominio
-        const DEFAULT_IMG = 'img/default.jpg';
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const redirectUrl = params.get("redirect");
 
-        // Extrae primer src de <img> dentro de un HTML string
-        function firstImageFromHtml(html) {
-          if (!html) return null;
-          const match = html.match(/<img[^>]+src=['"]([^'"]+)['"][^>]*>/i);
-          return match ? match[1] : null;
+        if (!redirectUrl) return;
+
+        try {
+          const decodedUrl = decodeURIComponent(redirectUrl);
+
+          // Basic safety check: must be http or https
+          if (!/^https?:\/\//i.test(decodedUrl)) return;
+
+          window.addEventListener("load", function () {
+            setTimeout(function () {
+              window.location.href = decodedUrl;
+            }, 5000);
+          });
+        } catch (e) {
+          // silent fail
         }
-
-        // Limpia HTML para el excerpt (quitar tags)
-        function cleanText(html) {
-          if (!html) return '';
-          const tmp = document.createElement('div');
-          tmp.innerHTML = html;
-          return tmp.textContent.trim();
-        }
-
-        // Obtiene la URL de la imagen destacada con varios fallbacks
-        async function getFeaturedImageUrl(post) {
-          // 1) Si WP devolvió _embedded (a veces viene si se pide ?_embed)
-          try {
-            if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]) {
-              const media = post._embedded['wp:featuredmedia'][0];
-              return media.source_url || (media.media_details?.sizes?.full?.source_url) || null;
-            }
-          } catch (e) { /* ignore */ }
-
-          // 2) Si no vino embebido, pedido directo al endpoint media por ID (featured_media)
-          try {
-            if (post.featured_media && Number(post.featured_media) > 0) {
-              const mediaResp = await fetch(`${WP_BASE}/wp-json/wp/v2/media/${post.featured_media}`);
-              if (mediaResp.ok) {
-                const mediaData = await mediaResp.json();
-                return mediaData.source_url || (mediaData.media_details?.sizes?.full?.source_url) || null;
-              }
-            }
-          } catch (e) {
-            console.warn('No se pudo obtener media por ID:', e);
-          }
-
-          // 3) Buscar primera <img> dentro del contenido del post
-          try {
-            const imgFromContent = firstImageFromHtml(post.content?.rendered);
-            if (imgFromContent) return imgFromContent;
-          } catch (e) { /* ignore */ }
-
-          // 4) Fallback
-          return null;
-        }
-
-        async function cargarPosts() {
-          try {
-            // NOTA: dejamos sin _embed para simular tu caso; si tu WP admite ?_embed podés agregarlo
-            const resp = await fetch(`${WP_BASE}/wp-json/wp/v2/posts?per_page=3`);
-            if (!resp.ok) throw new Error('Error fetching posts: ' + resp.status);
-            const posts = await resp.json();
-
-            posts.forEach(async (post, i) => {
-              const index = i + 1;
-              const title = post.title?.rendered || 'Sin título';
-              const excerptHtml = post.excerpt?.rendered || post.content?.rendered || '';
-              const excerpt = cleanText(excerptHtml).slice(0, 220); // recortar si querés
-
-              // obtener imagen con los fallbacks (puede hacer una segunda petición en getFeaturedImageUrl)
-              let imageUrl = await getFeaturedImageUrl(post);
-              if (!imageUrl) imageUrl = DEFAULT_IMG;
-
-              // Reemplazo en DOM (si existen estos IDs)
-              const imgEl = document.getElementById(`post-img-${index}`);
-              const titleEl = document.getElementById(`post-title-${index}`);
-              const excerptEl = document.getElementById(`post-excerpt-${index}`);
-
-              if (imgEl) {
-                imgEl.src = imageUrl;
-                imgEl.alt = title;
-              }
-              if (titleEl) {
-                titleEl.innerHTML = `<a href="${post.link}" target="_blank" rel="noopener noreferrer">${title}</a>`;
-              }
-              if (excerptEl) {
-                excerptEl.textContent = excerpt;
-              }
-            });
-
-          } catch (err) {
-            console.error('Error cargando posts:', err);
-          }
-        }
-
-        // Ejecutar
-        cargarPosts();
       })();
     </script>
-  
 
-    <script>
-        // JavaScript Vainilla (Modificado)
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            const slidesWrapper = document.querySelector('.carousel-slides');
-            const slides = document.querySelectorAll('.carousel-slide');
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
-
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-            let slideWidth = slides[0].clientWidth;
-            
-            // --- TIEMPOS ---
-            // Tiempo del loop automático (4 segundos)
-            const autoplayTime = 4000; 
-            // Tiempo de pausa al usar flechas (20 segundos)
-            const manualPauseTime = 10000; 
-            
-            let autoplayInterval; // Variable para guardar el intervalo
-
-            // Función para mover el carrusel
-            function goToSlide(index) {
-                if (index < 0) {
-                    currentIndex = totalSlides - 1;
-                } else if (index >= totalSlides) {
-                    currentIndex = 0;
-                } else {
-                    currentIndex = index;
-                }
-                slidesWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-            }
-
-            // Funciones para los botones
-            function showNextSlide() {
-                goToSlide(currentIndex + 1);
-            }
-
-            function showPrevSlide() {
-                goToSlide(currentIndex - 1);
-            }
-
-            // Iniciar Autoplay
-            function startAutoplay() {
-                // Limpiamos cualquier intervalo anterior para evitar duplicados
-                stopAutoplay(); 
-                autoplayInterval = setInterval(showNextSlide, autoplayTime);
-            }
-
-            // Detener Autoplay
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-
-            // --- Event Listeners (Actualizados) ---
-
-            // Botones con la nueva lógica de pausa de 20 segundos
-            nextBtn.addEventListener('click', () => {
-                showNextSlide();  // Muestra el siguiente
-                stopAutoplay();   // Frena el loop actual
-                // Espera 20 segundos y LUEGO reinicia el loop
-                setTimeout(startAutoplay, manualPauseTime);
-            });
-
-            prevBtn.addEventListener('click', () => {
-                showPrevSlide();  // Muestra el anterior
-                stopAutoplay();   // Frena el loop actual
-                // Espera 20 segundos y LUEGO reinicia el loop
-                setTimeout(startAutoplay, manualPauseTime);
-            });
-
-            // (Hemos eliminado los listeners 'mouseenter' y 'mouseleave'
-            // para que el carrusel no se frene con el mouse)
-
-            // Manejar el redimensionamiento de la ventana
-            window.addEventListener('resize', () => {
-                slideWidth = slides[0].clientWidth;
-                // Actualiza la posición sin animación para que no se vea raro
-                const tempTransition = slidesWrapper.style.transition;
-                slidesWrapper.style.transition = 'none';
-                goToSlide(currentIndex);
-                // Restaura la animación
-                setTimeout(() => {
-                    slidesWrapper.style.transition = tempTransition;
-                }, 0);
-            });
-
-            // Iniciar todo
-            startAutoplay();
-        });
-    </script>
 
   </body>
 </html>
