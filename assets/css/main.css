@@ -23622,13 +23622,16 @@ START: Client CSS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 700px) {
   .h6-client-title-wrapper {
     padding: 15px 15px 35px;
+    align-items: start;
   }
 }
 @media (max-width: 575px) {
