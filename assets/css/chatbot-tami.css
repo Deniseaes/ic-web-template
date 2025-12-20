@@ -1,0 +1,68 @@
+/* TAMI */
+.tami-chat-wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden; /* fundamental para que el borde no “se salga” */
+}
+
+/* Banner */
+.chatbot-banner {
+  height: 85px;
+  background: linear-gradient(
+    45deg,
+    #0af8f8 0%,
+    #9f04c2 60%,
+    #9f04c2 100%
+  );
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-banner p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+/* Contenedor con borde degradado */
+.tami-box-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+
+  /* clave: que el borde no “agrande” y no rompa el layout */
+  box-sizing: border-box;
+
+  /* borde degradado */
+  border: 7px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(90deg, #0af8f8, #9f04c2) border-box;
+
+  /* padding interno para que el iframe no toque el borde */
+  padding: 12px;
+
+  /* altura final */
+  height: 370px;
+  display: flex;
+}
+
+/* Iframe */
+.home-discover-the-ai-solution-container-tami-chat-ai {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+
+  background-color: #f5f5f5 !important;
+
+  /* radio interno consistente con el padding */
+  border-radius: 8px;
+}
