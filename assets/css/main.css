@@ -13654,6 +13654,7 @@ START: Contact CSS
 }
 
 .contact-form {
+  width: 100%;
    background-color: var(--tj-color-grey-1);
   -webkit-margin-start: 0;
   margin-inline-start: 0;
@@ -13661,7 +13662,7 @@ START: Contact CSS
   margin-inline-end: 15px;
   padding: 60px 50px;
   border-radius: 12px;
-  height: 90%;
+  height: auto;
 }
 .contact-form .title {
   margin-bottom: 35px;
