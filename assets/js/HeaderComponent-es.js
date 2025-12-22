@@ -112,7 +112,7 @@ class HeaderComponent extends HTMLElement {
     <header style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="header-area header-1 header-absolute section-gap-x">
       <div class="header-global-use-zoho">
           <span id="header-global-use-zoho-link" style="color:#ffffff;">
-            Regístranos como tu socio <strong>ZOHO</strong> utilizando el código <strong>INTCUSA</strong> | Aprende cómo hacerlo <strong><u><a href="https://store.zoho.com/html/store/tagyourpartner.html" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">aquí</a></u></strong>
+            Regístranos como tu socio <strong>ZOHO</strong> utilizando el código <strong>INTCPE</strong> | Aprende cómo hacerlo <strong><u><a href="/activate-access/ES/" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">aquí</a></u></strong>
           </span>
       </div>
       <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="container-fluid">
