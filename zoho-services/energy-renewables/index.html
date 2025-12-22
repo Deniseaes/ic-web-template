@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Zoho and AI solutions for solar and renewable energy companies to manage projects, field operations, financing and customer service." />
+    <meta
+      name="description"
+      content="Zoho and AI solutions for solar and renewable energy companies to manage projects, field operations, financing and customer service." />
 
     <!-- Site Title -->
     <title>Zoho for Renewable Energy Companies | InterConnecta</title>
 
     <!-- Place favicon.ico in the root directory -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="/assets/images/logoFavicon-interconnecta.png"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logoFavicon-interconnecta.png" />
     <!-- CSS here -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/font-awesome-pro.min.css" />
@@ -32,14 +30,14 @@
     <link rel="stylesheet" href="/assets/css/sevice-details-02.css" />
     <link rel="stylesheet" href="/assets/css/service-details.css" />
     <link rel="stylesheet" href="/assets/css/empresas.css" />
+    <link rel="stylesheet" href="/assets/css/chatbot-tami.css" />
   </head>
 
   <body>
-    <div class="body-overlay"></div> 
-    
+    <div class="body-overlay"></div>
+
     <componente-header></componente-header>
 
-  
     <!--
   El smooth-wrapper y smooth-content son los que contiene todo el contenido de la página y el footer
   El main que tiene id primary es el que contiene todo el contenido de la página menos el footer
@@ -52,22 +50,26 @@
           <div class="space-for-header"></div>
           <!--AQUI VA EL CONTENIDO-->
           <div class="customer-page pag-empresas">
-            <section class="zoho-banner banner-energia col-12">
-              <div class="zoho-banner-content">
-                <img class="zoho-banner-logo" src="/assets/images/empresa-energia/logo-energiasolar.svg" alt="" />
-                <h1 class="zoho-banner-title">Energías Renovables</h1>
-                <p>
-                  Un ecosistema digital conectado para operar con mayor claridad, control y previsibilidad en proyectos
-                  de energía renovable.
-                </p>
-                <div>
-                  <a href="/contact/ES/" target="_blank" class="tj-primary-btn">
-                    <span class="btn-text"><span>Solicitar una consultoría</span></span>
-                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                  </a>
+            <div class="customer-page pag-empresas">
+              <section class="zoho-banner banner-energia col-12">
+                <div class="zoho-banner-content">
+                  <img class="zoho-banner-logo" src="/assets/images/empresa-energia/logo-energiasolar.svg" alt="" />
+
+                  <h1 class="zoho-banner-title">Renewable Energy</h1>
+                  <p>
+                    A connected digital ecosystem to operate renewable energy projects with greater clarity, control,
+                    and predictability.
+                  </p>
+
+                  <div>
+                    <a href="/contact/" target="_blank" class="tj-primary-btn">
+                      <span class="btn-text"><span>Request a Consultation</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <div class="row row-gap-5">
               <section class="tj-blog-section cambios section-gap slidebar-stickiy-container">
@@ -79,10 +81,14 @@
                           <!-- ===========================
      Sección: Qué cambia...
      =========================== -->
-                          <section class="seccion-industria s-v" style="margin-top: 0px !important">
-                            <h2 class="wow fadeInUp faq-margin" style="color: #ffffff !important" data-wow-delay=".3s">
+                          <section
+                            class="seccion-industria s-v s wow fadeInUp"
+                            data-wow-delay=".1s"
+                            style="margin-top: 0px !important">
+                            <h2 class="faq-margin" style="color: #ffffff !important">
                               What changes when work starts flowing
                             </h2>
+
                             <p>
                               The results you start seeing when sales, operations, and support stop working in
                               disconnected systems and the business begins operating as one.
@@ -90,7 +96,7 @@
 
                             <div class="accordion tj-faq style-2" id="faqMetrics">
                               <!-- ===================== 3 MONTHS ===================== -->
-                              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                              <div class="accordion-item">
                                 <button
                                   class="faq-title collapsed"
                                   type="button"
@@ -134,7 +140,7 @@
                               </div>
 
                               <!-- ===================== 6 MONTHS ===================== -->
-                              <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                              <div class="accordion-item">
                                 <button
                                   class="faq-title collapsed"
                                   type="button"
@@ -178,7 +184,7 @@
                               </div>
 
                               <!-- ===================== 12 MONTHS ===================== -->
-                              <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                              <div class="accordion-item">
                                 <button
                                   class="faq-title collapsed"
                                   type="button"
@@ -244,7 +250,7 @@
                             <div class="container-fluid">
                               <div class="row">
                                 <div class="col-12">
-                                  <div class="project-wrapper wow fadeInUp" data-wow-delay=".4s">
+                                  <div class="project-wrapper wow fadeInUp" data-wow-delay=".2s">
                                     <div class="dept-tabs">
                                       <button class="dept-tab is-active" data-slide="0">Marketing</button>
                                       <button class="dept-tab" data-slide="1">Sales</button>
@@ -1222,11 +1228,23 @@
                     <!-- Sidebar -->
                     <div class="col-lg-4">
                       <div class="tj-main-sidebar slidebar-stickiy">
-                        <div class="tj-sidebar-widget service-categories wow fadeInUp" data-wow-delay=".1s">
-                          <h4 class="widget-title">Tami</h4>
-                          
+                         <!--chat-bot-->
+                                           
+                        <div class="tami-chat-wrapper">
+                          <div class="chatbot-banner">
+                            <p>Tami | IC AGENT</p>
+                          </div>
+
+                          <div class="tami-box-container">
+                            <iframe
+                              class="home-discover-the-ai-solution-container-tami-chat-ai"
+                              src="https://tami-webchat-467061048126.us-central1.run.app/?theme=light"
+                              allow="clipboard-write">
+                            </iframe>
+                          </div>
                         </div>
 
+                         <!--chat-bot-->
                         <div class="tj-sidebar-widget widget-feature-item wow fadeInUp box-trial" data-wow-delay=".3s">
                           <div class="feature-box">
                             <div class="feature-content">
@@ -1250,11 +1268,8 @@
               </section>
             </div>
           </div>
-          
-
-      </main>
-      <componente-footer></componente-footer>
-      
+        </main>
+        <componente-footer></componente-footer>
       </div>
     </div>
     <!--video modal-->
@@ -1284,7 +1299,7 @@
       </div>
     </div>
     <!-- JS here -->
-   
+
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/gsap.min.js"></script>
@@ -1302,7 +1317,7 @@
     <script src="/assets/js/HeaderComponent.js"></script>
     <script src="/assets/js/FooterComponent.js"></script>
 
-   <!-- Script del slider de soluciones (FIX tabs reordenados + realIndex) -->
+    <!-- Script del slider de soluciones (FIX tabs reordenados + realIndex) -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const section = document.querySelector(".soluciones-recomendadas");
@@ -1439,6 +1454,5 @@
         });
       });
     </script>
-
   </body>
 </html>
