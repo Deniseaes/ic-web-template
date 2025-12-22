@@ -103,25 +103,22 @@
     <script>
       (function () {
         const params = new URLSearchParams(window.location.search);
-        const redirectUrl = params.get("redirect");
+        const link = params.get("link");
 
-        if (!redirectUrl) return;
+        if (!link) return;
 
         try {
-          const decodedUrl = decodeURIComponent(redirectUrl);
+          const decodedUrl = decodeURIComponent(link);
 
-          // Basic safety check: must be http or https
+          // Safety check
           if (!/^https?:\/\//i.test(decodedUrl)) return;
 
-          window.addEventListener("load", function () {
-            setTimeout(function () {
-              window.location.href = decodedUrl;
-            }, 5000);
-          });
-        } catch (e) {
-          
-        }
+          setTimeout(function () {
+            window.location.href = decodedUrl;
+          }, 5000);
+        } catch (e) {}
       })();
+
     </script>
 
 
