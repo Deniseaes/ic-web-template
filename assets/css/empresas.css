@@ -953,3 +953,14 @@ s.go h2 {
     display: flex !important;
   }
 }
+/*caoss de estudio*/
+#formModal .modal-content { 
+    background-color: transparent;
+   border: none;
+}
+#formModal .btn-close {
+    --bs-btn-close-color: #000;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 15px;
+}
