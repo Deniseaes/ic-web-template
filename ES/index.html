@@ -816,7 +816,7 @@
                           <div id="title-card-soluciones-industrias" class="project-content">
                             
                             <div  class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/energy-renewables/ES/">ENERGÍA SOLAR</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/energy-renewables/ES/">Energía Soalr</a></h4>
                             
                               </a>
                             </div>
@@ -831,7 +831,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias" class="project-content">
                             <div class="project-text" >
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/healthcare/ES/">SALUD</a>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/healthcare/ES/">Salud</a>
                               </h4>
                               
                             </div>
@@ -846,7 +846,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias" class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/distribution-logistics/ES/">DISTRIBUCIÓN Y LOGÍSTICA</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/distribution-logistics/ES/">Distribución Y Logística</a></h4>
                               
                             </div>
                           </div>
@@ -874,7 +874,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/technology-companies/ES/">IT</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/technology-companies/ES/">Tecnología de la Información</a></h4>
                               
                             </div>
                           </div>
@@ -889,7 +889,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text" id="cont-title-card-soluciones-industrias">
-                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/education-training/ES/">EDUCACIÓN Y CAPACITACIÓN</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/education-training/ES/">Educación y Capacitación</a></h4>
                               
                             </div>
                           </div>
@@ -904,7 +904,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text" id="cont-title-card-soluciones-industrias">
-                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/financial-services/ES/">FINANZAS Y SERVICIOS FINANCIEROS</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/financial-services/ES/">Finanzas y Servicios Financieros</a></h4>
                               
                             </div>
                           </div>
@@ -935,7 +935,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title"id="card-soluciones-industrias-title"><a href="/zoho-services/b2b/ES/">CORPORATIVO B2B</a></h4>
+                              <h4 class="title"id="card-soluciones-industrias-title"><a href="/zoho-services/b2b/ES/">Corporativo B2B</a></h4>
                               
                                 <i class="tji-arrow-right-big"></i>
                               </a>
@@ -1491,6 +1491,33 @@
         // Cuando se cierra el modal
         videoModal.addEventListener('hidden.bs.modal', function () {
           videoIframe.src = "";
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiperProject = new Swiper('.project-slider-2', {
+          // Configuración de movimiento automático
+          autoplay: {
+            delay: 2000, // Se mueve cada 3 segundos
+            disableOnInteraction: false, // Sigue moviéndose aunque el usuario lo toque
+          },
+          // Permite que el carrusel sea infinito
+          loop: true, 
+          // Ajusta cuántas diapositivas se ven (puedes cambiar estos números)
+          slidesPerView: 1,
+          spaceBetween: 20,
+          // Configuración para que sea responsivo
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          },
+          // Si quieres usar los puntos de paginación que tienes en tu HTML
+          pagination: {
+            el: '.swiper-pagination-area',
+            clickable: true,
+          },
         });
       });
     </script>

@@ -1019,8 +1019,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="project-wrapper wow fadeInUp" data-wow-delay=".4s">
-                  <div class="swiper project-slider-2">
-                    <div class="swiper-wrapper">
+                  <div class="swiper project-slider-2" data-swiper-autoplay="1000">
+                    <div class="swiper-wrapper"  data-swiper-autoplay="1000">
 
                       <div class="swiper-slide">
                         <div id="card-soluciones-industrias" class="project-item">
@@ -1030,7 +1030,7 @@
                           <div id="title-card-soluciones-industrias" class="project-content">
                             
                             <div  class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/energy-renewables/">SOLAR ENERGY</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/energy-renewables/">Solar Energy</a></h4>
                               
                               </a>
                             </div>
@@ -1045,7 +1045,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias" class="project-content">
                             <div class="project-text" >
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/healthcare/">HEALTH</a>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/healthcare/">Health</a>
                               </h4>
                               
                             </div>
@@ -1060,7 +1060,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias" class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/distribution-logistics/">DISTRIBUTION AND LOGISTICS</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/distribution-logistics/">Distribution And Logistics</a></h4>
                               
                             </div>
                           </div>
@@ -1088,7 +1088,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/technology-companies/">IT</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/technology-companies/">Information Technology</a></h4>
                               
                             </div>
                           </div>
@@ -1103,7 +1103,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text" id="cont-title-card-soluciones-industrias">
-                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/education-training/">EDUCATION AND TRAINING</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/education-training/">Education And Training</a></h4>
                               
                             </div>
                           </div>
@@ -1118,7 +1118,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text" id="cont-title-card-soluciones-industrias">
-                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/financial-services/">FINANCE AND FINANCIAL SERVICES</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title-largo"><a href="/zoho-services/financial-services/">Finance And Financial Services</a></h4>
                               
                             </div>
                           </div>
@@ -1133,7 +1133,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/manufacturing/">CONSTRUCTION AND SERVICES</a></h4>
+                              <h4 class="title" id="card-soluciones-industrias-title"><a href="/zoho-services/manufacturing/">Construction And Services</a></h4>
                               
                                 <i class="tji-arrow-right-big"></i>
                               </a>
@@ -1149,7 +1149,7 @@
                           </div>
                           <div id="title-card-soluciones-industrias"  class="project-content">
                             <div class="project-text">
-                              <h4 class="title"id="card-soluciones-industrias-title"><a href="/zoho-services/b2b/">B2B CORPORATE</a></h4>
+                              <h4 class="title"id="card-soluciones-industrias-title"><a href="/zoho-services/b2b/">B2B Corporate</a></h4>
                               
                                 <i class="tji-arrow-right-big"></i>
                               </a>
@@ -1705,6 +1705,34 @@
             videoIframe.src = "";
           });
         });
+    </script>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiperProject = new Swiper('.project-slider-2', {
+          // Configuración de movimiento automático
+          autoplay: {
+            delay: 2000, // Se mueve cada 3 segundos
+            disableOnInteraction: false, // Sigue moviéndose aunque el usuario lo toque
+          },
+          // Permite que el carrusel sea infinito
+          loop: true, 
+          // Ajusta cuántas diapositivas se ven (puedes cambiar estos números)
+          slidesPerView: 1,
+          spaceBetween: 20,
+          // Configuración para que sea responsivo
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          },
+          // Si quieres usar los puntos de paginación que tienes en tu HTML
+          pagination: {
+            el: '.swiper-pagination-area',
+            clickable: true,
+          },
+        });
+      });
     </script>
   </body>
 </html>
