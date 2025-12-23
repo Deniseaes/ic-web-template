@@ -189,10 +189,11 @@
 .ic-brand-image{
   display:block;
   width:auto;
-  height:100%;
+  height:450px;
   object-fit:cover;
   border-radius: 18px;
-  box-shadow: var(--brand-shadow);
+  margin-bottom: 15px;
+  
 }
 
 /* ===== Responsive ===== */
