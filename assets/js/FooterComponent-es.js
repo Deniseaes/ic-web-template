@@ -150,7 +150,7 @@ class FooterComponentES extends HTMLElement {
               </div>
               <div>
                 <div class="region"><img src="/assets/images/footer/panama-flag.svg" class="flag" alt="Panamá" />Centro América</div>
-                <p>Panamá (Ciudad de Panamá) — +507-836-0436</p>
+                <p>Panamá (Ciudad de Panamá) — +507-6980-0545</p>
               </div>
               <div>
                 <div class="region"><img src="/assets/images/footer/puerto-rico-flag.svg" class="flag" alt="Puerto Rico" />Caribe</div>
