@@ -998,7 +998,8 @@
     display: inline-block;   /* o display:block; */
     white-space: normal;
     overflow-wrap: break-word;
-    
+    justify-content: flex-start;
+    text-align: left;
   }
 }
 
@@ -1017,10 +1018,12 @@
 @media (max-width: 1200px){
   #boton-card-4-carrusel-home-hero{
     font-size: 14px;
-    width:200px;
+    width:190px;
     display: inline-block;   /* o display:block; */
     white-space: normal;
     overflow-wrap: break-word;
+    justify-content: flex-start;
+    text-align: left;
   }
 }
 
