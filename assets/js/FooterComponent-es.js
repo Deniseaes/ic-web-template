@@ -10,7 +10,7 @@ class FooterComponentES extends HTMLElement {
               <div class="col-12">
                 <div id="footer-cta-area" class="cta-area">
                   <div class="cta-content">
-                    <span class="sub-title"><i class="tji-box"></i> InterConnecta • Socio Empresarial</span>
+                    <span class="sub-title">  InterConnecta • Socio Empresarial</span>
                     <h2 class="title">Descubre cómo crear valor sostenible en toda tu <span>operación.</span></h2>
                     <div class="cta-btn">
                       <a id="footer-cta-btn" class="tj-primary-btn" href="/contact/ES/">
@@ -126,7 +126,7 @@ class FooterComponentES extends HTMLElement {
         <div id="footer-bottom">
           <div class="container">
             <div id="footer-contact-group">
-              <div class="pill"><span class="icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+13053301400">+1 (305) 330-1400</a></div>
+              
               <div class="pill"><span class="icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@interconnecta.com">info@interconnecta.com</a></div>
             </div>
 

@@ -470,3 +470,7 @@ c-cursos .project-txt{
 }
 }
 
+.ic-integral-list .ic-integral-item {
+  justify-content: flex-start
+}
+
