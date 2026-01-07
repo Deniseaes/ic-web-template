@@ -1,5 +1,30 @@
 {
   "dependencies": {
     "http-server": "^14.1.1"
-  }
+  },
+  "name": "ic-web-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "purgecss": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deniseaes/ic-web-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Deniseaes/ic-web-template/issues"
+  },
+  "homepage": "https://github.com/Deniseaes/ic-web-template#readme"
 }

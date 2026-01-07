@@ -1,0 +1,11 @@
+{
+  "content": [
+    "./index.html",
+    "./**/*.html",
+    "./assets/js/**/*.js"
+  ],
+  "css": [
+    "./assets/css/main.css"
+  ],
+  "output": "./assets/css/"
+}
