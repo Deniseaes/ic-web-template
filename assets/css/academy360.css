@@ -73,7 +73,7 @@
   }
 } 
 .accordion-item{
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 0px 30px !important;
 } 
 .servicios .active{
@@ -93,6 +93,7 @@ border: 2px solid var(--ic-green) !important;
     margin-top: 10px;
     color: var(--tj-color-text-body);
     padding: 0px 0px 15px;
+    background-color: transparent !important;
 }
    
 .servicio .pricing-box.active .pricing-btn a {
