@@ -12498,7 +12498,7 @@ START: Faq CSS
   border-radius: 8px;
   border: 0;
   position: relative;
-  background-color: #f5f5f5
+  background-color: #ffffff
 
 }
 .tj-faq .accordion-item:last-child {
@@ -18703,7 +18703,7 @@ START: Pricing CSS
 }
 .accordion.pricing-accordion .pricing-box.active .faq-title::after {
   color: var(--tj-color-heading-primary);
-  background-color: var(--tj-color-common-white);
+  background-color: #ffffff;
   border-color: var(--tj-color-common-white);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -24876,7 +24876,7 @@ START: FAQ CSS
 }
 .h7-faq-wrapper.style-2 .accordion-item.active .faq-title::after {
   border-color: var(--tj-color-common-white);
-  background-color: var(--tj-color-common-white);
+  background-color: #ffffff;
   color: var(--tj-color-heading-primary);
 }
 .h7-faq-wrapper.style-2 .accordion-item:not(.active) .faq-title {

@@ -620,6 +620,37 @@
   border-radius: 20px;
 }
 
+[class^="item-carrusel-container-item"]{
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.item-carrusel-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.item-carrusel-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.item-carrusel-overlay--gradient-6{
+  background: linear-gradient(
+    to right,
+    rgba(2, 45, 80, 0.85) 0%,
+    rgba(2, 45, 80, 0.7) 35%,
+    rgba(2, 45, 80, 0.4) 60%,
+    rgba(2, 45, 80, 0.1) 100%
+  );
+}
+
 .banner-left-box-new-carrusel {
   padding: 0px;
   width: 45%;
@@ -661,6 +692,14 @@
   align-items: center;
 }
 
+.banner-left-box-new-carrusel,
+.banner-right-box-new-carrusel,
+.banner-right-box-new-carrusel-5,
+.banner-right-box-new-carrusel-7{
+  position: relative;
+  z-index: 2;
+}
+
 .banner-content-new-carrusel-container {
   width: 100%;
   display: flex;
@@ -685,10 +724,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center; 
   border-radius: 20px;
 }
 
@@ -705,10 +740,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/crm.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px;
 }
 
@@ -725,10 +756,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/analitycs.webp");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px; 
 }
 
@@ -745,10 +772,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/carrusel-home/customerportal.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px;
 }
 
@@ -765,10 +788,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image:  url("../../assets/images/carrusel-home/soporte.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px; 
 }
 
@@ -801,17 +820,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(
-    to right,
-    rgba(2, 45, 80, 0.85) 0%,
-    rgba(2, 45, 80, 0.7) 35%,
-    rgba(2, 45, 80, 0.4) 60%,
-    rgba(2, 45, 80, 0.1) 100%
-  ),
-  url("../../assets/images/carrusel-home/apphub.webp");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px; 
 }
 
@@ -830,10 +838,6 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-image:  url("../../assets/images/carrusel-home/automatizacion.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover;      
-  background-position: center;  
   border-radius: 20px;
 }
 
