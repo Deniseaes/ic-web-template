@@ -252,7 +252,7 @@ color: #ffffff !important;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: left;
+  justify-content: center;
   gap: 10px;
   font-size: 16px;
   font-weight: var(--tj-fw-sbold);
@@ -354,5 +354,123 @@ color: #ffffff !important;
   .ic-integral-item img {
     margin-bottom: 12px; /* espacio entre imagen y texto */
   }
+}
+
+/*carrusel cursos*/
+.c-cursos .project-wrapper {
+    padding: 0 ;
+}
+.c-cursos 
+.project-item .project-img::before {
+    content: "";
+    background:none;
+}
+.c-cursos .project-item{
+  border: solid 1px #eeeeee
+}
+.c-cursos .project-content{
+padding: 10px;
+}
+c-cursos .project-txt{
+ 
+  width: 100% !important
+}
+.c-cursos a{
+ font-size: 16px; 
+  font-weight: 400;
+} 
+.c-cursos a:hover{
+ font-size: 16px; 
+  font-weight: 400;
+}
+/* Contenedor de la imagen */
+.c-cursos .project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen */
+.c-cursos .project-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay oscuro */
+.c-cursos .project-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; 
+}
+
+/* Botón encima */
+.c-cursos .project-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  opacity: 0;
+  pointer-events: none;
+
+  background: rgba(255, 255, 255, 0.75);
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover */
+.c-cursos .project-img:hover::after {
+  opacity: 1;
+}
+
+.c-cursos .project-img:hover .project-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.c-cursos .slider-navigation{
+  margin: 25px 0;
+} 
+
+.s-g {
+  background-color: #f5f5f5;
+   padding:30px !important; 
+  border-radius: 20px;
+  margin: 30px 0 !important
+}
+
+ 
+/* Tablet */
+@media (max-width:1024px) {
+  .seccion-industria {
+    padding: 60px 40px; /* menos padding lateral */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .seccion-industria {
+    padding: 40px 0px; /* casi full-width, solo 16px de margen */
+  }
+  .s-g {
+  background-color: #f5f5f5;
+   padding:40px 10px !important; 
+  border-radius: 20px;
+  margin: 20px 0 !important;
+      margin: 10px 0 !important
+}
+}
+
+.ic-integral-list .ic-integral-item {
+  justify-content: flex-start
 }
 

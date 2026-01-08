@@ -112,7 +112,7 @@ class HeaderComponent extends HTMLElement {
     <header style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="header-area header-1 header-absolute section-gap-x">
       <div class="header-global-use-zoho">
           <span id="header-global-use-zoho-link" style="color:#ffffff;">
-            Regístranos como tu socio <strong>ZOHO</strong> utilizando el código <strong>INTCUSA</strong> | Aprende cómo hacerlo <strong><u><a href="https://store.zoho.com/html/store/tagyourpartner.html" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">aquí</a></u></strong>
+            Regístranos como tu socio <strong>ZOHO</strong> utilizando el código <strong>INTCPE</strong> | Aprende cómo hacerlo <strong><u><a href="/activate-access/ES/" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">aquí</a></u></strong>
           </span>
       </div>
       <div style="background-color: #ecf0f0; border-radius: 0 0 20px 20px;" class="container-fluid">
@@ -157,7 +157,7 @@ class HeaderComponent extends HTMLElement {
                                     <a href="/zoho-services/financial-services/ES/">Servicios Financieros</a>
                                     <a href="/zoho-services/manufacturing/ES/">Manufactura</a>
                                     <a href="/zoho-services/energy-renewables/ES/">Energía y Renovables</a>
-                                    <a href="/zoho-services/technology-companies/">Empresas de Tecnología</a>
+                                    <a href="/zoho-services/technology-companies/ES">Empresas de Tecnología</a>
                                     <a href="/zoho-services/healthcare/ES/">Cuidado de la Salud</a>
                                     <a href="/zoho-services/distribution-logistics/ES/">Distribución & Logística</a>
                                     <a href="/zoho-services/supply-chain-operations/ES/">Cadena de suministro y operaciones</a>

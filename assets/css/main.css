@@ -10182,6 +10182,15 @@ START: Services CSS
   display: inline-flex;
   line-height: 1;
 }
+
+.service-item .service-icon img {
+  transition: filter 0.3s ease;
+}
+
+/* hover sobre TODO el card */
+.service-item:hover .service-icon img {
+  filter: brightness(0) invert(1);
+}
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .service-item .service-icon {
@@ -11317,20 +11326,21 @@ START: Project CSS
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 10px;
+  
 }
 .categories a {
   background-color: rgba(255, 255, 255, 0.15);
   font-size: 16px;
   line-height: 1;
   color: var(--tj-color-text-body);
-  font-weight: var(--tj-fw-medium);
+  font-weight: var(--tj-fw-bold);
   padding: 2px 7px 4px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   overflow: hidden;
   border-radius: 4px;
-  border: 1px solid var(--tj-color-border-1);
+  border: 2px solid var(--tj-color-border-1);
   backdrop-filter: blur(15px);
 }
 .categories a:hover {
@@ -13654,6 +13664,7 @@ START: Contact CSS
 }
 
 .contact-form {
+  width: 100%;
    background-color: var(--tj-color-grey-1);
   -webkit-margin-start: 0;
   margin-inline-start: 0;
@@ -13661,7 +13672,7 @@ START: Contact CSS
   margin-inline-end: 15px;
   padding: 60px 50px;
   border-radius: 12px;
-  height: 90%;
+  height: auto;
 }
 .contact-form .title {
   margin-bottom: 35px;

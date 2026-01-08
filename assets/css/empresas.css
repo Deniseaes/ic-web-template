@@ -447,6 +447,7 @@
 .caso-exito .categories a{
   background-color: var(--ic-gray-dark) !important;
   color: #ffffff !important;
+  font-weight: 800;
   margin-bottom: 10px;
   padding: 4px 10px 
 }
@@ -906,7 +907,7 @@ s.go p{
      
 }
 s.go h2 {
-  color: #ffffff !important,
+  color: #ffffff !important
     
 }
 
@@ -952,4 +953,15 @@ s.go h2 {
   .slider-navigation.only-two {
     display: flex !important;
   }
+}
+/*caoss de estudio*/
+#formModal .modal-content { 
+    background-color: transparent;
+   border: none;
+}
+#formModal .btn-close {
+    --bs-btn-close-color: #000;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 15px;
 }
